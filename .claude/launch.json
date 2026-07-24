@@ -4,7 +4,7 @@
     {
       "name": "sigmatek-site",
       "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
-      "runtimeArgs": [".claude/dev-server.js"],
+      "runtimeArgs": [".claude/dev-server.cjs"],
       "port": 5510
     }
   ]
