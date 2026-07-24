@@ -1,0 +1,38 @@
+{
+  "name": "sigmatek-website",
+  "version": "1.0.0",
+  "description": "Sigmatek Mühendislik kurumsal web sitesi",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"**/*.{html,css,js,json}\"",
+    "format:check": "prettier --check \"**/*.{html,css,js,json}\"",
+    "lint:css": "stylelint \"css/**/*.css\"",
+    "lint:css:fix": "stylelint \"css/**/*.css\" --fix",
+    "lint:js": "eslint \"js/**/*.js\"",
+    "optimize:img": "node scripts/optimize-images.js",
+    "optimize:svg": "svgo -f assets -r",
+    "audit:site": "echo \"Chrome DevTools > Lighthouse ile denetleyin veya: npx unlighthouse --site http://localhost:5510\""
+  },
+  "keywords": [
+    "ges",
+    "solar",
+    "engineering",
+    "sigmatek"
+  ],
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.7.0",
+    "globals": "^17.7.0",
+    "prettier": "^3.9.6",
+    "sharp": "^0.35.3",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard": "^40.0.0",
+    "svgo": "^4.0.2",
+    "vite": "^8.1.5"
+  }
+}
