@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sigmatek Mühendislik — Tanıtım Broşürü</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #0a0e14;
+        --ink-soft: #12171f;
+        --paper: #faf9f5;
+        --paper-alt: #f2f0ea;
+        --gold: #f5a623;
+        --gold-soft: #ffc857;
+        --emerald: #0ea968;
+        --slate: #5b6572;
+        --line: rgba(10, 14, 20, 0.1);
+        --font-head: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+        --font-body: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: var(--font-body);
+        color: var(--ink);
+        background: #6b7280;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: var(--font-head);
+        letter-spacing: -0.02em;
+        line-height: 1.05;
+      }
+
+      /* A4 sayfa */
+      .page {
+        width: 210mm;
+        height: 297mm;
+        margin: 12mm auto;
+        background: var(--paper);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
+      }
+
+      /* ---------- ÖN SAYFA ---------- */
+      .cover-hero {
+        position: relative;
+        height: 152mm;
+        background: var(--ink);
+        color: #fff;
+        overflow: hidden;
+      }
+      .cover-hero img.bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5;
+      }
+      .cover-hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(10, 14, 20, 0.55) 0%, rgba(10, 14, 20, 0.85) 100%);
+      }
+      .cover-inner {
+        position: relative;
+        z-index: 2;
+        padding: 15mm 16mm 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .cover-top {
+        text-align: center;
+      }
+      .cover-logo {
+        height: 24mm;
+        width: auto;
+        margin: 0 auto;
+        filter: drop-shadow(0 2mm 6mm rgba(0, 0, 0, 0.55));
+      }
+      .cover-services {
+        display: flex;
+        justify-content: center;
+        gap: 9mm;
+        margin-top: 9mm;
+        padding-top: 7mm;
+        border-top: 1px solid rgba(255, 255, 255, 0.16);
+      }
+      .cover-services .cs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5mm;
+        font-size: 7.5pt;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.85);
+      }
+      .cover-services svg {
+        width: 8mm;
+        height: 8mm;
+        color: var(--gold-soft);
+      }
+      .cover-bottom {
+        margin-top: auto;
+      }
+      .cover-eyebrow {
+        font-size: 10pt;
+        font-weight: 600;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--gold-soft);
+      }
+      .cover-title {
+        font-size: 40pt;
+        font-weight: 700;
+        margin: 6mm 0 5mm;
+      }
+      .cover-title .accent {
+        background: linear-gradient(120deg, var(--gold-soft), var(--gold));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .cover-sub {
+        font-size: 12pt;
+        line-height: 1.55;
+        color: rgba(255, 255, 255, 0.86);
+        max-width: 150mm;
+        margin-bottom: 14mm;
+      }
+
+      /* İstatistik şeridi */
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background: var(--gold);
+        color: var(--ink);
+      }
+      .stat {
+        padding: 9mm 8mm;
+        text-align: center;
+        border-right: 1px solid rgba(10, 14, 20, 0.15);
+      }
+      .stat:last-child {
+        border-right: none;
+      }
+      .stat b {
+        font-family: var(--font-head);
+        font-size: 26pt;
+        font-weight: 700;
+        display: block;
+      }
+      .stat span {
+        font-size: 9.5pt;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+      }
+
+      /* Alt görsel şeridi */
+      .cover-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        height: 62mm;
+      }
+      .cover-gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .cover-foot {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--ink);
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 8.5pt;
+        padding: 3.5mm 16mm;
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 0.05em;
+      }
+
+      /* ---------- ARKA SAYFA ---------- */
+      .back {
+        padding: 15mm 16mm 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .section-eyebrow {
+        font-size: 9.5pt;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+      .section-title {
+        font-size: 22pt;
+        font-weight: 700;
+        margin: 3mm 0 7mm;
+      }
+      .services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4.5mm 7mm;
+      }
+      .svc {
+        display: flex;
+        gap: 4mm;
+        align-items: flex-start;
+      }
+      .svc .num {
+        font-family: var(--font-head);
+        font-size: 12pt;
+        font-weight: 700;
+        color: var(--emerald);
+        min-width: 9mm;
+      }
+      .svc h4 {
+        font-size: 11.5pt;
+        font-weight: 700;
+        margin-bottom: 1mm;
+      }
+      .svc p {
+        font-size: 8.7pt;
+        line-height: 1.45;
+        color: var(--slate);
+      }
+
+      .refs {
+        margin-top: 10mm;
+      }
+      .refs-row {
+        display: flex;
+        align-items: center;
+        gap: 10mm;
+        flex-wrap: wrap;
+        margin-top: 4mm;
+      }
+      .refs-row img {
+        height: 11mm;
+        width: auto;
+        object-fit: contain;
+        filter: grayscale(0.2);
+        opacity: 0.85;
+      }
+
+      /* İletişim kartı */
+      .contact {
+        margin-top: auto;
+        background: var(--ink);
+        color: #fff;
+        border-radius: 4mm;
+        padding: 9mm 10mm;
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 8mm;
+        margin-bottom: 8mm;
+      }
+      .contact h3 {
+        font-size: 16pt;
+        margin-bottom: 2mm;
+      }
+      .contact .lead {
+        font-size: 9pt;
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.5;
+      }
+      .contact .person {
+        margin-top: 5mm;
+        font-size: 11pt;
+        font-weight: 700;
+        color: var(--gold-soft);
+      }
+      .contact .person small {
+        display: block;
+        font-size: 8pt;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.6);
+        letter-spacing: 0.05em;
+      }
+      .cinfo {
+        display: flex;
+        flex-direction: column;
+        gap: 3mm;
+        font-size: 9pt;
+        justify-content: center;
+      }
+      .cinfo div {
+        display: flex;
+        gap: 3mm;
+        align-items: flex-start;
+      }
+      .cinfo .k {
+        color: var(--gold);
+        font-weight: 700;
+        min-width: 16mm;
+        letter-spacing: 0.05em;
+      }
+      .cinfo .v {
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.4;
+      }
+      .back-foot {
+        text-align: center;
+        font-size: 8pt;
+        color: var(--slate);
+        padding-bottom: 6mm;
+        letter-spacing: 0.05em;
+      }
+
+      /* ---------- İÇ SAYFALAR (S2, S3) ---------- */
+      .inner {
+        padding: 15mm 16mm 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .about-hero {
+        display: grid;
+        grid-template-columns: 1.25fr 1fr;
+        gap: 8mm;
+        align-items: center;
+        margin-bottom: 9mm;
+      }
+      .about-hero .about-copy p {
+        font-size: 9.5pt;
+        line-height: 1.6;
+        color: var(--slate);
+        margin-top: 4mm;
+      }
+      .about-hero img {
+        width: 100%;
+        height: 58mm;
+        object-fit: cover;
+        border-radius: 3mm;
+      }
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5mm;
+        margin-top: 5mm;
+      }
+      .why-card {
+        background: var(--paper-alt);
+        border-radius: 3mm;
+        padding: 6mm 6mm 6.5mm;
+        border-left: 3px solid var(--gold);
+      }
+      .why-card h4 {
+        font-size: 11pt;
+        margin-bottom: 2mm;
+      }
+      .why-card p {
+        font-size: 8.7pt;
+        line-height: 1.5;
+        color: var(--slate);
+      }
+      .process {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6mm;
+        margin-top: 6mm;
+      }
+      .pstep .pn {
+        font-family: var(--font-head);
+        font-size: 20pt;
+        font-weight: 700;
+        color: var(--gold);
+        display: block;
+      }
+      .pstep h4 {
+        font-size: 10pt;
+        margin: 2.5mm 0 1.5mm;
+      }
+      .pstep p {
+        font-size: 8pt;
+        line-height: 1.45;
+        color: var(--slate);
+      }
+      .band {
+        margin-top: auto;
+        margin-bottom: 8mm;
+        background: linear-gradient(120deg, var(--gold-soft), var(--gold));
+        color: var(--ink);
+        border-radius: 4mm;
+        padding: 7mm 9mm;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6mm;
+      }
+      .band b {
+        font-family: var(--font-head);
+        font-size: 15pt;
+        font-weight: 700;
+      }
+      .band span {
+        font-size: 9pt;
+        font-weight: 500;
+      }
+      .band .pct {
+        font-family: var(--font-head);
+        font-size: 30pt;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      /* Projeler */
+      .projs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5mm;
+        margin-top: 4mm;
+      }
+      .pcard img {
+        width: 100%;
+        height: 34mm;
+        object-fit: cover;
+        border-radius: 2.5mm;
+      }
+      .pcard h4 {
+        font-size: 9.5pt;
+        margin: 3mm 0 1mm;
+      }
+      .pcard p {
+        font-size: 8pt;
+        line-height: 1.4;
+        color: var(--slate);
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        .page {
+          margin: 0;
+          box-shadow: none;
+          page-break-after: always;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ============ SAYFA 1 — ÖN ============ -->
+    <section class="page">
+      <div class="cover-hero">
+        <img class="bg" src="assets/photos/hero-real.jpg" alt="" />
+        <div class="cover-inner">
+          <div class="cover-top">
+            <img class="cover-logo" src="assets/logo/sigmatek_muhendislik-bw.png" alt="Sigmatek Mühendislik" />
+            <div class="cover-services">
+              <span class="cs">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="24" r="7" stroke="currentColor" stroke-width="2.6" />
+                  <path
+                    d="M24 5v6M24 37v6M5 24h6M37 24h6M11 11l4 4M33 33l4 4M37 11l-4 4M15 33l-4 4"
+                    stroke="currentColor"
+                    stroke-width="2.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                GES / Solar
+              </span>
+              <span class="cs">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path
+                    d="M33 6a9 9 0 0 0-11 11L7 32a4.5 4.5 0 0 0 6.4 6.4L29 23a9 9 0 0 0 11-11l-6.2 6.2-4.8-1.2-1.2-4.8L33 6z"
+                    stroke="currentColor"
+                    stroke-width="2.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Mekanik
+              </span>
+              <span class="cs">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path
+                    d="M24 5c-6 7-10 12-10 18a10 10 0 0 0 20 0c0-6-4-11-10-18z"
+                    stroke="currentColor"
+                    stroke-width="2.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Isıtma
+              </span>
+              <span class="cs">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path
+                    d="M24 5v38M8 15l32 18M40 15 8 33"
+                    stroke="currentColor"
+                    stroke-width="2.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                Soğutma
+              </span>
+              <span class="cs">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path
+                    d="M6 17h24a6 6 0 1 0-4-10M6 25h32a6 6 0 1 1-4 10M6 33h18a5 5 0 1 0-3 8"
+                    stroke="currentColor"
+                    stroke-width="2.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                Havalandırma
+              </span>
+              <span class="cs">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path
+                    d="M24 5c-2 6-8 9-8 16a8 8 0 0 0 16 0c0-3-1-6-3-9-1 2-2 3-4 4 1-4-1-7-1-11z"
+                    stroke="currentColor"
+                    stroke-width="2.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Yangın
+              </span>
+            </div>
+          </div>
+          <div class="cover-bottom">
+            <p class="cover-eyebrow">Yenilenebilir Enerji &amp; Endüstriyel Mühendislik</p>
+            <h1 class="cover-title">Güneşten güce,<br />mühendislikten <span class="accent">konfora.</span></h1>
+            <p class="cover-sub">
+              GES çatı ve saha kurulumlarından endüstriyel ısıtma, soğutma, havalandırma, otomasyon; yangın güvenliği ve
+              çelik konstrüksiyona kadar — projelerinizi anahtar teslim mühendislik disipliniyle hayata geçiriyoruz.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><b>15+</b><span>YILLIK DENEYİM</span></div>
+        <div class="stat"><b>550 MW+</b><span>KURULU GES GÜCÜ</span></div>
+        <div class="stat"><b>7/24</b><span>TEKNİK DESTEK</span></div>
+      </div>
+
+      <div class="cover-gallery">
+        <img src="assets/gallery/cati-sigmatek_muhendislik_0606b.jpg" alt="GES Çatı" />
+        <img src="assets/gallery/saha-sigmatek_muhendislik_0814.jpg" alt="GES Saha" />
+        <img src="assets/gallery/muh-sigmatek_muhendislik_01475.jpg" alt="Mühendislik" />
+      </div>
+
+      <div class="cover-foot">
+        <span>SİGMATEK MÜHENDİSLİK</span>
+        <span>www.sigmatek.org &nbsp;•&nbsp; +90 532 749 84 60</span>
+      </div>
+    </section>
+
+    <!-- ============ SAYFA 2 — HAKKIMIZDA ============ -->
+    <section class="page">
+      <div class="inner">
+        <p class="section-eyebrow">Hakkımızda</p>
+        <h2 class="section-title">Sahada üretilen, mühendislikle doğrulanan çözümler</h2>
+
+        <div class="about-hero">
+          <div class="about-copy">
+            <p>
+              Sigmatek Mühendislik olarak, güneş enerjisi santrallerinden endüstriyel tesis altyapılarına kadar geniş
+              bir yelpazede projeleri baştan sona yönetiyoruz. Deneyimli mühendis kadromuz, keşiften devreye almaya
+              kadar her adımda sahada; enerji verimliliği ve uzun vadeli güvenilirlik önceliğimiz.
+            </p>
+            <p>
+              Anahtar teslim proje yönetimi, yerinde etüt ile şekillenen özel çözümler ve kurulum sonrası 7/24 teknik
+              destek ile kalite, iş güvenliği ve çevre standartlarına tam uyum sağlıyoruz.
+            </p>
+          </div>
+          <img src="assets/gallery/saha-sigmatek_muhendislik_0814.jpg" alt="Sigmatek saha çalışması" />
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <h4>Uçtan Uca Mühendislik</h4>
+            <p>Fizibiliteden devreye almaya, tek elden koordinasyonla proje risklerini en aza indiriyoruz.</p>
+          </div>
+          <div class="why-card">
+            <h4>Saha Deneyimi</h4>
+            <p>15+ yıllık birikim ve 550 MW+ kurulu güç ile GES'ten endüstriyel tesise geniş uygulama tecrübesi.</p>
+          </div>
+          <div class="why-card">
+            <h4>Kalite &amp; Güvenlik</h4>
+            <p>İş güvenliği, çevre ve kalite standartlarına tam uyumlu, mevzuata dayalı mühendislik disiplini.</p>
+          </div>
+          <div class="why-card">
+            <h4>7/24 Teknik Destek</h4>
+            <p>Kurulum sonrası izleme, periyodik bakım ve kesintisiz teknik destekle uzun vadeli güvenilirlik.</p>
+          </div>
+        </div>
+
+        <p class="section-eyebrow" style="margin-top: 9mm">Çalışma Sürecimiz</p>
+        <h2 class="section-title" style="font-size: 16pt; margin-bottom: 0">Fikirden devreye almaya dört adım</h2>
+        <div class="process">
+          <div class="pstep">
+            <span class="pn">01</span>
+            <h4>Keşif &amp; Analiz</h4>
+            <p>Saha etüdü, enerji ihtiyaç analizi ve fizibilite çalışması.</p>
+          </div>
+          <div class="pstep">
+            <span class="pn">02</span>
+            <h4>Mühendislik &amp; Tasarım</h4>
+            <p>Yerleşim, elektrik ve mekanik projelendirme.</p>
+          </div>
+          <div class="pstep">
+            <span class="pn">03</span>
+            <h4>Kurulum &amp; Devreye Alma</h4>
+            <p>Saha montajı, testler ve devreye alma.</p>
+          </div>
+          <div class="pstep">
+            <span class="pn">04</span>
+            <h4>İzleme &amp; Bakım</h4>
+            <p>Uzaktan izleme ve periyodik bakım hizmetleri.</p>
+          </div>
+        </div>
+
+        <div class="band">
+          <div><b>Ortalama Sistem Verimliliği</b><br /><span>Kurulu GES santrallerimizin saha performansı</span></div>
+          <div class="pct">%98,4</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SAYFA 3 — HİZMETLER ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">Hizmetlerimiz</p>
+        <h2 class="section-title">Tek çatı altında uçtan uca mühendislik</h2>
+
+        <div class="services">
+          <div class="svc">
+            <span class="num">01</span>
+            <div>
+              <h4>GES Çatı Sistemleri</h4>
+              <p>
+                Konut, ticari ve endüstriyel çatılarda statik analizden montaja üretim garantili anahtar teslim GES.
+              </p>
+            </div>
+          </div>
+          <div class="svc">
+            <span class="num">02</span>
+            <div>
+              <h4>GES Saha Kurulumları</h4>
+              <p>Arazi etüdü, tesviye, çelik konstrüksiyon ve tracker sistemleriyle MW ölçeğinde saha santralleri.</p>
+            </div>
+          </div>
+          <div class="svc">
+            <span class="num">03</span>
+            <div>
+              <h4>Mühendislik &amp; Danışmanlık</h4>
+              <p>Fizibilite, yerleşim, elektrik-mekanik projelendirme ve şebeke bağlantı süreç yönetimi.</p>
+            </div>
+          </div>
+          <div class="svc">
+            <span class="num">04</span>
+            <div>
+              <h4>Endüstriyel Isıtma</h4>
+              <p>
+                Fabrika ve tesislere özel, enerji verimli ısıtma sistemlerinin tasarımı, kurulumu ve devreye alınması.
+              </p>
+            </div>
+          </div>
+          <div class="svc">
+            <span class="num">05</span>
+            <div>
+              <h4>Soğutma Sistemleri</h4>
+              <p>Endüstriyel tesis ve soğuk hava depoları için sürdürülebilir, düşük işletme maliyetli soğutma.</p>
+            </div>
+          </div>
+          <div class="svc">
+            <span class="num">06</span>
+            <div>
+              <h4>Havalandırma &amp; Otomasyon</h4>
+              <p>Klima santrali, hava kanalı ve SCADA/PLC otomasyonla uzaktan izlenebilir tesis altyapısı.</p>
+            </div>
+          </div>
+          <div class="svc">
+            <span class="num">07</span>
+            <div>
+              <h4>Yangın Sistemleri</h4>
+              <p>
+                Sprinkler, pompa istasyonu, algılama-alarm ve gazlı söndürmede mevzuata uygun anahtar teslim çözümler.
+              </p>
+            </div>
+          </div>
+          <div class="svc">
+            <span class="num">08</span>
+            <div>
+              <h4>İnşaat &amp; Çelik Konstrüksiyon</h4>
+              <p>Çelik imalat-montajdan tadilat, güçlendirme ve onarıma; projeden teslime tek elden uygulama.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-grid" style="margin-top: 9mm">
+          <div class="why-card">
+            <h4>Tek Elden Koordinasyon</h4>
+            <p>Proje, mühendislik, saha ve devreye alma ekipleri tek çatı altında; tedarikçi karmaşası yok.</p>
+          </div>
+          <div class="why-card">
+            <h4>Mevzuata Tam Uyum</h4>
+            <p>Elektrik, mekanik ve yangın güvenliği projelerinde ilgili yönetmelik ve standartlara tam uyum.</p>
+          </div>
+        </div>
+
+        <div class="refs" style="margin-top: 10mm">
+          <p class="section-eyebrow">Bizi Tercih Eden Firmalar</p>
+          <div class="refs-row">
+            <img src="assets/clients/imc.png" alt="IMC" />
+            <img src="assets/clients/ictas.png" alt="İçtaş" />
+            <img src="assets/clients/tosyali.svg" alt="Tosyalı" />
+            <img src="assets/clients/calik-enerji.svg" alt="Çalık Enerji" />
+            <img src="assets/clients/fortis-energy.svg" alt="Fortis Enerji" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SAYFA 4 — PROJELER & İLETİŞİM ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">Projeler</p>
+        <h2 class="section-title" style="font-size: 20pt">Sahadan örnek referanslar</h2>
+
+        <div class="projs">
+          <div class="pcard">
+            <img src="assets/photos/proje-1.jpg" alt="Saha Elektrik Altyapısı" />
+            <h4>Saha Elektrik Altyapısı</h4>
+            <p>Trafo ve şalt sahası ekipmanlarının montaj ve kurulum çalışmaları.</p>
+          </div>
+          <div class="pcard">
+            <img src="assets/photos/proje-2.jpg" alt="GES Saha Trafo Merkezi" />
+            <h4>GES Saha Trafo Merkezi</h4>
+            <p>Enerji santrali sahasında trafo ve kumanda ünitelerinin kurulumu.</p>
+          </div>
+          <div class="pcard">
+            <img src="assets/photos/proje-3.jpg" alt="Güç ve Dağıtım Ekipmanları" />
+            <h4>Güç ve Dağıtım Ekipmanları</h4>
+            <p>Sahadaki güç ve dağıtım ekipmanlarının devreye alma çalışmaları.</p>
+          </div>
+        </div>
+
+        <div class="why-grid" style="margin-top: 8mm">
+          <div class="why-card">
+            <h4>Kalite &amp; Güvenlik Standartları</h4>
+            <p>
+              ISO tabanlı kalite yönetim yaklaşımı, iş sağlığı-güvenliği (İSG) mevzuatına tam uyum ve çevre
+              standartlarına duyarlı saha uygulaması ile her projede aynı disiplin.
+            </p>
+          </div>
+          <div class="why-card">
+            <h4>Garanti &amp; Devreye Alma</h4>
+            <p>
+              Üretim garantili ekipman seçimi, saha testleri ve resmi devreye alma (commissioning) raporlarıyla teslim
+              edilen her sistem belgelendirilir.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact">
+          <div>
+            <h3>Projenizi birlikte hayata geçirelim</h3>
+            <p class="lead">Keşif ve ön fizibilite görüşmesi için ekibimizle iletişime geçin.</p>
+            <p class="person">Uğur Gül<small>SİGMATEK MÜHENDİSLİK</small></p>
+          </div>
+          <div class="cinfo">
+            <div><span class="k">Telefon</span><span class="v">+90 532 749 84 60</span></div>
+            <div><span class="k">E-posta</span><span class="v">ugur.gul@sigmatek.org</span></div>
+            <div><span class="k">Web</span><span class="v">www.sigmatek.org</span></div>
+            <div>
+              <span class="k">Adres</span
+              ><span class="v">İçerenköy Mah. Şükran Sok. Şerafet Bey Apt. No:52/B, Ataşehir / İstanbul</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="back-foot">© Sigmatek Mühendislik Danışmanlık A.Ş. — Tüm hakları saklıdır.</p>
+      </div>
+    </section>
+  </body>
+</html>
