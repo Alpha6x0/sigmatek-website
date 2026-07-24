@@ -182,7 +182,7 @@
       /* Alt görsel şeridi */
       .cover-gallery {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 0;
         height: 62mm;
       }
@@ -258,16 +258,24 @@
       .refs-row {
         display: flex;
         align-items: center;
-        gap: 10mm;
+        gap: 3mm 5mm;
         flex-wrap: wrap;
         margin-top: 4mm;
       }
       .refs-row img {
-        height: 11mm;
-        width: auto;
+        height: 8mm;
+        width: 24mm;
         object-fit: contain;
         filter: grayscale(0.2);
         opacity: 0.85;
+      }
+      .refs-row img.on-dark-chip {
+        background: var(--ink);
+        border-radius: 1.2mm;
+        padding: 1.5mm 2.5mm;
+        opacity: 1;
+        filter: none;
+        box-sizing: content-box;
       }
 
       /* İletişim kartı */
@@ -439,7 +447,7 @@
       }
       .pcard img {
         width: 100%;
-        height: 34mm;
+        height: 48mm;
         object-fit: cover;
         border-radius: 2.5mm;
       }
@@ -566,8 +574,9 @@
 
       <div class="cover-gallery">
         <img src="assets/gallery/cati-sigmatek_muhendislik_0606b.jpg" alt="GES Çatı" />
-        <img src="assets/gallery/saha-sigmatek_muhendislik_0814.jpg" alt="GES Saha" />
-        <img src="assets/gallery/muh-sigmatek_muhendislik_01475.jpg" alt="Mühendislik" />
+        <img src="assets/gallery/muh-sigmatek_muhendislik_01475.jpg" alt="Mühendislik ekibi" />
+        <img src="assets/mj-gallery/mekanik-kazan-dairesi.jpg" alt="Endüstriyel mekanik ısıtma" />
+        <img src="assets/mj-gallery/yangin-sprinkler-hatti.png" alt="Yangın söndürme sistemi" />
       </div>
 
       <div class="cover-foot">
@@ -738,6 +747,31 @@
             <img src="assets/clients/tosyali.svg" alt="Tosyalı" />
             <img src="assets/clients/calik-enerji.svg" alt="Çalık Enerji" />
             <img src="assets/clients/fortis-energy.svg" alt="Fortis Enerji" />
+            <img src="assets/clients/basf.svg" alt="BASF" />
+            <img src="assets/clients/dhl.svg" alt="DHL" />
+            <img src="assets/clients/anadolu-efes.png" alt="Anadolu Efes" class="on-dark-chip" />
+            <img src="assets/clients/anadolu-holding.svg" alt="Anadolu Holding" />
+            <img src="assets/clients/buyaka.png" alt="Buyaka GYO" />
+            <img src="assets/clients/levent-insaat.png" alt="Levent İnşaat" class="on-dark-chip" />
+            <img src="assets/clients/meiser.png" alt="MEİSER Izgara" />
+            <img src="assets/clients/spx.png" alt="SPX" />
+            <img src="assets/clients/yargici.svg" alt="Yargıcı" />
+            <img src="assets/clients/mono-mimarlik.png" alt="Mono Mimarlık" />
+            <img src="assets/clients/hsa-enerji.png" alt="HSA Enerji" />
+            <img src="assets/clients/benetton.svg" alt="Benetton" />
+            <img src="assets/clients/kfc.svg" alt="KFC" />
+            <img src="assets/clients/turkcell.png" alt="Turkcell" />
+            <img src="assets/clients/dau.svg" alt="Doğu Akdeniz Üniversitesi" class="on-dark-chip" />
+            <img src="assets/clients/doga-koleji.png" alt="Doğa Koleji" />
+            <img src="assets/clients/bahcesehir-koleji.svg" alt="Bahçeşehir Koleji" class="on-dark-chip" />
+            <img src="assets/clients/merit-royal.png" alt="Merit Royal Girne" />
+            <img src="assets/clients/abelia.svg" alt="Abelia" />
+            <img src="assets/clients/aksa-enerji.svg" alt="Aksa Enerji" />
+            <img src="assets/clients/togg.svg" alt="TOGG" class="on-dark-chip" />
+            <img src="assets/clients/zorlu-center.png" alt="Zorlu Center" />
+            <img src="assets/clients/demiroren.svg" alt="Demirören Holding" />
+            <img src="assets/clients/bahas-holding.png" alt="Bahaş Holding" />
+            <img src="assets/clients/tupras.svg" alt="Tüpraş" />
           </div>
         </div>
       </div>
