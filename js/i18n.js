@@ -12,7 +12,7 @@ window.SIGMATEK_I18N = {
     header_cta: "Teklif Al",
     header_navToggleAria: "Menüyü aç/kapat",
 
-    hero_eyebrow: "İnşaat, Elektromekanik &amp; Enerji Mühendisliği",
+    hero_eyebrow: "İnşaat • Elektromekanik • Enerji • Proses Mühendisliği",
     hero_title_html: 'İnşaattan elektromekaniğe,<br />oradan <span class="text-gradient">enerjiye.</span>',
     hero_lead:
       "Çelik konstrüksiyon ve inşaattan; ısıtma, soğutma, havalandırma ve mekanik tesisata, GES çatı ve saha kurulumlarına kadar; projenizi anahtar teslim mühendislik yaklaşımıyla hayata geçiriyoruz.",
@@ -189,7 +189,7 @@ window.SIGMATEK_I18N = {
     header_cta: "Get a Quote",
     header_navToggleAria: "Toggle menu",
 
-    hero_eyebrow: "Construction, Electromechanical &amp; Energy Engineering",
+    hero_eyebrow: "Construction • Electromechanical • Energy • Process Engineering",
     hero_title_html:
       'From construction to electromechanical,<br />and on to <span class="text-gradient">energy.</span>',
     hero_lead:
@@ -366,7 +366,7 @@ window.SIGMATEK_I18N = {
     header_cta: "اطلب عرض سعر",
     header_navToggleAria: "فتح/إغلاق القائمة",
 
-    hero_eyebrow: "الإنشاءات والكهروميكانيك وهندسة الطاقة",
+    hero_eyebrow: "الإنشاءات • الكهروميكانيك • الطاقة • هندسة العمليات",
     hero_title_html: 'من الإنشاءات إلى الكهروميكانيك،<br />ومنها إلى <span class="text-gradient">الطاقة.</span>',
     hero_lead:
       "من الهياكل الحديدية والإنشاءات إلى التدفئة والتبريد والتهوية والتمديدات الميكانيكية، وصولاً إلى محطات الطاقة الشمسية السطحية والأرضية، نحقق مشروعكم بأسلوب هندسي متكامل بنظام تسليم المفتاح.",
