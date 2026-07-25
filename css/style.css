@@ -286,6 +286,79 @@ body::before {
   gap: 18px;
 }
 
+/* ==========================================================================
+   Language switcher
+   ========================================================================== */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 999px;
+  background: rgb(255, 255, 255, 0.06);
+  border: 1px solid var(--line-dark);
+}
+.site-header.is-scrolled .lang-switch {
+  background: var(--paper-alt);
+  border-color: var(--line);
+}
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 11px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--on-dark-mute);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition:
+    background 0.3s var(--ease),
+    color 0.3s var(--ease),
+    transform 0.2s var(--ease);
+}
+.site-header.is-scrolled .lang-btn {
+  color: var(--slate);
+}
+.lang-btn:hover {
+  transform: translateY(-1px);
+  color: var(--on-dark);
+}
+.site-header.is-scrolled .lang-btn:hover {
+  color: var(--ink);
+}
+.lang-btn.is-active {
+  background: var(--gold);
+  color: var(--ink);
+}
+.lang-btn.is-active:hover {
+  transform: none;
+  color: var(--ink);
+}
+.lang-flag {
+  width: 18px;
+  height: 12px;
+  border-radius: 2px;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px rgb(0, 0, 0, 0.15);
+}
+.lang-code {
+  line-height: 1;
+}
+
+@media (width <= 560px) {
+  .lang-code {
+    display: none;
+  }
+  .lang-btn {
+    padding: 6px 9px;
+  }
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -444,6 +517,7 @@ body::before {
 .stat-value {
   display: flex;
   align-items: baseline;
+  direction: ltr;
 }
 .stat-number,
 .stat-suffix {
@@ -758,6 +832,8 @@ body::before {
 .floating-card strong {
   font-family: var(--font-head);
   font-size: 1.7rem;
+  direction: ltr;
+  unicode-bidi: isolate;
 }
 .floating-card span {
   font-size: 0.78rem;
@@ -1504,4 +1580,63 @@ body.modal-open {
     height: 30px;
     padding: 8px 14px;
   }
+}
+
+/* ==========================================================================
+   RTL (Arapça) desteği
+   ========================================================================== */
+html[dir="rtl"] body {
+  text-align: right;
+}
+html[dir="rtl"] .service-link .arrow,
+html[dir="rtl"] .service-card:hover .service-link .arrow {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+html[dir="rtl"] .scroll-cue {
+  right: 50%;
+  left: auto;
+  transform: translateX(50%);
+}
+html[dir="rtl"] .check-list li {
+  padding-right: 30px;
+  padding-left: 0;
+}
+html[dir="rtl"] .check-list li::before {
+  right: 0;
+  left: auto;
+}
+html[dir="rtl"] .service-modal-list li {
+  padding-right: 26px;
+  padding-left: 0;
+}
+html[dir="rtl"] .service-modal-list li::before {
+  right: 0;
+  left: auto;
+}
+html[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 26px;
+}
+html[dir="rtl"] .service-modal-close {
+  right: auto;
+  left: 14px;
+}
+html[dir="rtl"] .main-nav a::after {
+  right: 0;
+  left: auto;
+}
+html[dir="rtl"] .contact-item {
+  text-align: right;
+}
+html[dir="rtl"] .form-note,
+html[dir="rtl"] label {
+  text-align: right;
+}
+html[dir="rtl"] .footer-brand,
+html[dir="rtl"] .footer-col {
+  text-align: right;
+}
+html[dir="rtl"] .step-index {
+  text-align: right;
 }

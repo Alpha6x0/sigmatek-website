@@ -36,16 +36,57 @@
         </a>
 
         <nav class="main-nav" id="mainNav">
-          <a href="#hizmetler">Hizmetler</a>
-          <a href="#hakkimizda">Hakkımızda</a>
-          <a href="#projeler">Projeler</a>
-          <a href="#surec">Süreç</a>
-          <a href="#iletisim">İletişim</a>
+          <a href="#hizmetler" data-i18n="nav_services">Hizmetler</a>
+          <a href="#hakkimizda" data-i18n="nav_about">Hakkımızda</a>
+          <a href="#projeler" data-i18n="nav_projects">Projeler</a>
+          <a href="#surec" data-i18n="nav_process">Süreç</a>
+          <a href="#iletisim" data-i18n="nav_contact">İletişim</a>
         </nav>
 
         <div class="header-actions">
-          <a href="#iletisim" class="btn btn-primary btn-sm">Teklif Al</a>
-          <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+          <div class="lang-switch" id="langSwitch" role="group" data-i18n-aria-label="lang_switch_aria">
+            <button type="button" class="lang-btn is-active" data-lang="tr">
+              <svg class="lang-flag" viewBox="0 0 30 20" aria-hidden="true">
+                <rect width="30" height="20" rx="2" fill="#E30A17" />
+                <circle cx="12" cy="10" r="5" fill="#fff" />
+                <circle cx="13.3" cy="10" r="4" fill="#E30A17" />
+                <path d="M17.8 10l3.4 1.1-2.1-2.9v3.6l2.1-2.9z" fill="#fff" transform="translate(0.3 0)" />
+              </svg>
+              <span class="lang-code">TR</span>
+            </button>
+            <button type="button" class="lang-btn" data-lang="en">
+              <svg class="lang-flag" viewBox="0 0 30 20" aria-hidden="true">
+                <clipPath id="gbClip"><rect width="30" height="20" rx="2" /></clipPath>
+                <g clip-path="url(#gbClip)">
+                  <rect width="30" height="20" fill="#012169" />
+                  <path d="M0 0l30 20M30 0L0 20" stroke="#fff" stroke-width="4" />
+                  <path d="M0 0l30 20M30 0L0 20" stroke="#C8102E" stroke-width="1.6" />
+                  <path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6.5" />
+                  <path d="M15 0v20M0 10h30" stroke="#C8102E" stroke-width="4" />
+                </g>
+              </svg>
+              <span class="lang-code">EN</span>
+            </button>
+            <button type="button" class="lang-btn" data-lang="ar">
+              <svg class="lang-flag" viewBox="0 0 30 20" aria-hidden="true">
+                <rect width="30" height="20" rx="2" fill="#006C35" />
+                <rect x="4" y="9.1" width="14" height="1.8" rx="0.9" fill="#fff" />
+                <path
+                  d="M19.5 10c0-1.3 1-2.3 2.3-2.3.5 0 1 .2 1.4.5-.3-1-1.2-1.7-2.3-1.7-1.3 0-2.4 1.1-2.4 2.4 0 .9.5 1.7 1.2 2.1-.1-.3-.2-.6-.2-1"
+                  fill="#fff"
+                />
+              </svg>
+              <span class="lang-code">AR</span>
+            </button>
+          </div>
+          <a href="#iletisim" class="btn btn-primary btn-sm" data-i18n="header_cta">Teklif Al</a>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Menüyü aç/kapat"
+            data-i18n-aria-label="header_navToggleAria"
+            aria-expanded="false"
+          >
             <span></span><span></span><span></span>
           </button>
         </div>
@@ -56,21 +97,23 @@
       <!-- HERO -->
       <section class="hero">
         <picture
-          ><source srcset="assets/photos/hero-real.webp" type="image/webp" />
-          <img src="assets/photos/hero-real.jpg" alt="" class="hero-bg" aria-hidden="true"
+          ><source srcset="assets/mj-gallery/celik-konstruksiyon-1.webp" type="image/webp" />
+          <img src="assets/mj-gallery/celik-konstruksiyon-1.png" alt="" class="hero-bg" aria-hidden="true"
         /></picture>
         <div class="hero-grid" aria-hidden="true"></div>
         <div class="hero-glow" aria-hidden="true"></div>
         <div class="container hero-inner">
-          <p class="eyebrow reveal">Yenilenebilir Enerji &amp; Endüstriyel Mühendislik</p>
-          <h1 class="reveal">Güneşten güce,<br />mühendislikten <span class="text-gradient">konfora.</span></h1>
-          <p class="hero-lead reveal">
-            GES çatı ve saha kurulumlarından endüstriyel ısıtma, soğutma, havalandırma ve otomasyon sistemlerine kadar;
-            projenizi anahtar teslim mühendislik yaklaşımıyla hayata geçiriyoruz.
+          <p class="eyebrow reveal" data-i18n="hero_eyebrow">İnşaat, Elektromekanik &amp; Enerji Mühendisliği</p>
+          <h1 class="reveal" data-i18n-html="hero_title_html">
+            İnşaattan elektromekaniğe,<br />oradan <span class="text-gradient">enerjiye.</span>
+          </h1>
+          <p class="hero-lead reveal" data-i18n="hero_lead">
+            Çelik konstrüksiyon ve inşaattan; ısıtma, soğutma, havalandırma ve mekanik tesisata, GES çatı ve saha
+            kurulumlarına kadar; projenizi anahtar teslim mühendislik yaklaşımıyla hayata geçiriyoruz.
           </p>
           <div class="hero-actions reveal">
-            <a href="#hizmetler" class="btn btn-primary">Hizmetlerimizi İnceleyin</a>
-            <a href="#iletisim" class="btn btn-ghost">Ücretsiz Keşif Talep Edin</a>
+            <a href="#hizmetler" class="btn btn-primary" data-i18n="hero_btnServices">Hizmetlerimizi İnceleyin</a>
+            <a href="#iletisim" class="btn btn-ghost" data-i18n="hero_btnContact">Ücretsiz Keşif Talep Edin</a>
           </div>
 
           <div class="hero-stats reveal">
@@ -78,23 +121,23 @@
               <span class="stat-value"
                 ><span class="stat-number" data-count="15">0</span><span class="stat-suffix">+</span></span
               >
-              <span class="stat-label">Yıllık Deneyim</span>
+              <span class="stat-label" data-i18n="hero_stat1Label">Yıllık Deneyim</span>
             </div>
             <div class="stat">
               <span class="stat-value"
                 ><span class="stat-number" data-count="550">0</span><span class="stat-suffix"> MW+</span></span
               >
-              <span class="stat-label">Kurulu GES Gücü</span>
+              <span class="stat-label" data-i18n="hero_stat2Label">Kurulu GES Gücü</span>
             </div>
             <div class="stat">
               <span class="stat-value"
                 ><span class="stat-number" data-count="7">0</span><span class="stat-suffix">/24</span></span
               >
-              <span class="stat-label">Teknik Destek</span>
+              <span class="stat-label" data-i18n="hero_stat3Label">Teknik Destek</span>
             </div>
           </div>
         </div>
-        <a href="#hizmetler" class="scroll-cue" aria-label="Aşağı kaydır">
+        <a href="#hizmetler" class="scroll-cue" aria-label="Aşağı kaydır" data-i18n-aria-label="hero_scrollAria">
           <span></span>
         </a>
       </section>
@@ -102,11 +145,13 @@
       <!-- LOGOS / TRUST STRIP -->
       <section class="trust-strip">
         <div class="container trust-inner">
-          <p>Mühendislik ve saha uygulamalarında güvenilir çözüm ortağı</p>
+          <p data-i18n="trust_lead">Mühendislik ve saha uygulamalarında güvenilir çözüm ortağı</p>
           <div class="trust-tags">
-            <span>GES Çatı</span><span>GES Saha</span><span>Mühendislik &amp; Danışmanlık</span>
-            <span>Endüstriyel Isıtma</span><span>Soğutma</span><span>Havalandırma</span><span>Otomasyon</span
-            ><span>Yangın Sistemleri</span><span>İnşaat &amp; Çelik</span>
+            <span data-i18n="trust_tag1">GES Çatı</span><span data-i18n="trust_tag2">GES Saha</span
+            ><span data-i18n="trust_tag3">Mühendislik &amp; Danışmanlık</span>
+            <span data-i18n="trust_tag4">Endüstriyel Isıtma</span><span data-i18n="trust_tag5">Soğutma</span
+            ><span data-i18n="trust_tag6">Havalandırma</span><span data-i18n="trust_tag7">Otomasyon</span
+            ><span data-i18n="trust_tag8">Yangın Sistemleri</span><span data-i18n="trust_tag9">İnşaat &amp; Çelik</span>
           </div>
         </div>
       </section>
@@ -115,9 +160,9 @@
       <section class="section" id="hizmetler">
         <div class="container">
           <div class="section-head reveal">
-            <p class="eyebrow">Hizmetlerimiz</p>
-            <h2>Tek çatı altında uçtan uca mühendislik</h2>
-            <p class="section-lead">
+            <p class="eyebrow" data-i18n="services_eyebrow">Hizmetlerimiz</p>
+            <h2 data-i18n="services_title">Tek çatı altında uçtan uca mühendislik</h2>
+            <p class="section-lead" data-i18n="services_lead">
               Enerji üretiminden endüstriyel iklimlendirmeye, her ölçekteki projede saha deneyimi ve mühendislik
               disipliniyle yanınızdayız.
             </p>
@@ -154,12 +199,14 @@
                   />
                 </svg>
               </div>
-              <h3>GES Çatı Sistemleri</h3>
-              <p>
+              <h3 data-i18n="svc_gescati_title">GES Çatı Sistemleri</h3>
+              <p data-i18n="svc_gescati_desc">
                 Konut, ticari ve endüstriyel çatılarda statik analizden montaja, üretim garantili anahtar teslim güneş
                 enerjisi santrali kurulumu.
               </p>
-              <a href="#iletisim" class="service-link">Detaylı bilgi al <span>&rarr;</span></a>
+              <a href="#iletisim" class="service-link"
+                ><span data-i18n="services_detailLink">Detaylı bilgi al</span> <span class="arrow">&rarr;</span></a
+              >
             </article>
 
             <article class="service-card reveal" data-service="ges-saha">
@@ -184,12 +231,14 @@
                   />
                 </svg>
               </div>
-              <h3>GES Saha Kurulumları</h3>
-              <p>
+              <h3 data-i18n="svc_gessaha_title">GES Saha Kurulumları</h3>
+              <p data-i18n="svc_gessaha_desc">
                 Arazi etüdü, şebeke bağlantı çözümleri ve tracker sistemleriyle büyük ölçekli yer tipi güneş enerjisi
                 santrali projeleri.
               </p>
-              <a href="#iletisim" class="service-link">Detaylı bilgi al <span>&rarr;</span></a>
+              <a href="#iletisim" class="service-link"
+                ><span data-i18n="services_detailLink">Detaylı bilgi al</span> <span class="arrow">&rarr;</span></a
+              >
             </article>
 
             <article class="service-card reveal" data-service="muhendislik">
@@ -213,12 +262,14 @@
                   />
                 </svg>
               </div>
-              <h3>Mühendislik &amp; Danışmanlık</h3>
-              <p>
+              <h3 data-i18n="svc_muhendislik_title">Mühendislik &amp; Danışmanlık</h3>
+              <p data-i18n="svc_muhendislik_desc">
                 Genel yerleşim planı, kablolama ve elektrik projelendirmesi, fizibilite ve Ar-Ge desteğiyle projenizin
                 her aşamasında danışmanlık.
               </p>
-              <a href="#iletisim" class="service-link">Detaylı bilgi al <span>&rarr;</span></a>
+              <a href="#iletisim" class="service-link"
+                ><span data-i18n="services_detailLink">Detaylı bilgi al</span> <span class="arrow">&rarr;</span></a
+              >
             </article>
 
             <article class="service-card reveal" data-service="isitma">
@@ -239,12 +290,14 @@
                   />
                 </svg>
               </div>
-              <h3>Endüstriyel Isıtma</h3>
-              <p>
+              <h3 data-i18n="svc_isitma_title">Endüstriyel Isıtma</h3>
+              <p data-i18n="svc_isitma_desc">
                 Fabrika ve tesislere özel, enerji verimliliği odaklı endüstriyel ısıtma sistemlerinin tasarımı, kurulumu
                 ve devreye alınması.
               </p>
-              <a href="#iletisim" class="service-link">Detaylı bilgi al <span>&rarr;</span></a>
+              <a href="#iletisim" class="service-link"
+                ><span data-i18n="services_detailLink">Detaylı bilgi al</span> <span class="arrow">&rarr;</span></a
+              >
             </article>
 
             <article class="service-card reveal" data-service="sogutma">
@@ -274,12 +327,14 @@
                   />
                 </svg>
               </div>
-              <h3>Soğutma Sistemleri</h3>
-              <p>
+              <h3 data-i18n="svc_sogutma_title">Soğutma Sistemleri</h3>
+              <p data-i18n="svc_sogutma_desc">
                 Endüstriyel tesisler ve soğuk hava depoları için sürdürülebilir, düşük işletme maliyetli soğutma sistemi
                 çözümleri.
               </p>
-              <a href="#iletisim" class="service-link">Detaylı bilgi al <span>&rarr;</span></a>
+              <a href="#iletisim" class="service-link"
+                ><span data-i18n="services_detailLink">Detaylı bilgi al</span> <span class="arrow">&rarr;</span></a
+              >
             </article>
 
             <article class="service-card reveal" data-service="havalandirma">
@@ -300,12 +355,14 @@
                   />
                 </svg>
               </div>
-              <h3>Havalandırma &amp; Otomasyon</h3>
-              <p>
+              <h3 data-i18n="svc_havalandirma_title">Havalandırma &amp; Otomasyon</h3>
+              <p data-i18n="svc_havalandirma_desc">
                 Endüstriyel havalandırma sistemleri ile SCADA/PLC tabanlı otomasyon entegrasyonu; tesisinizi uzaktan
                 izlenebilir hale getiriyoruz.
               </p>
-              <a href="#iletisim" class="service-link">Detaylı bilgi al <span>&rarr;</span></a>
+              <a href="#iletisim" class="service-link"
+                ><span data-i18n="services_detailLink">Detaylı bilgi al</span> <span class="arrow">&rarr;</span></a
+              >
             </article>
 
             <article class="service-card reveal" data-service="yangin">
@@ -326,12 +383,14 @@
                   />
                 </svg>
               </div>
-              <h3>Yangın Sistemleri</h3>
-              <p>
+              <h3 data-i18n="svc_yangin_title">Yangın Sistemleri</h3>
+              <p data-i18n="svc_yangin_desc">
                 Sprinkler, yangın dolabı ve pompa istasyonundan algılama ve alarm sistemlerine kadar mevzuata uygun
                 anahtar teslim yangın güvenliği çözümleri.
               </p>
-              <a href="#iletisim" class="service-link">Detaylı bilgi al <span>&rarr;</span></a>
+              <a href="#iletisim" class="service-link"
+                ><span data-i18n="services_detailLink">Detaylı bilgi al</span> <span class="arrow">&rarr;</span></a
+              >
             </article>
 
             <article class="service-card reveal" data-service="insaat">
@@ -356,12 +415,14 @@
                   />
                 </svg>
               </div>
-              <h3>İnşaat &amp; Çelik Konstrüksiyon</h3>
-              <p>
+              <h3 data-i18n="svc_insaat_title">İnşaat &amp; Çelik Konstrüksiyon</h3>
+              <p data-i18n="svc_insaat_desc">
                 Çelik konstrüksiyon imalatı ve montajından tadilat, güçlendirme ve onarım işlerine kadar
                 projelendirmeden uygulamaya anahtar teslim inşaat çözümleri.
               </p>
-              <a href="#iletisim" class="service-link">Detaylı bilgi al <span>&rarr;</span></a>
+              <a href="#iletisim" class="service-link"
+                ><span data-i18n="services_detailLink">Detaylı bilgi al</span> <span class="arrow">&rarr;</span></a
+              >
             </article>
           </div>
         </div>
@@ -375,32 +436,34 @@
         /></picture>
         <div class="container about-grid">
           <div class="about-copy reveal">
-            <p class="eyebrow">Hakkımızda</p>
-            <h2>Sahada üretilen, mühendislikle doğrulanan çözümler</h2>
-            <p>
+            <p class="eyebrow" data-i18n="about_eyebrow">Hakkımızda</p>
+            <h2 data-i18n="about_title">Sahada üretilen, mühendislikle doğrulanan çözümler</h2>
+            <p data-i18n="about_p1">
               Sigmatek Mühendislik Danışmanlık A.Ş., 2018 yılında Makine Mühendisi Uğur Gül tarafından kurulmuştur.
               Faaliyetlerine inşaat, elektrik, mekanik ve endüstriyel (elk.-mek.) tesisat alanlarında başlayan firmamız;
               2021 yılı itibarıyla uzmanlık alanına yenilenebilir enerji sistemleri yapım işleri ve mühendislik
               hizmetlerini de dahil ederek enerji sektöründe güçlü bir oyuncu haline gelmiştir.
             </p>
-            <p>
+            <p data-i18n="about_p2">
               Bizi sektörde farklılaştıran en önemli özelliklerden biri, yüksek verimlilik sağlayan motorlu güneş takip
               sistemleri (motorized solar tracking) konusundaki mühendislik yetkinliğimizdir. Mühendislik bilgisi, saha
               tecrübesi ve sürdürülebilirlik vizyonuyla; temiz enerjiye geçişte güvenilir bir çözüm ortağı olmayı
               sürdürüyoruz.
             </p>
             <ul class="check-list">
-              <li>İnşaat, elektrik, mekanik ve endüstriyel tesisatta köklü mühendislik birikimi</li>
-              <li>Motorlu güneş takip sistemleriyle maksimum enerji verimi</li>
-              <li>Yerinde etüt ve saha analiziyle şekillenen özel çözümler</li>
-              <li>Kurulum sonrası izleme, bakım ve 7/24 teknik destek</li>
+              <li data-i18n="about_list1">
+                İnşaat, elektrik, mekanik ve endüstriyel tesisatta köklü mühendislik birikimi
+              </li>
+              <li data-i18n="about_list2">Motorlu güneş takip sistemleriyle maksimum enerji verimi</li>
+              <li data-i18n="about_list3">Yerinde etüt ve saha analiziyle şekillenen özel çözümler</li>
+              <li data-i18n="about_list4">Kurulum sonrası izleme, bakım ve 7/24 teknik destek</li>
             </ul>
-            <a href="#iletisim" class="btn btn-primary">Bizimle Çalışın</a>
+            <a href="#iletisim" class="btn btn-primary" data-i18n="about_cta">Bizimle Çalışın</a>
           </div>
           <div class="about-visual reveal" aria-hidden="true">
             <div class="floating-card">
               <strong>%98,4</strong>
-              <span>Ortalama sistem verimliliği</span>
+              <span data-i18n="about_statLabel">Ortalama sistem verimliliği</span>
             </div>
           </div>
         </div>
@@ -410,31 +473,35 @@
       <section class="section" id="surec">
         <div class="container">
           <div class="section-head reveal">
-            <p class="eyebrow">Çalışma Sürecimiz</p>
-            <h2>Fikirden devreye almaya dört adım</h2>
+            <p class="eyebrow" data-i18n="process_eyebrow">Çalışma Sürecimiz</p>
+            <h2 data-i18n="process_title">Fikirden devreye almaya dört adım</h2>
           </div>
           <div class="process-grid">
             <div class="process-step reveal">
               <span class="step-index">01</span>
-              <h3>Keşif &amp; Analiz</h3>
-              <p>Saha etüdü, enerji ihtiyaç analizi ve fizibilite çalışmasıyla projenin temelini atıyoruz.</p>
+              <h3 data-i18n="step1_title">Keşif &amp; Analiz</h3>
+              <p data-i18n="step1_desc">
+                Saha etüdü, enerji ihtiyaç analizi ve fizibilite çalışmasıyla projenin temelini atıyoruz.
+              </p>
             </div>
             <div class="process-step reveal">
               <span class="step-index">02</span>
-              <h3>Mühendislik &amp; Tasarım</h3>
-              <p>
+              <h3 data-i18n="step2_title">Mühendislik &amp; Tasarım</h3>
+              <p data-i18n="step2_desc">
                 Genel yerleşim, elektrik ve mekanik projelendirmeyi mevzuata ve standartlara uygun olarak hazırlıyoruz.
               </p>
             </div>
             <div class="process-step reveal">
               <span class="step-index">03</span>
-              <h3>Kurulum &amp; Devreye Alma</h3>
-              <p>Saha ekibimiz kurulumu gerçekleştirir, sistemler testlerden geçirilerek devreye alınır.</p>
+              <h3 data-i18n="step3_title">Kurulum &amp; Devreye Alma</h3>
+              <p data-i18n="step3_desc">
+                Saha ekibimiz kurulumu gerçekleştirir, sistemler testlerden geçirilerek devreye alınır.
+              </p>
             </div>
             <div class="process-step reveal">
               <span class="step-index">04</span>
-              <h3>İzleme &amp; Bakım</h3>
-              <p>
+              <h3 data-i18n="step4_title">İzleme &amp; Bakım</h3>
+              <p data-i18n="step4_desc">
                 Uzaktan izleme ve periyodik bakım hizmetleriyle sistem performansını uzun vadede güvence altına
                 alıyoruz.
               </p>
@@ -446,7 +513,7 @@
       <!-- CLIENTS -->
       <section class="section-alt clients-strip">
         <div class="container">
-          <p class="clients-label">Bizi Tercih Eden Firmalar</p>
+          <p class="clients-label" data-i18n="clients_label">Bizi Tercih Eden Firmalar</p>
           <div class="clients-row">
             <picture
               ><source srcset="assets/clients/imc.webp" type="image/webp" />
@@ -497,9 +564,9 @@
       <section class="section section-dark" id="tanitim">
         <div class="container">
           <div class="section-head reveal">
-            <p class="eyebrow">Tanıtım Filmleri</p>
-            <h2>Sahadan görüntülerle Sigmatek Mühendislik</h2>
-            <p class="section-lead">
+            <p class="eyebrow" data-i18n="video_eyebrow">Tanıtım Filmleri</p>
+            <h2 data-i18n="video_title">Sahadan görüntülerle Sigmatek Mühendislik</h2>
+            <p class="section-lead" data-i18n="video_lead">
               Tanıtım filmlerimizi izleyerek çalışma prensibimiz ve saha uygulamalarımız hakkında daha fazla bilgi
               edinebilirsiniz.
             </p>
@@ -515,7 +582,7 @@
                   loading="lazy"
                 ></iframe>
               </div>
-              <h3>Genel Tanıtım Filmi</h3>
+              <h3 data-i18n="video1_title">Genel Tanıtım Filmi</h3>
             </div>
             <div class="video-card reveal">
               <div class="video-frame">
@@ -527,7 +594,7 @@
                   loading="lazy"
                 ></iframe>
               </div>
-              <h3>GES Çatı Uygulamaları</h3>
+              <h3 data-i18n="video2_title">GES Çatı Uygulamaları</h3>
             </div>
             <div class="video-card reveal">
               <div class="video-frame">
@@ -539,7 +606,7 @@
                   loading="lazy"
                 ></iframe>
               </div>
-              <h3>GES Saha Projeleri</h3>
+              <h3 data-i18n="video3_title">GES Saha Projeleri</h3>
             </div>
           </div>
         </div>
@@ -549,21 +616,27 @@
       <section class="section section-alt" id="projeler">
         <div class="container">
           <div class="section-head reveal">
-            <p class="eyebrow">Projeler</p>
-            <h2>Sahadan örnek referanslar</h2>
-            <p class="section-lead">Farklı ölçek ve sektörlerden tamamladığımız projelerden birkaçı.</p>
+            <p class="eyebrow" data-i18n="projects_eyebrow">Projeler</p>
+            <h2 data-i18n="projects_title">Sahadan örnek referanslar</h2>
+            <p class="section-lead" data-i18n="projects_lead">
+              Farklı ölçek ve sektörlerden tamamladığımız projelerden birkaçı.
+            </p>
           </div>
           <div class="grid projects-grid">
             <article class="project-card reveal">
               <div class="project-media">
                 <picture
                   ><source srcset="assets/photos/proje-1.webp" type="image/webp" />
-                  <img src="assets/photos/proje-1.jpg" alt="GES Saha kurulumu" loading="lazy" /></picture
-                ><span>GES Saha</span>
+                  <img
+                    src="assets/photos/proje-1.jpg"
+                    alt="GES Saha kurulumu"
+                    data-i18n-alt="alt_saha_kurulum"
+                    loading="lazy" /></picture
+                ><span data-i18n="proj1_badge">GES Saha</span>
               </div>
               <div class="project-body">
-                <h3>Saha Elektrik Altyapısı</h3>
-                <p>Trafo ve şalt sahası ekipmanlarının montaj ve kurulum çalışmaları.</p>
+                <h3 data-i18n="proj1_title">Saha Elektrik Altyapısı</h3>
+                <p data-i18n="proj1_desc">Trafo ve şalt sahası ekipmanlarının montaj ve kurulum çalışmaları.</p>
               </div>
             </article>
             <article class="project-card reveal">
@@ -571,11 +644,11 @@
                 <picture
                   ><source srcset="assets/photos/proje-2.webp" type="image/webp" />
                   <img src="assets/photos/proje-2.jpg" alt="GES Saha trafo merkezi" loading="lazy" /></picture
-                ><span>Trafo Merkezi</span>
+                ><span data-i18n="proj2_badge">Trafo Merkezi</span>
               </div>
               <div class="project-body">
-                <h3>GES Saha Trafo Merkezi</h3>
-                <p>Enerji santrali sahasında trafo ve kumanda ünitelerinin kurulumu.</p>
+                <h3 data-i18n="proj2_title">GES Saha Trafo Merkezi</h3>
+                <p data-i18n="proj2_desc">Enerji santrali sahasında trafo ve kumanda ünitelerinin kurulumu.</p>
               </div>
             </article>
             <article class="project-card reveal">
@@ -583,11 +656,11 @@
                 <picture
                   ><source srcset="assets/photos/proje-3.webp" type="image/webp" />
                   <img src="assets/photos/proje-3.jpg" alt="Elektrik ekipmanları kurulumu" loading="lazy" /></picture
-                ><span>Elektrik Ekipmanları</span>
+                ><span data-i18n="proj3_badge">Elektrik Ekipmanları</span>
               </div>
               <div class="project-body">
-                <h3>Güç ve Dağıtım Ekipmanları</h3>
-                <p>Sahadaki güç ve dağıtım ekipmanlarının devreye alma çalışmaları.</p>
+                <h3 data-i18n="proj3_title">Güç ve Dağıtım Ekipmanları</h3>
+                <p data-i18n="proj3_desc">Sahadaki güç ve dağıtım ekipmanlarının devreye alma çalışmaları.</p>
               </div>
             </article>
           </div>
@@ -598,19 +671,27 @@
       <section class="section" id="galeri">
         <div class="container">
           <div class="section-head reveal">
-            <p class="eyebrow">Foto Galeri</p>
-            <h2>Sahadan kareler</h2>
-            <p class="section-lead">Hizmet başlığına tıklayarak ilgili sahadan fotoğrafları filtreleyebilirsiniz.</p>
+            <p class="eyebrow" data-i18n="gallery_eyebrow">Foto Galeri</p>
+            <h2 data-i18n="gallery_title">Sahadan kareler</h2>
+            <p class="section-lead" data-i18n="gallery_lead">
+              Hizmet başlığına tıklayarak ilgili sahadan fotoğrafları filtreleyebilirsiniz.
+            </p>
           </div>
           <div class="gallery-filters">
-            <button type="button" class="gallery-filter is-active" data-filter="all">Tümü</button>
-            <button type="button" class="gallery-filter" data-filter="mekanik">Mekanik</button>
-            <button type="button" class="gallery-filter" data-filter="havalandirma">Havalandırma</button>
-            <button type="button" class="gallery-filter" data-filter="yangin">Yangın</button>
-            <button type="button" class="gallery-filter" data-filter="celik">Çelik</button>
-            <button type="button" class="gallery-filter" data-filter="cati">GES Çatı</button>
-            <button type="button" class="gallery-filter" data-filter="saha">GES Saha</button>
-            <button type="button" class="gallery-filter" data-filter="muh">Mühendislik</button>
+            <button type="button" class="gallery-filter is-active" data-filter="all" data-i18n="filter_all">
+              Tümü
+            </button>
+            <button type="button" class="gallery-filter" data-filter="mekanik" data-i18n="filter_mekanik">
+              Mekanik
+            </button>
+            <button type="button" class="gallery-filter" data-filter="havalandirma" data-i18n="filter_havalandirma">
+              Havalandırma
+            </button>
+            <button type="button" class="gallery-filter" data-filter="yangin" data-i18n="filter_yangin">Yangın</button>
+            <button type="button" class="gallery-filter" data-filter="celik" data-i18n="filter_celik">Çelik</button>
+            <button type="button" class="gallery-filter" data-filter="cati" data-i18n="filter_cati">GES Çatı</button>
+            <button type="button" class="gallery-filter" data-filter="saha" data-i18n="filter_saha">GES Saha</button>
+            <button type="button" class="gallery-filter" data-filter="muh" data-i18n="filter_muh">Mühendislik</button>
           </div>
           <div class="gallery-grid">
             <div class="gallery-item" data-cat="mekanik">
@@ -619,6 +700,7 @@
                 <img
                   src="assets/mj-gallery/mekanik-kazan-dairesi.jpg"
                   alt="Mekanik tesisat kazan dairesi"
+                  data-i18n-alt="alt_mekanik_kazan"
                   loading="lazy"
               /></picture>
             </div>
@@ -628,25 +710,38 @@
                 <img
                   src="assets/mj-gallery/havalandirma-kanal-yalitim.jpg"
                   alt="Yalıtımlı havalandırma kanalı"
+                  data-i18n-alt="alt_havalandirma_kanal"
                   loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="yangin">
               <picture
                 ><source srcset="assets/mj-gallery/yangin-pompa-istasyonu.webp" type="image/webp" />
-                <img src="assets/mj-gallery/yangin-pompa-istasyonu.png" alt="Yangın pompa istasyonu" loading="lazy"
+                <img
+                  src="assets/mj-gallery/yangin-pompa-istasyonu.png"
+                  alt="Yangın pompa istasyonu"
+                  data-i18n-alt="alt_yangin_pompa"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="celik">
               <picture
                 ><source srcset="assets/mj-gallery/celik-konstruksiyon-1.webp" type="image/webp" />
-                <img src="assets/mj-gallery/celik-konstruksiyon-1.png" alt="Çelik konstrüksiyon imalatı" loading="lazy"
+                <img
+                  src="assets/mj-gallery/celik-konstruksiyon-1.png"
+                  alt="Çelik konstrüksiyon imalatı"
+                  data-i18n-alt="alt_celik_1"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="cati">
               <picture
                 ><source srcset="assets/gallery/cati-sigmatek_muhendislik_0606b.webp" type="image/webp" />
-                <img src="assets/gallery/cati-sigmatek_muhendislik_0606b.jpg" alt="GES Çatı kurulumu" loading="lazy"
+                <img
+                  src="assets/gallery/cati-sigmatek_muhendislik_0606b.jpg"
+                  alt="GES Çatı kurulumu"
+                  data-i18n-alt="alt_cati_kurulum"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="mekanik">
@@ -655,6 +750,7 @@
                 <img
                   src="assets/mj-gallery/mekanik-boru-manifoldu.jpg"
                   alt="Mekanik boru hattı manifoldu"
+                  data-i18n-alt="alt_mekanik_boru"
                   loading="lazy"
               /></picture>
             </div>
@@ -664,31 +760,48 @@
                 <img
                   src="assets/mj-gallery/havalandirma-catisi-1.png"
                   alt="Çatı üstü havalandırma üniteleri"
+                  data-i18n-alt="alt_havalandirma_catisi"
                   loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="yangin">
               <picture
                 ><source srcset="assets/mj-gallery/yangin-sprinkler-hatti.webp" type="image/webp" />
-                <img src="assets/mj-gallery/yangin-sprinkler-hatti.png" alt="Yangın sprinkler hattı" loading="lazy"
+                <img
+                  src="assets/mj-gallery/yangin-sprinkler-hatti.png"
+                  alt="Yangın sprinkler hattı"
+                  data-i18n-alt="alt_yangin_sprinkler"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="celik">
               <picture
                 ><source srcset="assets/mj-gallery/celik-konstruksiyon-2.webp" type="image/webp" />
-                <img src="assets/mj-gallery/celik-konstruksiyon-2.png" alt="Çelik çatı konstrüksiyonu" loading="lazy"
+                <img
+                  src="assets/mj-gallery/celik-konstruksiyon-2.png"
+                  alt="Çelik çatı konstrüksiyonu"
+                  data-i18n-alt="alt_celik_2"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="saha">
               <picture
                 ><source srcset="assets/gallery/saha-sigmatek_muhendislik_0814.webp" type="image/webp" />
-                <img src="assets/gallery/saha-sigmatek_muhendislik_0814.jpg" alt="GES Saha kurulumu" loading="lazy"
+                <img
+                  src="assets/gallery/saha-sigmatek_muhendislik_0814.jpg"
+                  alt="GES Saha kurulumu"
+                  data-i18n-alt="alt_saha_kurulum"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="mekanik">
               <picture
                 ><source srcset="assets/mj-gallery/mekanik-tesis-koridoru.webp" type="image/webp" />
-                <img src="assets/mj-gallery/mekanik-tesis-koridoru.png" alt="Mekanik tesis koridoru" loading="lazy"
+                <img
+                  src="assets/mj-gallery/mekanik-tesis-koridoru.png"
+                  alt="Mekanik tesis koridoru"
+                  data-i18n-alt="alt_mekanik_koridor"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="havalandirma">
@@ -697,13 +810,18 @@
                 <img
                   src="assets/mj-gallery/havalandirma-catisi-2.png"
                   alt="Çatı üstü havalandırma üniteleri"
+                  data-i18n-alt="alt_havalandirma_catisi"
                   loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="yangin">
               <picture
                 ><source srcset="assets/mj-gallery/yangin-tavan-tesisati.webp" type="image/webp" />
-                <img src="assets/mj-gallery/yangin-tavan-tesisati.png" alt="Yangın tavan tesisatı" loading="lazy"
+                <img
+                  src="assets/mj-gallery/yangin-tavan-tesisati.png"
+                  alt="Yangın tavan tesisatı"
+                  data-i18n-alt="alt_yangin_tavan"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="muh">
@@ -712,13 +830,18 @@
                 <img
                   src="assets/gallery/muh-sigmatek_muhendislik_01475.jpg"
                   alt="Mühendislik ve saha ölçümü"
+                  data-i18n-alt="alt_muh_olcum"
                   loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="mekanik">
               <picture
                 ><source srcset="assets/mj-gallery/mekanik-pompa-dairesi.webp" type="image/webp" />
-                <img src="assets/mj-gallery/mekanik-pompa-dairesi.png" alt="Mekanik pompa dairesi" loading="lazy"
+                <img
+                  src="assets/mj-gallery/mekanik-pompa-dairesi.png"
+                  alt="Mekanik pompa dairesi"
+                  data-i18n-alt="alt_mekanik_pompa"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="havalandirma">
@@ -727,19 +850,28 @@
                 <img
                   src="assets/mj-gallery/havalandirma-catisi-3.png"
                   alt="Çatı üstü havalandırma üniteleri"
+                  data-i18n-alt="alt_havalandirma_catisi"
                   loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="cati">
               <picture
                 ><source srcset="assets/gallery/cati-sigmatek_muhendislik_0593.webp" type="image/webp" />
-                <img src="assets/gallery/cati-sigmatek_muhendislik_0593.jpg" alt="GES Çatı kurulumu" loading="lazy"
+                <img
+                  src="assets/gallery/cati-sigmatek_muhendislik_0593.jpg"
+                  alt="GES Çatı kurulumu"
+                  data-i18n-alt="alt_cati_kurulum"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="mekanik">
               <picture
                 ><source srcset="assets/mj-gallery/mekanik-esanjor-dairesi.webp" type="image/webp" />
-                <img src="assets/mj-gallery/mekanik-esanjor-dairesi.png" alt="Mekanik eşanjör dairesi" loading="lazy"
+                <img
+                  src="assets/mj-gallery/mekanik-esanjor-dairesi.png"
+                  alt="Mekanik eşanjör dairesi"
+                  data-i18n-alt="alt_mekanik_esanjor"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="havalandirma">
@@ -748,19 +880,28 @@
                 <img
                   src="assets/mj-gallery/havalandirma-catisi-4.png"
                   alt="Çatı üstü havalandırma üniteleri"
+                  data-i18n-alt="alt_havalandirma_catisi"
                   loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="saha">
               <picture
                 ><source srcset="assets/gallery/saha-sigmatek_muhendislik_0647.webp" type="image/webp" />
-                <img src="assets/gallery/saha-sigmatek_muhendislik_0647.jpg" alt="GES Saha kurulumu" loading="lazy"
+                <img
+                  src="assets/gallery/saha-sigmatek_muhendislik_0647.jpg"
+                  alt="GES Saha kurulumu"
+                  data-i18n-alt="alt_saha_kurulum"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="mekanik">
               <picture
                 ><source srcset="assets/mj-gallery/mekanik-devreye-alma.webp" type="image/webp" />
-                <img src="assets/mj-gallery/mekanik-devreye-alma.png" alt="Mekanik sistem devreye alma" loading="lazy"
+                <img
+                  src="assets/mj-gallery/mekanik-devreye-alma.png"
+                  alt="Mekanik sistem devreye alma"
+                  data-i18n-alt="alt_mekanik_devreye"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="muh">
@@ -769,19 +910,28 @@
                 <img
                   src="assets/gallery/muh-sigmatek_muhendislik_01454.jpg"
                   alt="Mühendislik saha çalışması"
+                  data-i18n-alt="alt_muh_saha"
                   loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="cati">
               <picture
                 ><source srcset="assets/gallery/cati-sigmatek_muhendislik_0597.webp" type="image/webp" />
-                <img src="assets/gallery/cati-sigmatek_muhendislik_0597.jpg" alt="GES Çatı kurulumu" loading="lazy"
+                <img
+                  src="assets/gallery/cati-sigmatek_muhendislik_0597.jpg"
+                  alt="GES Çatı kurulumu"
+                  data-i18n-alt="alt_cati_kurulum"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="saha">
               <picture
                 ><source srcset="assets/gallery/saha-sigmatek_muhendislik_0886.webp" type="image/webp" />
-                <img src="assets/gallery/saha-sigmatek_muhendislik_0886.jpg" alt="GES Saha kurulumu" loading="lazy"
+                <img
+                  src="assets/gallery/saha-sigmatek_muhendislik_0886.jpg"
+                  alt="GES Saha kurulumu"
+                  data-i18n-alt="alt_saha_kurulum"
+                  loading="lazy"
               /></picture>
             </div>
             <div class="gallery-item" data-cat="muh">
@@ -790,6 +940,7 @@
                 <img
                   src="assets/gallery/muh-sigmatek_muhendislik_01489.jpg"
                   alt="Mühendislik saha çalışması"
+                  data-i18n-alt="alt_muh_saha"
                   loading="lazy"
               /></picture>
             </div>
@@ -804,9 +955,9 @@
           <img src="assets/photos/hero-solar-farm.jpg" alt="" class="cta-bg" aria-hidden="true"
         /></picture>
         <div class="container cta-inner reveal">
-          <h2>Projenizi birlikte hayata geçirelim</h2>
-          <p>Keşif ve ön fizibilite görüşmesi için ekibimizle iletişime geçin.</p>
-          <a href="#iletisim" class="btn btn-light">Ücretsiz Teklif Alın</a>
+          <h2 data-i18n="cta_title">Projenizi birlikte hayata geçirelim</h2>
+          <p data-i18n="cta_desc">Keşif ve ön fizibilite görüşmesi için ekibimizle iletişime geçin.</p>
+          <a href="#iletisim" class="btn btn-light" data-i18n="cta_button">Ücretsiz Teklif Alın</a>
         </div>
       </section>
 
@@ -814,22 +965,24 @@
       <section class="section" id="iletisim">
         <div class="container contact-grid">
           <div class="contact-info reveal">
-            <p class="eyebrow">İletişim</p>
-            <h2>Projenizi konuşalım</h2>
-            <p class="section-lead">Sorularınız için formu doldurun ya da doğrudan bize ulaşın.</p>
+            <p class="eyebrow" data-i18n="contact_eyebrow">İletişim</p>
+            <h2 data-i18n="contact_title">Projenizi konuşalım</h2>
+            <p class="section-lead" data-i18n="contact_lead">
+              Sorularınız için formu doldurun ya da doğrudan bize ulaşın.
+            </p>
 
             <div class="contact-item">
-              <span class="contact-label">Adres</span>
+              <span class="contact-label" data-i18n="contact_addressLabel">Adres</span>
               <span
                 >İçerenköy Mahallesi, Şükran Sokak, Şerafet Bey Apartmanı, No:52/B, Pk:34752, Ataşehir/İstanbul</span
               >
             </div>
             <div class="contact-item">
-              <span class="contact-label">Telefon</span>
+              <span class="contact-label" data-i18n="contact_phoneLabel">Telefon</span>
               <span>+90 532 749 84 60</span>
             </div>
             <div class="contact-item">
-              <span class="contact-label">E-posta</span>
+              <span class="contact-label" data-i18n="contact_emailLabel">E-posta</span>
               <span>ugur.gul@sigmatek.org</span>
             </div>
           </div>
@@ -845,36 +998,36 @@
             <input type="hidden" name="_captcha" value="false" />
             <div class="form-row">
               <label
-                >Ad Soyad
+                ><span data-i18n="form_nameLabel">Ad Soyad</span>
                 <input type="text" name="Ad Soyad" required />
               </label>
               <label
-                >Telefon
+                ><span data-i18n="form_phoneLabel">Telefon</span>
                 <input type="tel" name="Telefon" required />
               </label>
             </div>
             <label
-              >E-posta
+              ><span data-i18n="form_emailLabel">E-posta</span>
               <input type="email" name="E-posta" required />
             </label>
             <label
-              >İlgilendiğiniz Hizmet
+              ><span data-i18n="form_serviceLabel">İlgilendiğiniz Hizmet</span>
               <select name="İlgilendiği Hizmet">
-                <option>GES Çatı</option>
-                <option>GES Saha</option>
-                <option>Mühendislik &amp; Danışmanlık</option>
-                <option>Endüstriyel Isıtma</option>
-                <option>Soğutma Sistemleri</option>
-                <option>Havalandırma &amp; Otomasyon</option>
-                <option>Yangın Sistemleri</option>
-                <option>İnşaat &amp; Çelik Konstrüksiyon</option>
+                <option data-i18n="svc_gescati_title">GES Çatı</option>
+                <option data-i18n="svc_gessaha_title">GES Saha</option>
+                <option data-i18n="svc_muhendislik_title">Mühendislik &amp; Danışmanlık</option>
+                <option data-i18n="svc_isitma_title">Endüstriyel Isıtma</option>
+                <option data-i18n="svc_sogutma_title">Soğutma Sistemleri</option>
+                <option data-i18n="svc_havalandirma_title">Havalandırma &amp; Otomasyon</option>
+                <option data-i18n="svc_yangin_title">Yangın Sistemleri</option>
+                <option data-i18n="svc_insaat_title">İnşaat &amp; Çelik Konstrüksiyon</option>
               </select>
             </label>
             <label
-              >Mesajınız
+              ><span data-i18n="form_messageLabel">Mesajınız</span>
               <textarea name="Mesaj" rows="4" required></textarea>
             </label>
-            <button type="submit" class="btn btn-primary btn-block">Talebi Gönder</button>
+            <button type="submit" class="btn btn-primary btn-block" data-i18n="form_submit">Talebi Gönder</button>
             <p class="form-note" id="formNote" role="status"></p>
           </form>
         </div>
@@ -890,40 +1043,45 @@
               <img src="assets/logo/sigmatek_muhendislik-bw.png" alt="Sigmatek Mühendislik" class="logo-img"
             /></picture>
           </span>
-          <p>
+          <p data-i18n="footer_about">
             GES çatı ve saha santrallerinden endüstriyel ısıtma, soğutma, havalandırma ve otomasyona; yangın güvenliği
             ve çelik konstrüksiyona kadar mühendislik disipliniyle tasarlanan, anahtar teslim uygulanan uçtan uca
             çözümler.
           </p>
         </div>
         <div class="footer-col">
-          <h4>Hizmetler</h4>
-          <a href="#hizmetler">GES Çatı &amp; Saha</a>
-          <a href="#hizmetler">Mühendislik &amp; Danışmanlık</a>
-          <a href="#hizmetler">Isıtma / Soğutma / Havalandırma</a>
-          <a href="#hizmetler">Otomasyon Sistemleri</a>
-          <a href="#hizmetler">Yangın Sistemleri</a>
-          <a href="#hizmetler">İnşaat &amp; Çelik Konstrüksiyon</a>
+          <h4 data-i18n="footer_servicesHeading">Hizmetler</h4>
+          <a href="#hizmetler" data-i18n="footer_link_gescatisaha">GES Çatı &amp; Saha</a>
+          <a href="#hizmetler" data-i18n="svc_muhendislik_title">Mühendislik &amp; Danışmanlık</a>
+          <a href="#hizmetler" data-i18n="footer_link_isivehava">Isıtma / Soğutma / Havalandırma</a>
+          <a href="#hizmetler" data-i18n="footer_link_otomasyon">Otomasyon Sistemleri</a>
+          <a href="#hizmetler" data-i18n="svc_yangin_title">Yangın Sistemleri</a>
+          <a href="#hizmetler" data-i18n="svc_insaat_title">İnşaat &amp; Çelik Konstrüksiyon</a>
         </div>
         <div class="footer-col">
-          <h4>Kurumsal</h4>
-          <a href="#hakkimizda">Hakkımızda</a>
-          <a href="#projeler">Projeler</a>
-          <a href="#surec">Süreç</a>
-          <a href="#iletisim">İletişim</a>
+          <h4 data-i18n="footer_corporateHeading">Kurumsal</h4>
+          <a href="#hakkimizda" data-i18n="nav_about">Hakkımızda</a>
+          <a href="#projeler" data-i18n="nav_projects">Projeler</a>
+          <a href="#surec" data-i18n="nav_process">Süreç</a>
+          <a href="#iletisim" data-i18n="nav_contact">İletişim</a>
         </div>
         <div class="footer-col">
-          <h4>İletişim</h4>
+          <h4 data-i18n="footer_contactHeading">İletişim</h4>
           <a href="tel:+905327498460">+90 532 749 84 60</a>
           <a href="mailto:ugur.gul@sigmatek.org">ugur.gul@sigmatek.org</a>
         </div>
       </div>
       <div class="container footer-bottom">
-        <p>&copy; <span id="year"></span> Sigmatek Mühendislik Danışmanlık A.Ş. Her hakkı saklıdır.</p>
+        <p>
+          &copy; <span id="year"></span> Sigmatek Mühendislik Danışmanlık A.Ş.
+          <span data-i18n="footer_copyrightRights">Her hakkı saklıdır.</span>
+        </p>
       </div>
     </footer>
 
-    <button class="back-to-top" id="backToTop" aria-label="Yukarı çık">&uarr;</button>
+    <button class="back-to-top" id="backToTop" aria-label="Yukarı çık" data-i18n-aria-label="back_to_top_aria">
+      &uarr;
+    </button>
 
     <!-- SERVICE DETAIL MODAL -->
     <div
@@ -936,7 +1094,9 @@
     >
       <div class="service-modal-overlay" data-close></div>
       <div class="service-modal-panel" role="document">
-        <button class="service-modal-close" data-close aria-label="Kapat">&times;</button>
+        <button class="service-modal-close" data-close aria-label="Kapat" data-i18n-aria-label="modal_close_aria">
+          &times;
+        </button>
         <div class="service-modal-media"><img id="serviceModalImg" src="" alt="" loading="lazy" /></div>
         <div class="service-modal-body" id="serviceModalBody"><!-- injected --></div>
       </div>
@@ -944,7 +1104,7 @@
 
     <!-- SERVICE DETAIL CONTENT (hidden source) -->
     <div class="service-details-store" hidden>
-      <template data-detail="ges-cati" data-img="assets/gallery/cati-sigmatek_muhendislik_0606b.webp">
+      <template data-lang="tr" data-detail="ges-cati" data-img="assets/gallery/cati-sigmatek_muhendislik_0606b.webp">
         <p class="eyebrow">Yenilenebilir Enerji</p>
         <h3 id="serviceModalTitle">GES Çatı Sistemleri</h3>
         <p class="service-modal-lead">
@@ -980,7 +1140,7 @@
         </ul>
       </template>
 
-      <template data-detail="ges-saha" data-img="assets/gallery/saha-sigmatek_muhendislik_0814.webp">
+      <template data-lang="tr" data-detail="ges-saha" data-img="assets/gallery/saha-sigmatek_muhendislik_0814.webp">
         <p class="eyebrow">Yenilenebilir Enerji</p>
         <h3 id="serviceModalTitle">GES Saha Kurulumları</h3>
         <p class="service-modal-lead">
@@ -1014,7 +1174,7 @@
         </ul>
       </template>
 
-      <template data-detail="muhendislik" data-img="assets/gallery/muh-sigmatek_muhendislik_01475.webp">
+      <template data-lang="tr" data-detail="muhendislik" data-img="assets/gallery/muh-sigmatek_muhendislik_01475.webp">
         <p class="eyebrow">Mühendislik</p>
         <h3 id="serviceModalTitle">Mühendislik &amp; Danışmanlık</h3>
         <p class="service-modal-lead">
@@ -1047,7 +1207,7 @@
         </ul>
       </template>
 
-      <template data-detail="isitma" data-img="assets/mj-gallery/mekanik-kazan-dairesi.webp">
+      <template data-lang="tr" data-detail="isitma" data-img="assets/mj-gallery/mekanik-kazan-dairesi.webp">
         <p class="eyebrow">Endüstriyel İklimlendirme</p>
         <h3 id="serviceModalTitle">Endüstriyel Isıtma</h3>
         <p class="service-modal-lead">
@@ -1075,7 +1235,7 @@
         </ul>
       </template>
 
-      <template data-detail="sogutma" data-img="assets/mj-gallery/mekanik-esanjor-dairesi.webp">
+      <template data-lang="tr" data-detail="sogutma" data-img="assets/mj-gallery/mekanik-esanjor-dairesi.webp">
         <p class="eyebrow">Endüstriyel İklimlendirme</p>
         <h3 id="serviceModalTitle">Soğutma Sistemleri</h3>
         <p class="service-modal-lead">
@@ -1103,7 +1263,7 @@
         </ul>
       </template>
 
-      <template data-detail="havalandirma" data-img="assets/mj-gallery/havalandirma-catisi-2.webp">
+      <template data-lang="tr" data-detail="havalandirma" data-img="assets/mj-gallery/havalandirma-catisi-2.webp">
         <p class="eyebrow">İklimlendirme &amp; Otomasyon</p>
         <h3 id="serviceModalTitle">Havalandırma &amp; Otomasyon</h3>
         <p class="service-modal-lead">
@@ -1129,7 +1289,7 @@
         </ul>
       </template>
 
-      <template data-detail="yangin" data-img="assets/mj-gallery/yangin-sprinkler-hatti.webp">
+      <template data-lang="tr" data-detail="yangin" data-img="assets/mj-gallery/yangin-sprinkler-hatti.webp">
         <p class="eyebrow">Yangın Güvenliği</p>
         <h3 id="serviceModalTitle">Yangın Sistemleri</h3>
         <p class="service-modal-lead">
@@ -1172,7 +1332,7 @@
         </ul>
       </template>
 
-      <template data-detail="insaat" data-img="assets/mj-gallery/celik-konstruksiyon-1.webp">
+      <template data-lang="tr" data-detail="insaat" data-img="assets/mj-gallery/celik-konstruksiyon-1.webp">
         <p class="eyebrow">İnşaat &amp; Yapı</p>
         <h3 id="serviceModalTitle">İnşaat &amp; Çelik Konstrüksiyon</h3>
         <p class="service-modal-lead">
@@ -1208,8 +1368,536 @@
           <li>Projeden teslime tek elden koordinasyon</li>
         </ul>
       </template>
+
+      <!-- ============ ENGLISH MODAL TEMPLATES ============ -->
+      <template data-lang="en" data-detail="ges-cati" data-img="assets/gallery/cati-sigmatek_muhendislik_0606b.webp">
+        <p class="eyebrow">Renewable Energy</p>
+        <h3 id="serviceModalTitle">Rooftop Solar Systems</h3>
+        <p class="service-modal-lead">
+          Turnkey rooftop solar power plant installation for residential, commercial and industrial buildings — from
+          structural analysis to commissioning, with a production guarantee.
+        </p>
+        <h4>End-to-End Scope of Work</h4>
+        <ul class="service-modal-list">
+          <li>
+            <strong>Roof structural &amp; load analysis:</strong> Additional load and wind load calculations for
+            trapezoidal sheet, sandwich panel, tile or membrane roofs.
+          </li>
+          <li>
+            <strong>Mounting structure:</strong> Aluminum/galvanized carrier profiles, hooks and clamps for
+            roof-appropriate fixing (mechanical or ballasted).
+          </li>
+          <li>
+            <strong>Panel (PV module) mounting:</strong> Array layout at optimum tilt and orientation, based on shading
+            analysis.
+          </li>
+          <li><strong>DC side:</strong> String cabling, cable trays/conduits, connectors and combiner boxes.</li>
+          <li><strong>AC side:</strong> String/hybrid inverter, AC panel, meter and grid connection (on-grid).</li>
+          <li><strong>Protection:</strong> Lightning protection, equipotential grounding and DC/AC surge arresters.</li>
+          <li><strong>Monitoring:</strong> Remote production monitoring and commissioning tests.</li>
+        </ul>
+        <h4>Benefits</h4>
+        <ul class="service-modal-list compact">
+          <li>Permanent electricity bill savings through self-consumption</li>
+          <li>Production-guaranteed equipment and engineering assurance</li>
+          <li>Fast installation with minimal operational downtime</li>
+        </ul>
+      </template>
+
+      <template data-lang="en" data-detail="ges-saha" data-img="assets/gallery/saha-sigmatek_muhendislik_0814.webp">
+        <p class="eyebrow">Renewable Energy</p>
+        <h3 id="serviceModalTitle">Ground-Mount Solar Installations</h3>
+        <p class="service-modal-lead">
+          Turnkey EPC solutions for large-scale ground-mount solar power plant projects, from land surveys to grid
+          connection.
+        </p>
+        <h4>End-to-End Scope of Work</h4>
+        <ul class="service-modal-list">
+          <li>
+            <strong>Land survey &amp; grading:</strong> Topographic survey, soil investigation and site grading to
+            prepare the ground for installation.
+          </li>
+          <li>
+            <strong>Structure fabrication:</strong> Hot-dip galvanized steel support structures; ramming or helical pile
+            foundation works.
+          </li>
+          <li>
+            <strong>Support system:</strong> Fixed-tilt structures or single-axis solar tracker systems for increased
+            yield.
+          </li>
+          <li><strong>Panel mounting:</strong> PV module installation per string plan, with torque control.</li>
+          <li><strong>DC collection:</strong> String cables, cable trays and conduits, combiner boxes.</li>
+          <li>
+            <strong>Power center:</strong> Inverter stations, transformer substation and switchyard (MV/LV)
+            installation.
+          </li>
+          <li>
+            <strong>Infrastructure:</strong> Grounding grid, lighting, perimeter security (fence, cameras) and SCADA
+            monitoring.
+          </li>
+        </ul>
+        <h4>Benefits</h4>
+        <ul class="service-modal-list compact">
+          <li>High-efficiency energy production at MW scale</li>
+          <li>Increased annual yield with tracker systems</li>
+          <li>On-site testing and commissioning included</li>
+        </ul>
+      </template>
+
+      <template data-lang="en" data-detail="muhendislik" data-img="assets/gallery/muh-sigmatek_muhendislik_01475.webp">
+        <p class="eyebrow">Engineering</p>
+        <h3 id="serviceModalTitle">Engineering &amp; Consulting</h3>
+        <p class="service-modal-lead">
+          End-to-end engineering consulting at every stage of your project, from feasibility to electrical and
+          mechanical design to commissioning.
+        </p>
+        <h4>Scope of Service</h4>
+        <ul class="service-modal-list">
+          <li>
+            <strong>Feasibility &amp; simulation:</strong> Energy yield analysis, production forecasting (PVsyst) and
+            ROI calculation.
+          </li>
+          <li><strong>General layout:</strong> Site/roof layout planning and shading optimization.</li>
+          <li>
+            <strong>Electrical design:</strong> Single-line diagram (SLD), AC/DC cable sizing and voltage drop
+            calculations, protection coordination.
+          </li>
+          <li>
+            <strong>Mechanical &amp; structural:</strong> Support structure and foundation structural calculations.
+          </li>
+          <li>
+            <strong>Permitting &amp; connection processes:</strong> Call letter, grid connection agreement and permit
+            application support.
+          </li>
+          <li>
+            <strong>R&amp;D &amp; optimization:</strong> Loss analysis, equipment selection and cost optimization.
+          </li>
+        </ul>
+        <h4>Benefits</h4>
+        <ul class="service-modal-list compact">
+          <li>Projects fully compliant with regulations and standards</li>
+          <li>Independent, manufacturer-agnostic technical consulting</li>
+          <li>Practical solutions that anticipate risks in advance</li>
+        </ul>
+      </template>
+
+      <template data-lang="en" data-detail="isitma" data-img="assets/mj-gallery/mekanik-kazan-dairesi.webp">
+        <p class="eyebrow">Industrial HVAC</p>
+        <h3 id="serviceModalTitle">Industrial Heating</h3>
+        <p class="service-modal-lead">
+          Design and installation of energy-efficient industrial heating systems tailored to factories and facilities,
+          from heat load analysis to commissioning.
+        </p>
+        <h4>End-to-End Scope of Work</h4>
+        <ul class="service-modal-list">
+          <li>
+            <strong>Heat load analysis:</strong> Capacity calculation based on volume, insulation and process
+            requirements.
+          </li>
+          <li><strong>Boiler room:</strong> Hot water, thermal oil or steam boiler systems and burner application.</li>
+          <li><strong>Terminal units:</strong> Radiant heating, warm air units and air curtain solutions.</li>
+          <li><strong>Piping:</strong> Pipeline, collectors, circulation pumps and expansion tank.</li>
+          <li>
+            <strong>Control &amp; valves:</strong> Motorized valves, thermostatic control and automatic balancing
+            equipment.
+          </li>
+          <li>
+            <strong>Insulation &amp; commissioning:</strong> Pipe insulation, hydrostatic testing and system balancing.
+          </li>
+        </ul>
+        <h4>Benefits</h4>
+        <ul class="service-modal-list compact">
+          <li>Low fuel consumption and operating cost</li>
+          <li>Uniform temperature distribution and comfort</li>
+          <li>Long-lasting, easy-to-maintain installation</li>
+        </ul>
+      </template>
+
+      <template data-lang="en" data-detail="sogutma" data-img="assets/mj-gallery/mekanik-esanjor-dairesi.webp">
+        <p class="eyebrow">Industrial HVAC</p>
+        <h3 id="serviceModalTitle">Cooling Systems</h3>
+        <p class="service-modal-lead">
+          Design and turnkey installation of sustainable, low operating-cost cooling systems for industrial facilities
+          and cold storage warehouses.
+        </p>
+        <h4>End-to-End Scope of Work</h4>
+        <ul class="service-modal-list">
+          <li>
+            <strong>Cooling load calculation:</strong> Capacity determination based on product, volume and process data.
+          </li>
+          <li>
+            <strong>Cooling unit:</strong> Air/water-cooled chillers, with cooling tower application when required.
+          </li>
+          <li>
+            <strong>Cold room:</strong> Polyurethane panel, evaporator and condenser installation, door and gasket
+            details.
+          </li>
+          <li><strong>Refrigerant circuit:</strong> Copper piping, refrigerant charging and leak testing.</li>
+          <li><strong>Distribution:</strong> Fan-coil and VRF/VRV systems for zone-based cooling.</li>
+          <li>
+            <strong>Insulation &amp; commissioning:</strong> Pipe insulation, drain lines and temperature control setup.
+          </li>
+        </ul>
+        <h4>Benefits</h4>
+        <ul class="service-modal-list compact">
+          <li>Uninterrupted cold chain and product safety</li>
+          <li>Energy-efficient, low operating expense</li>
+          <li>Remote temperature monitoring and alarms</li>
+        </ul>
+      </template>
+
+      <template data-lang="en" data-detail="havalandirma" data-img="assets/mj-gallery/havalandirma-catisi-2.webp">
+        <p class="eyebrow">HVAC &amp; Automation</p>
+        <h3 id="serviceModalTitle">Ventilation &amp; Automation</h3>
+        <p class="service-modal-lead">
+          Industrial ventilation systems with SCADA/PLC-based automation integration, making your facility efficient,
+          healthy and remotely monitorable.
+        </p>
+        <h4>End-to-End Scope of Work</h4>
+        <ul class="service-modal-list">
+          <li>
+            <strong>Airflow analysis:</strong> Flow rate calculation based on fresh air, exhaust and comfort
+            requirements.
+          </li>
+          <li>
+            <strong>Main equipment:</strong> Air handling units (AHU), fresh air/exhaust fans and heat recovery units.
+          </li>
+          <li>
+            <strong>Duct fabrication:</strong> Galvanized sheet metal ductwork, damper, diffuser and grille
+            installation.
+          </li>
+          <li><strong>Automation:</strong> PLC/SCADA control, sensor (temperature, humidity, CO₂) integration.</li>
+          <li>
+            <strong>Efficiency:</strong> Fan speed control and energy savings with variable frequency drives (VFD).
+          </li>
+          <li><strong>Monitoring:</strong> Building management system (BMS) and remote alarm/reporting access.</li>
+        </ul>
+        <h4>Benefits</h4>
+        <ul class="service-modal-list compact">
+          <li>Healthy indoor air quality and comfort</li>
+          <li>Rapid response through remote monitoring</li>
+          <li>Lower energy consumption through automation</li>
+        </ul>
+      </template>
+
+      <template data-lang="en" data-detail="yangin" data-img="assets/mj-gallery/yangin-sprinkler-hatti.webp">
+        <p class="eyebrow">Fire Safety</p>
+        <h3 id="serviceModalTitle">Fire Systems</h3>
+        <p class="service-modal-lead">
+          Turnkey active and passive fire safety systems for facilities and buildings, compliant with fire safety
+          regulations, from risk analysis to commissioning.
+        </p>
+        <h4>End-to-End Scope of Work</h4>
+        <ul class="service-modal-list">
+          <li>
+            <strong>Risk analysis &amp; design:</strong> Scenario development, hydraulic calculation and design based on
+            building type and fire load.
+          </li>
+          <li>
+            <strong>Pump station:</strong> Fire pump set (electric/diesel + jockey), manifold and pressurization set.
+          </li>
+          <li>
+            <strong>Sprinkler system:</strong> Wet/dry alarm valves, sprinkler piping, sprinkler heads and installation.
+          </li>
+          <li>
+            <strong>Fire cabinets &amp; hydrants:</strong> Indoor fire cabinets, outdoor hydrant lines and fire
+            department connections.
+          </li>
+          <li>
+            <strong>Detection &amp; alarm:</strong> Smoke/heat detectors, fire alarm panel, call points and siren
+            integration.
+          </li>
+          <li>
+            <strong>Special suppression:</strong> Gas-based (FM-200/NOVEC) or foam suppression, kitchen (Ansul) systems.
+          </li>
+          <li>
+            <strong>Passive measures &amp; commissioning:</strong> Fire dampers, smoke exhaust, testing and acceptance
+            documentation.
+          </li>
+        </ul>
+        <h4>Benefits</h4>
+        <ul class="service-modal-list compact">
+          <li>Full regulatory compliance for life and property safety</li>
+          <li>Documentation ready for fire department and permit approval</li>
+          <li>Periodic maintenance and 24/7 technical support</li>
+        </ul>
+      </template>
+
+      <template data-lang="en" data-detail="insaat" data-img="assets/mj-gallery/celik-konstruksiyon-1.webp">
+        <p class="eyebrow">Construction &amp; Structures</p>
+        <h3 id="serviceModalTitle">Construction &amp; Steel Structures</h3>
+        <p class="service-modal-lead">
+          Turnkey construction, steel and repair services carried out with engineering discipline — from steel structure
+          fabrication to renovation and reinforcement, from static design to turnkey execution.
+        </p>
+        <h4>End-to-End Scope of Work</h4>
+        <ul class="service-modal-list">
+          <li>
+            <strong>Structural design &amp; survey:</strong> Support system structural calculations, quantity takeoff
+            and shop drawings.
+          </li>
+          <li>
+            <strong>Steel fabrication:</strong> Workshop column-beam fabrication, welded/bolted connections and quality
+            control (NDT).
+          </li>
+          <li>
+            <strong>Surface &amp; protection:</strong> Sandblasting, hot-dip galvanizing and industrial coating for
+            corrosion protection.
+          </li>
+          <li>
+            <strong>Erection:</strong> Site assembly, anchor/foundation connections, axis and level (leveling) control.
+          </li>
+          <li>
+            <strong>Roof &amp; facade:</strong> Sandwich panels, trapezoidal roofing, facade cladding and lighting
+            strips.
+          </li>
+          <li>
+            <strong>Renovation &amp; reinforcement:</strong> Reinforcement of existing structures, carbon
+            fiber/jacketing and structural strengthening.
+          </li>
+          <li>
+            <strong>Repair &amp; renovation:</strong> Industrial facility maintenance, reinforced concrete repair and
+            complete renovation works.
+          </li>
+        </ul>
+        <h4>Benefits</h4>
+        <ul class="service-modal-list compact">
+          <li>Fast, lightweight steel structure with a short site duration</li>
+          <li>Full compliance with occupational safety and building standards</li>
+          <li>Single-point coordination from design to handover</li>
+        </ul>
+      </template>
+
+      <!-- ============ ARABIC MODAL TEMPLATES ============ -->
+      <template data-lang="ar" data-detail="ges-cati" data-img="assets/gallery/cati-sigmatek_muhendislik_0606b.webp">
+        <p class="eyebrow">الطاقة المتجددة</p>
+        <h3 id="serviceModalTitle">أنظمة الطاقة الشمسية على الأسطح</h3>
+        <p class="service-modal-lead">
+          تركيب محطات طاقة شمسية على الأسطح بنظام تسليم المفتاح للمباني السكنية والتجارية والصناعية، من التحليل الإنشائي
+          وحتى التشغيل، مع ضمان الإنتاج.
+        </p>
+        <h4>نطاق العمل الشامل</h4>
+        <ul class="service-modal-list">
+          <li>
+            <strong>التحليل الإنشائي وتحمّل الأحمال:</strong> حساب الأحمال الإضافية وأحمال الرياح للأسطح المعدنية
+            والبانل الساندويتش والقرميد أو الأغشية.
+          </li>
+          <li>
+            <strong>هيكل التركيب:</strong> قطاعات حاملة من الألمنيوم/المجلفن مع كلابات ومشابك للتثبيت المناسب للسقف
+            (ميكانيكي أو بالثقل).
+          </li>
+          <li><strong>تركيب الألواح (PV):</strong> تصميم المصفوفة بأفضل ميل واتجاه بناءً على تحليل التظليل.</li>
+          <li><strong>الجانب المستمر (DC):</strong> تمديدات كابلات السلاسل، مجاري الكابلات وصناديق التجميع.</li>
+          <li><strong>الجانب المتردد (AC):</strong> عاكس سلاسل/هجين، لوحة تيار متردد، عداد وربط بالشبكة.</li>
+          <li><strong>الحماية:</strong> الحماية من الصواعق والتأريض المتساوي الجهد ومانعات الصواعق.</li>
+          <li><strong>المراقبة:</strong> مراقبة الإنتاج عن بُعد واختبارات التشغيل.</li>
+        </ul>
+        <h4>الفوائد</h4>
+        <ul class="service-modal-list compact">
+          <li>توفير دائم في فاتورة الكهرباء بفضل الاستهلاك الذاتي</li>
+          <li>ضمان إنتاج وضمانات هندسية للمعدات</li>
+          <li>تركيب سريع بأدنى توقف تشغيلي</li>
+        </ul>
+      </template>
+
+      <template data-lang="ar" data-detail="ges-saha" data-img="assets/gallery/saha-sigmatek_muhendislik_0814.webp">
+        <p class="eyebrow">الطاقة المتجددة</p>
+        <h3 id="serviceModalTitle">تركيبات الطاقة الشمسية الأرضية</h3>
+        <p class="service-modal-lead">
+          حلول تسليم مفتاح (EPC) لمشاريع محطات الطاقة الشمسية الأرضية واسعة النطاق، من مسح الأراضي وحتى الربط بالشبكة.
+        </p>
+        <h4>نطاق العمل الشامل</h4>
+        <ul class="service-modal-list">
+          <li><strong>مسح الأراضي والتسوية:</strong> المسح الطبوغرافي ودراسة التربة وتسوية الموقع تمهيداً للتركيب.</li>
+          <li>
+            <strong>تصنيع الهياكل:</strong> هياكل فولاذية مجلفنة بالغمس الساخن؛ أعمال أساسات بالدق أو الأوتاد الحلزونية.
+          </li>
+          <li><strong>نظام الدعم:</strong> هياكل ثابتة الميل أو أنظمة تتبع شمسي أحادية المحور لزيادة الإنتاجية.</li>
+          <li><strong>تركيب الألواح:</strong> تركيب الوحدات الشمسية وفق مخطط السلاسل مع ضبط عزم الربط.</li>
+          <li><strong>تجميع التيار المستمر:</strong> كابلات السلاسل، مجاري الكابلات وصناديق التجميع.</li>
+          <li><strong>مركز الطاقة:</strong> محطات العاكسات ومحطة المحولات وساحة القطع (جهد متوسط/منخفض).</li>
+          <li>
+            <strong>البنية التحتية:</strong> شبكة التأريض، الإنارة، الأمن المحيطي (سياج، كاميرات) ونظام SCADA للمراقبة.
+          </li>
+        </ul>
+        <h4>الفوائد</h4>
+        <ul class="service-modal-list compact">
+          <li>إنتاج طاقة عالي الكفاءة بمقياس الميغاواط</li>
+          <li>زيادة العائد السنوي بفضل أنظمة التتبع</li>
+          <li>اختبار وتشغيل ميداني ضمن النطاق</li>
+        </ul>
+      </template>
+
+      <template data-lang="ar" data-detail="muhendislik" data-img="assets/gallery/muh-sigmatek_muhendislik_01475.webp">
+        <p class="eyebrow">الهندسة</p>
+        <h3 id="serviceModalTitle">الهندسة والاستشارات</h3>
+        <p class="service-modal-lead">
+          استشارات هندسية متكاملة في كل مرحلة من مشروعكم، من دراسة الجدوى إلى التصميم الكهربائي والميكانيكي وحتى
+          التشغيل.
+        </p>
+        <h4>نطاق الخدمة</h4>
+        <ul class="service-modal-list">
+          <li>
+            <strong>الجدوى والمحاكاة:</strong> تحليل إنتاجية الطاقة، توقع الإنتاج (PVsyst) وحساب العائد على الاستثمار.
+          </li>
+          <li><strong>التخطيط العام:</strong> تخطيط تنسيق الموقع/السطح وتحسين التظليل.</li>
+          <li>
+            <strong>التصميم الكهربائي:</strong> المخطط أحادي الخط (SLD)، حسابات مقاطع الكابلات وهبوط الجهد، وتنسيق
+            الحماية.
+          </li>
+          <li><strong>الميكانيكا والإنشاء:</strong> حسابات إنشائية للهيكل الحامل والأساسات.</li>
+          <li><strong>إجراءات التراخيص والربط:</strong> خطاب الدعوة، اتفاقية الربط بالشبكة ودعم طلبات التراخيص.</li>
+          <li><strong>البحث والتطوير:</strong> تحليل الفاقد، اختيار المعدات وتحسين التكاليف.</li>
+        </ul>
+        <h4>الفوائد</h4>
+        <ul class="service-modal-list compact">
+          <li>مشاريع متوافقة تماماً مع الأنظمة والمعايير</li>
+          <li>استشارات تقنية مستقلة وغير مرتبطة بمصنّع معين</li>
+          <li>حلول عملية تستبق المخاطر</li>
+        </ul>
+      </template>
+
+      <template data-lang="ar" data-detail="isitma" data-img="assets/mj-gallery/mekanik-kazan-dairesi.webp">
+        <p class="eyebrow">التكييف الصناعي</p>
+        <h3 id="serviceModalTitle">التدفئة الصناعية</h3>
+        <p class="service-modal-lead">
+          تصميم وتركيب أنظمة تدفئة صناعية موفرة للطاقة ومصممة خصيصاً للمصانع والمنشآت، من تحليل الحمل الحراري وحتى
+          التشغيل.
+        </p>
+        <h4>نطاق العمل الشامل</h4>
+        <ul class="service-modal-list">
+          <li><strong>تحليل الحمل الحراري:</strong> حساب السعة بناءً على الحجم والعزل ومتطلبات العملية.</li>
+          <li>
+            <strong>غرفة الغلايات:</strong> أنظمة غلايات المياه الساخنة أو الزيت الحراري أو البخار وتطبيق المحرقة.
+          </li>
+          <li><strong>الوحدات الطرفية:</strong> التدفئة الإشعاعية ووحدات الهواء الساخن وحلول الستائر الهوائية.</li>
+          <li><strong>التمديدات:</strong> خطوط الأنابيب، المجمّعات، مضخات التدوير وخزان التمدد.</li>
+          <li><strong>التحكم والصمامات:</strong> صمامات محركة، تحكم ثرموستاتي ومعدات موازنة أوتوماتيكية.</li>
+          <li><strong>العزل والتشغيل:</strong> عزل الأنابيب، الاختبار الهيدروستاتيكي وموازنة النظام.</li>
+        </ul>
+        <h4>الفوائد</h4>
+        <ul class="service-modal-list compact">
+          <li>استهلاك وقود منخفض وتكلفة تشغيل أقل</li>
+          <li>توزيع حراري متجانس وراحة</li>
+          <li>تمديدات طويلة الأمد وسهلة الصيانة</li>
+        </ul>
+      </template>
+
+      <template data-lang="ar" data-detail="sogutma" data-img="assets/mj-gallery/mekanik-esanjor-dairesi.webp">
+        <p class="eyebrow">التكييف الصناعي</p>
+        <h3 id="serviceModalTitle">أنظمة التبريد</h3>
+        <p class="service-modal-lead">
+          تصميم وتركيب أنظمة تبريد مستدامة بتكلفة تشغيل منخفضة بنظام تسليم مفتاح للمنشآت الصناعية ومستودعات التبريد.
+        </p>
+        <h4>نطاق العمل الشامل</h4>
+        <ul class="service-modal-list">
+          <li><strong>حساب حمل التبريد:</strong> تحديد السعة بناءً على بيانات المنتج والحجم والعملية.</li>
+          <li><strong>وحدة التبريد:</strong> مبردات هوائية/مائية، مع برج تبريد عند الحاجة.</li>
+          <li><strong>الغرفة الباردة:</strong> ألواح بولي يوريثان، تركيب المبخر والمكثف، وتفاصيل الأبواب والحشوات.</li>
+          <li><strong>دائرة التبريد:</strong> تمديدات نحاسية، شحن غاز التبريد واختبار التسرب.</li>
+          <li><strong>التوزيع:</strong> أنظمة Fan-coil وVRF/VRV للتبريد حسب المنطقة.</li>
+          <li><strong>العزل والتشغيل:</strong> عزل الأنابيب، خطوط التصريف وضبط التحكم بدرجة الحرارة.</li>
+        </ul>
+        <h4>الفوائد</h4>
+        <ul class="service-modal-list compact">
+          <li>سلسلة تبريد متواصلة وسلامة المنتج</li>
+          <li>كفاءة في الطاقة وتكلفة تشغيل منخفضة</li>
+          <li>مراقبة حرارة عن بُعد وإنذارات</li>
+        </ul>
+      </template>
+
+      <template data-lang="ar" data-detail="havalandirma" data-img="assets/mj-gallery/havalandirma-catisi-2.webp">
+        <p class="eyebrow">التكييف والأتمتة</p>
+        <h3 id="serviceModalTitle">التهوية والأتمتة</h3>
+        <p class="service-modal-lead">
+          أنظمة تهوية صناعية مع تكامل أتمتة قائم على SCADA/PLC، لجعل منشأتكم فعّالة وصحية وقابلة للمراقبة عن بُعد.
+        </p>
+        <h4>نطاق العمل الشامل</h4>
+        <ul class="service-modal-list">
+          <li><strong>تحليل تدفق الهواء:</strong> حساب معدل التدفق بناءً على الهواء النقي والعادم ومتطلبات الراحة.</li>
+          <li>
+            <strong>المعدات الرئيسية:</strong> وحدات معالجة الهواء (AHU)، مراوح الهواء النقي/العادم ووحدات استرداد
+            الحرارة.
+          </li>
+          <li><strong>تصنيع القنوات:</strong> قنوات هواء من الصاج المجلفن، دمبرات، ديفيوزرات وتركيب فتحات التهوية.</li>
+          <li><strong>الأتمتة:</strong> تحكم PLC/SCADA وتكامل الحساسات (حرارة، رطوبة، ثاني أكسيد الكربون).</li>
+          <li><strong>الكفاءة:</strong> تحكم بسرعة المراوح وتوفير الطاقة عبر محركات التردد المتغير (VFD).</li>
+          <li><strong>المراقبة:</strong> نظام إدارة المبنى (BMS) وإنذار/تقارير عن بُعد.</li>
+        </ul>
+        <h4>الفوائد</h4>
+        <ul class="service-modal-list compact">
+          <li>جودة هواء داخلي صحية وراحة</li>
+          <li>استجابة سريعة بفضل المراقبة عن بُعد</li>
+          <li>استهلاك طاقة أقل بفضل الأتمتة</li>
+        </ul>
+      </template>
+
+      <template data-lang="ar" data-detail="yangin" data-img="assets/mj-gallery/yangin-sprinkler-hatti.webp">
+        <p class="eyebrow">السلامة من الحرائق</p>
+        <h3 id="serviceModalTitle">أنظمة الحريق</h3>
+        <p class="service-modal-lead">
+          أنظمة سلامة من الحرائق فعّالة وسلبية بنظام تسليم مفتاح ومتوافقة مع أنظمة السلامة، من تحليل المخاطر وحتى
+          التشغيل.
+        </p>
+        <h4>نطاق العمل الشامل</h4>
+        <ul class="service-modal-list">
+          <li>
+            <strong>تحليل المخاطر والتصميم:</strong> بناء السيناريو والحساب الهيدروليكي والتصميم بناءً على نوع المبنى
+            وحمل الحريق.
+          </li>
+          <li><strong>محطة الضخ:</strong> مجموعة مضخات الحريق (كهربائية/ديزل + جوكي)، المجمّع وطقم التحضير للضغط.</li>
+          <li><strong>نظام الرشاشات:</strong> صمامات إنذار رطبة/جافة، تمديدات الرشاشات، رؤوس الرشاشات وتركيبها.</li>
+          <li><strong>خزانات الحريق والحنفيات:</strong> خزانات حريق داخلية، خطوط حنفيات خارجية ووصلات إطفاء.</li>
+          <li><strong>الكشف والإنذار:</strong> كاشفات دخان/حرارة، لوحة إنذار حريق، أزرار وأجراس إنذار.</li>
+          <li><strong>الإطفاء الخاص:</strong> إطفاء غازي (FM-200/NOVEC) أو رغوي، أنظمة المطابخ (Ansul).</li>
+          <li><strong>الإجراءات السلبية والتشغيل:</strong> دمبرات الحريق، تصريف الدخان، الاختبارات ووثائق القبول.</li>
+        </ul>
+        <h4>الفوائد</h4>
+        <ul class="service-modal-list compact">
+          <li>امتثال كامل للأنظمة لسلامة الأرواح والممتلكات</li>
+          <li>وثائق جاهزة لموافقة الدفاع المدني والتراخيص</li>
+          <li>صيانة دورية ودعم فني على مدار الساعة</li>
+        </ul>
+      </template>
+
+      <template data-lang="ar" data-detail="insaat" data-img="assets/mj-gallery/celik-konstruksiyon-1.webp">
+        <p class="eyebrow">الإنشاءات والهياكل</p>
+        <h3 id="serviceModalTitle">الإنشاءات والهياكل الحديدية</h3>
+        <p class="service-modal-lead">
+          خدمات إنشائية وحديدية وترميم تُنفذ بانضباط هندسي، من تصنيع الهياكل الحديدية إلى الترميم والتقوية، ومن التصميم
+          الإنشائي إلى التنفيذ بنظام تسليم مفتاح.
+        </p>
+        <h4>نطاق العمل الشامل</h4>
+        <ul class="service-modal-list">
+          <li>
+            <strong>التصميم الإنشائي والمسح:</strong> حسابات إنشائية للنظام الحامل، حصر الكميات ومخططات التصنيع (shop
+            drawing).
+          </li>
+          <li>
+            <strong>تصنيع الحديد:</strong> تصنيع الأعمدة والجسور في الورشة، وصلات ملحومة/مبرشمة وضبط الجودة (NDT).
+          </li>
+          <li>
+            <strong>السطح والحماية:</strong> السفع الرملي، الغلفنة بالغمس الساخن والطلاء الصناعي للحماية من التآكل.
+          </li>
+          <li><strong>التركيب:</strong> التجميع الميداني، وصلات الأساسات/الأوتاد، وضبط المحاور والمستوى.</li>
+          <li><strong>السقف والواجهة:</strong> ألواح ساندويتش، أسقف معدنية، تكسية الواجهات وأشرطة الإنارة.</li>
+          <li>
+            <strong>الترميم والتقوية:</strong> تقوية الهياكل القائمة، الألياف الكربونية/التغليف والتقوية الإنشائية.
+          </li>
+          <li>
+            <strong>الإصلاح والتجديد:</strong> صيانة المنشآت الصناعية، إصلاح الخرسانة المسلحة وأعمال التجديد الشامل.
+          </li>
+        </ul>
+        <h4>الفوائد</h4>
+        <ul class="service-modal-list compact">
+          <li>هيكل حديدي سريع وخفيف يقلل مدة الموقع</li>
+          <li>امتثال كامل لمعايير السلامة المهنية والبناء</li>
+          <li>تنسيق من جهة واحدة من التصميم حتى التسليم</li>
+        </ul>
+      </template>
     </div>
 
+    <script src="js/i18n.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

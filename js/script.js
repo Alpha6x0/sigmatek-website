@@ -8,6 +8,63 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // ---------------------------------------------------------------------
+  // i18n: dil değiştirme (TR / EN / AR)
+  // ---------------------------------------------------------------------
+  const RTL_LANGS = ["ar"];
+  const LANG_STORAGE_KEY = "sigmatek_lang";
+  const dict = window.SIGMATEK_I18N || {};
+  let currentLang = localStorage.getItem(LANG_STORAGE_KEY) || "tr";
+  if (!dict[currentLang]) currentLang = "tr";
+
+  const t = (key) => (dict[currentLang] && dict[currentLang][key]) || (dict.tr && dict.tr[key]) || "";
+
+  const applyTranslations = () => {
+    document.documentElement.setAttribute("lang", currentLang);
+    document.documentElement.setAttribute("dir", RTL_LANGS.includes(currentLang) ? "rtl" : "ltr");
+
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      const value = t(key);
+      if (value) el.textContent = value;
+    });
+    document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-html");
+      const value = t(key);
+      if (value) el.innerHTML = value;
+    });
+    document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-alt");
+      const value = t(key);
+      if (value) el.setAttribute("alt", value);
+    });
+    document.querySelectorAll("[data-i18n-aria-label]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-aria-label");
+      const value = t(key);
+      if (value) el.setAttribute("aria-label", value);
+    });
+
+    document.querySelectorAll(".lang-btn").forEach((btn) => {
+      btn.classList.toggle("is-active", btn.getAttribute("data-lang") === currentLang);
+    });
+  };
+
+  const setLanguage = (lang) => {
+    if (!dict[lang] || lang === currentLang) {
+      if (dict[lang]) applyTranslations();
+      return;
+    }
+    currentLang = lang;
+    localStorage.setItem(LANG_STORAGE_KEY, lang);
+    applyTranslations();
+  };
+
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.addEventListener("click", () => setLanguage(btn.getAttribute("data-lang")));
+  });
+
+  applyTranslations();
+
   // Mobile nav toggle
   if (navToggle && mainNav) {
     navToggle.addEventListener("click", () => {
@@ -120,7 +177,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let lastFocused = null;
 
     const openModal = (key) => {
-      const tpl = store && store.querySelector(`template[data-detail="${key}"]`);
+      const tpl =
+        store &&
+        (store.querySelector(`template[data-detail="${key}"][data-lang="${currentLang}"]`) ||
+          store.querySelector(`template[data-detail="${key}"][data-lang="tr"]`) ||
+          store.querySelector(`template[data-detail="${key}"]`));
       if (!tpl) return;
       modalBody.innerHTML = "";
       modalBody.appendChild(tpl.content.cloneNode(true));
@@ -174,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const submitBtn = form.querySelector('button[type="submit"]');
       if (submitBtn) submitBtn.disabled = true;
       if (formNote) {
-        formNote.textContent = "Gönderiliyor...";
+        formNote.textContent = t("form_sending");
         formNote.style.color = "";
       }
 
@@ -187,7 +248,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then((res) => res.json())
         .then((data) => {
           if (data && data.success === "true") {
-            if (formNote) formNote.textContent = "Talebiniz başarıyla alınmıştır. En kısa sürede dönüş yapılacaktır.";
+            if (formNote) formNote.textContent = t("form_success");
             form.reset();
           } else {
             throw new Error(data && data.message ? data.message : "unknown");
@@ -195,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(() => {
           if (formNote) {
-            formNote.textContent = "Gönderilemedi. Lütfen tekrar deneyin ya da bizi telefonla arayın.";
+            formNote.textContent = t("form_error");
             formNote.style.color = "#E24B4A";
           }
         })
