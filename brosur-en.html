@@ -469,28 +469,83 @@
         margin-top: 6mm;
       }
       .gitem {
-        position: relative;
         border-radius: 2.5mm;
         overflow: hidden;
-        height: 44mm;
+        background: var(--paper-alt);
       }
       .gitem img {
         width: 100%;
-        height: 100%;
+        height: 33mm;
         object-fit: cover;
       }
-      .gitem span {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(0deg, rgba(10, 14, 20, 0.82), transparent);
-        color: #fff;
-        font-size: 7pt;
+      .gitem .gcap {
+        padding: 2.8mm 3mm 3.5mm;
+      }
+      .gitem .gcap b {
+        font-size: 7.8pt;
         font-weight: 700;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        padding: 3mm 3mm 1.8mm;
+        letter-spacing: 0.02em;
+        display: block;
+        margin-bottom: 1mm;
+      }
+      .gitem .gcap span {
+        font-size: 6.9pt;
+        line-height: 1.4;
+        color: var(--slate);
+      }
+
+      /* Capabilities spotlight */
+      .spotlight-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6mm;
+        margin-top: 6mm;
+      }
+      .spot {
+        border-radius: 3mm;
+        overflow: hidden;
+        background: var(--paper-alt);
+      }
+      .spot img {
+        width: 100%;
+        height: 44mm;
+        object-fit: cover;
+      }
+      .spot .sp-body {
+        padding: 5mm 6mm 6mm;
+      }
+      .spot h4 {
+        font-size: 12pt;
+        margin-bottom: 2mm;
+      }
+      .spot p {
+        font-size: 8.7pt;
+        line-height: 1.55;
+        color: var(--slate);
+      }
+
+      /* Quote / testimonial band */
+      .quote-band {
+        margin-top: 8mm;
+        background: var(--ink-soft);
+        color: #fff;
+        border-radius: 4mm;
+        padding: 8mm 9mm;
+      }
+      .quote-band p {
+        font-size: 11pt;
+        line-height: 1.6;
+        font-style: italic;
+      }
+      .quote-band .qsource {
+        margin-top: 4mm;
+        font-size: 8.5pt;
+        color: var(--gold-soft);
+        font-weight: 700;
+        font-style: normal;
+      }
+      .why-grid.cols-3 {
+        grid-template-columns: repeat(3, 1fr);
       }
 
       /* Contact page (P6) */
@@ -874,46 +929,61 @@
             <p>Full compliance with relevant codes and standards in electrical, mechanical and fire safety projects.</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="refs" style="margin-top: 10mm">
-          <p class="section-eyebrow">Companies That Trust Us</p>
-          <div class="refs-row">
-            <img src="assets/clients/imc.png" alt="IMC" />
-            <img src="assets/clients/ictas.png" alt="IC Ictas" />
-            <img src="assets/clients/tosyali.svg" alt="Tosyali" />
-            <img src="assets/clients/calik-enerji.svg" alt="Calik Enerji" />
-            <img src="assets/clients/fortis-energy.svg" alt="Fortis Energy" />
-            <img src="assets/clients/basf.svg" alt="BASF" />
-            <img src="assets/clients/dhl.svg" alt="DHL" />
-            <img src="assets/clients/anadolu-efes.png" alt="Anadolu Efes" class="on-dark-chip" />
-            <img src="assets/clients/anadolu-holding.svg" alt="Anadolu Holding" />
-            <img src="assets/clients/buyaka.png" alt="Buyaka REIT" />
-            <img src="assets/clients/levent-insaat.png" alt="Levent Construction" class="on-dark-chip" />
-            <img src="assets/clients/meiser.png" alt="MEISER Grating" />
-            <img src="assets/clients/spx.png" alt="SPX" />
-            <img src="assets/clients/yargici.svg" alt="Yargici" />
-            <img src="assets/clients/mono-mimarlik.png" alt="Mono Architecture" />
-            <img src="assets/clients/hsa-enerji.png" alt="HSA Enerji" />
-            <img src="assets/clients/benetton.svg" alt="Benetton" />
-            <img src="assets/clients/kfc.svg" alt="KFC" />
-            <img src="assets/clients/turkcell.png" alt="Turkcell" />
-            <img src="assets/clients/dau.svg" alt="Eastern Mediterranean University" class="on-dark-chip" />
-            <img src="assets/clients/doga-koleji.png" alt="Doga College" />
-            <img src="assets/clients/bahcesehir-koleji.svg" alt="Bahcesehir College" class="on-dark-chip" />
-            <img src="assets/clients/merit-royal.png" alt="Merit Royal Kyrenia" />
-            <img src="assets/clients/abelia.svg" alt="Abelia" />
-            <img src="assets/clients/aksa-enerji.svg" alt="Aksa Enerji" />
-            <img src="assets/clients/togg.svg" alt="TOGG" class="on-dark-chip" />
-            <img src="assets/clients/zorlu-center.png" alt="Zorlu Center" />
-            <img src="assets/clients/demiroren.svg" alt="Demiroren Holding" />
-            <img src="assets/clients/bahas-holding.png" alt="Bahas Holding" />
-            <img src="assets/clients/tupras.svg" alt="Tupras" />
+    <!-- ============ PAGE 4 — CAPABILITIES SPOTLIGHT ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">Capabilities</p>
+        <h2 class="section-title">Four disciplines, one engineering team</h2>
+
+        <div class="spotlight-grid">
+          <div class="spot">
+            <img src="assets/mj-gallery/celik-konstruksiyon-1.png" alt="Solar EPC and steel structures" />
+            <div class="sp-body">
+              <h4>Solar EPC</h4>
+              <p>
+                Rooftop and ground-mount solar power plants delivered turnkey — from static analysis and steel racking
+                to grid connection and production-guaranteed commissioning.
+              </p>
+            </div>
+          </div>
+          <div class="spot">
+            <img src="assets/mj-gallery/mekanik-pompa-dairesi.png" alt="Mechanical and HVAC systems" />
+            <div class="sp-body">
+              <h4>Mechanical &amp; HVAC</h4>
+              <p>
+                Industrial heating, cooling and ventilation systems engineered for energy efficiency, with SCADA/PLC
+                automation for remote facility monitoring.
+              </p>
+            </div>
+          </div>
+          <div class="spot">
+            <img src="assets/mj-gallery/yangin-sprinkler-hatti.png" alt="Fire and life safety systems" />
+            <div class="sp-body">
+              <h4>Fire &amp; Life Safety</h4>
+              <p>
+                Sprinkler networks, pump stations, detection and gas suppression systems designed and certified to code
+                for full occupant protection.
+              </p>
+            </div>
+          </div>
+          <div class="spot">
+            <img src="assets/mj-gallery/celik-konstruksiyon-2.png" alt="Construction and steel structures" />
+            <div class="sp-body">
+              <h4>Construction &amp; Steel</h4>
+              <p>
+                Steel fabrication and erection, structural reinforcement and renovation — the civil backbone behind
+                every mechanical and energy installation we deliver.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ PAGE 4 — GALLERY ============ -->
+    <!-- ============ PAGE 5 — GALLERY ============ -->
     <section class="page">
       <div class="back">
         <p class="section-eyebrow">Photo Gallery</p>
@@ -925,35 +995,73 @@
         <div class="gallery-grid">
           <div class="gitem">
             <img src="assets/gallery/cati-sigmatek_muhendislik_0593.jpg" alt="Rooftop solar installation" />
-            <span>Rooftop Solar</span>
+            <div class="gcap">
+              <b>Rooftop Solar</b>
+              <span
+                >Panel racking and module installation on an industrial rooftop, sized to the roof's static load
+                capacity.</span
+              >
+            </div>
           </div>
           <div class="gitem">
             <img src="assets/gallery/saha-sigmatek_muhendislik_0647.jpg" alt="Ground-mount solar field" />
-            <span>Ground-Mount Solar</span>
+            <div class="gcap">
+              <b>Ground-Mount Solar</b>
+              <span
+                >MW-scale ground-mount array with tracker rows, following a full topographic and grid-connection
+                survey.</span
+              >
+            </div>
           </div>
           <div class="gitem">
             <img src="assets/mj-gallery/mekanik-esanjor-dairesi.png" alt="Mechanical heat exchanger room" />
-            <span>Mechanical</span>
+            <div class="gcap">
+              <b>Mechanical Plant Room</b>
+              <span>Heat exchanger room piping and insulation work inside an industrial mechanical installation.</span>
+            </div>
           </div>
           <div class="gitem">
             <img src="assets/mj-gallery/havalandirma-catisi-1.png" alt="Rooftop ventilation units" />
-            <span>Ventilation</span>
+            <div class="gcap">
+              <b>Rooftop Ventilation</b>
+              <span>Air handling units mounted on the roof, ducted into the building's HVAC distribution network.</span>
+            </div>
           </div>
           <div class="gitem">
             <img src="assets/mj-gallery/yangin-pompa-istasyonu.png" alt="Fire pump station" />
-            <span>Fire Systems</span>
+            <div class="gcap">
+              <b>Fire Pump Station</b>
+              <span
+                >Dedicated fire pump room supplying pressure to the sprinkler and hydrant network across the
+                facility.</span
+              >
+            </div>
           </div>
           <div class="gitem">
             <img src="assets/mj-gallery/celik-konstruksiyon-2.png" alt="Steel structure erection" />
-            <span>Steel Construction</span>
+            <div class="gcap">
+              <b>Steel Structure Erection</b>
+              <span>Structural steel frame assembly forming the load-bearing shell of an industrial building.</span>
+            </div>
           </div>
           <div class="gitem">
             <img src="assets/gallery/muh-sigmatek_muhendislik_01454.jpg" alt="Engineering site measurement" />
-            <span>Engineering</span>
+            <div class="gcap">
+              <b>Engineering Survey</b>
+              <span
+                >Field measurement and layout verification performed by our engineering team before installation.</span
+              >
+            </div>
           </div>
           <div class="gitem">
             <img src="assets/mj-gallery/mekanik-devreye-alma.png" alt="Mechanical system commissioning" />
-            <span>Commissioning</span>
+            <div class="gcap">
+              <b>Commissioning</b>
+              <span
+                >Final system testing and commissioning checks prior to handover and the official acceptance
+                report.</span
+              >
+            </div>
           </div>
         </div>
 
@@ -970,7 +1078,7 @@
       </div>
     </section>
 
-    <!-- ============ PAGE 5 — PROJECTS ============ -->
+    <!-- ============ PAGE 6 — PROJECTS ============ -->
     <section class="page">
       <div class="back">
         <p class="section-eyebrow">Projects</p>
@@ -1030,7 +1138,108 @@
       </div>
     </section>
 
-    <!-- ============ PAGE 6 — CONTACT ============ -->
+    <!-- ============ PAGE 7 — CLIENTS & REFERENCES ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">Clients &amp; References</p>
+        <h2 class="section-title">Companies that trust us</h2>
+        <p style="font-size: 9.5pt; color: var(--slate); max-width: 155mm; margin-bottom: 2mm">
+          From industrial conglomerates to universities and retail chains, our client base spans sectors that share one
+          requirement — engineering that holds up in the field.
+        </p>
+
+        <div class="refs" style="margin-top: 6mm">
+          <div class="refs-row">
+            <img src="assets/clients/imc.png" alt="IMC" />
+            <img src="assets/clients/ictas.png" alt="IC Ictas" />
+            <img src="assets/clients/tosyali.svg" alt="Tosyali" />
+            <img src="assets/clients/calik-enerji.svg" alt="Calik Enerji" />
+            <img src="assets/clients/fortis-energy.svg" alt="Fortis Energy" />
+            <img src="assets/clients/basf.svg" alt="BASF" />
+            <img src="assets/clients/dhl.svg" alt="DHL" />
+            <img src="assets/clients/anadolu-efes.png" alt="Anadolu Efes" class="on-dark-chip" />
+            <img src="assets/clients/anadolu-holding.svg" alt="Anadolu Holding" />
+            <img src="assets/clients/buyaka.png" alt="Buyaka REIT" />
+            <img src="assets/clients/levent-insaat.png" alt="Levent Construction" class="on-dark-chip" />
+            <img src="assets/clients/meiser.png" alt="MEISER Grating" />
+            <img src="assets/clients/spx.png" alt="SPX" />
+            <img src="assets/clients/yargici.svg" alt="Yargici" />
+            <img src="assets/clients/mono-mimarlik.png" alt="Mono Architecture" />
+            <img src="assets/clients/hsa-enerji.png" alt="HSA Enerji" />
+            <img src="assets/clients/benetton.svg" alt="Benetton" />
+            <img src="assets/clients/kfc.svg" alt="KFC" />
+            <img src="assets/clients/turkcell.png" alt="Turkcell" />
+            <img src="assets/clients/dau.svg" alt="Eastern Mediterranean University" class="on-dark-chip" />
+            <img src="assets/clients/doga-koleji.png" alt="Doga College" />
+            <img src="assets/clients/bahcesehir-koleji.svg" alt="Bahcesehir College" class="on-dark-chip" />
+            <img src="assets/clients/merit-royal.png" alt="Merit Royal Kyrenia" />
+            <img src="assets/clients/abelia.svg" alt="Abelia" />
+            <img src="assets/clients/aksa-enerji.svg" alt="Aksa Enerji" />
+            <img src="assets/clients/togg.svg" alt="TOGG" class="on-dark-chip" />
+            <img src="assets/clients/zorlu-center.png" alt="Zorlu Center" />
+            <img src="assets/clients/demiroren.svg" alt="Demiroren Holding" />
+            <img src="assets/clients/bahas-holding.png" alt="Bahas Holding" />
+            <img src="assets/clients/tupras.svg" alt="Tupras" />
+          </div>
+        </div>
+
+        <div class="quote-band">
+          <p>
+            "Sigmatek coordinated survey, design and installation as a single team — no handoffs between suppliers, no
+            delays chasing accountability. The plant was commissioned on schedule and has run at rated output since."
+          </p>
+          <p class="qsource">— Facility Operations Lead, industrial client reference</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PAGE 8 — QUALITY, SAFETY & SUSTAINABILITY ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">Quality, Safety &amp; Sustainability</p>
+        <h2 class="section-title">Discipline that holds up on-site</h2>
+
+        <div class="why-grid cols-3">
+          <div class="why-card">
+            <h4>ISO-Based Quality Management</h4>
+            <p>
+              Documented processes for design review, procurement and field execution keep every project to the same
+              standard.
+            </p>
+          </div>
+          <div class="why-card">
+            <h4>Occupational Health &amp; Safety</h4>
+            <p>Full HSE compliance on-site — risk assessment, PPE enforcement and daily toolbox talks on every crew.</p>
+          </div>
+          <div class="why-card">
+            <h4>Environmental Responsibility</h4>
+            <p>
+              Waste segregation, controlled runoff and material reuse are standard practice across our construction
+              sites.
+            </p>
+          </div>
+          <div class="why-card">
+            <h4>Production-Guaranteed Equipment</h4>
+            <p>
+              Solar modules, inverters and mechanical components are selected against manufacturer performance
+              guarantees.
+            </p>
+          </div>
+          <div class="why-card">
+            <h4>Commissioning &amp; Documentation</h4>
+            <p>
+              Every handover includes field test records and an official commissioning report for the client's files.
+            </p>
+          </div>
+          <div class="why-card">
+            <h4>Long-Term Energy Efficiency</h4>
+            <p>Systems are designed and tuned for lifecycle efficiency, not just installation-day performance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PAGE 9 — CONTACT ============ -->
     <section class="page">
       <div class="contact-page">
         <p class="section-eyebrow">Get In Touch</p>

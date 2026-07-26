@@ -461,6 +461,181 @@
         color: var(--slate);
       }
 
+      /* Fotoğraf galerisi */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4mm;
+        margin-top: 6mm;
+      }
+      .gitem {
+        border-radius: 2.5mm;
+        overflow: hidden;
+        background: var(--paper-alt);
+      }
+      .gitem img {
+        width: 100%;
+        height: 33mm;
+        object-fit: cover;
+      }
+      .gitem .gcap {
+        padding: 2.8mm 3mm 3.5mm;
+      }
+      .gitem .gcap b {
+        font-size: 7.8pt;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 1mm;
+      }
+      .gitem .gcap span {
+        font-size: 6.9pt;
+        line-height: 1.4;
+        color: var(--slate);
+      }
+
+      /* Yetenek vitrini */
+      .spotlight-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6mm;
+        margin-top: 6mm;
+      }
+      .spot {
+        border-radius: 3mm;
+        overflow: hidden;
+        background: var(--paper-alt);
+      }
+      .spot img {
+        width: 100%;
+        height: 44mm;
+        object-fit: cover;
+      }
+      .spot .sp-body {
+        padding: 5mm 6mm 6mm;
+      }
+      .spot h4 {
+        font-size: 12pt;
+        margin-bottom: 2mm;
+      }
+      .spot p {
+        font-size: 8.7pt;
+        line-height: 1.5;
+        color: var(--slate);
+      }
+
+      /* Alıntı şeridi */
+      .quote-band {
+        margin-top: 8mm;
+        background: var(--ink-soft);
+        color: #fff;
+        border-radius: 4mm;
+        padding: 8mm 9mm;
+      }
+      .quote-band p {
+        font-size: 11pt;
+        line-height: 1.6;
+        font-style: italic;
+      }
+      .quote-band .qsource {
+        margin-top: 4mm;
+        font-size: 8.5pt;
+        color: var(--gold-soft);
+        font-weight: 700;
+        font-style: normal;
+      }
+      .why-grid.cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      /* İletişim sayfası */
+      .contact-page {
+        background: var(--ink);
+        color: #fff;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 22mm 20mm;
+      }
+      .contact-page .section-eyebrow {
+        color: var(--gold-soft);
+      }
+      .contact-page h2 {
+        font-size: 26pt;
+        font-weight: 700;
+        margin: 3mm 0 6mm;
+        max-width: 140mm;
+      }
+      .contact-page .lead {
+        font-size: 10.5pt;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.72);
+        max-width: 130mm;
+        margin-bottom: 12mm;
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6mm 10mm;
+        margin-bottom: 14mm;
+      }
+      .cbox {
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+        padding-top: 4mm;
+      }
+      .cbox .k {
+        font-size: 8.5pt;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--gold);
+        display: block;
+        margin-bottom: 2mm;
+      }
+      .cbox .v {
+        font-size: 11pt;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1.4;
+      }
+      .contact-cta {
+        background: linear-gradient(120deg, var(--gold-soft), var(--gold));
+        color: var(--ink);
+        border-radius: 4mm;
+        padding: 8mm 10mm;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6mm;
+      }
+      .contact-cta b {
+        font-family: var(--font-head);
+        font-size: 14pt;
+        display: block;
+        margin-bottom: 1.5mm;
+      }
+      .contact-cta span {
+        font-size: 9pt;
+        font-weight: 500;
+      }
+      .contact-cta .person {
+        text-align: right;
+        font-size: 11pt;
+        font-weight: 700;
+      }
+      .contact-cta .person small {
+        display: block;
+        font-size: 8pt;
+        font-weight: 500;
+        opacity: 0.75;
+      }
+      .contact-foot {
+        margin-top: 14mm;
+        font-size: 8pt;
+        color: rgba(255, 255, 255, 0.45);
+        letter-spacing: 0.05em;
+      }
+
       @page {
         size: A4;
         margin: 0;
@@ -738,9 +913,212 @@
             <p>Elektrik, mekanik ve yangın güvenliği projelerinde ilgili yönetmelik ve standartlara tam uyum.</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="refs" style="margin-top: 10mm">
-          <p class="section-eyebrow">Bizi Tercih Eden Firmalar</p>
+    <!-- ============ SAYFA 4 — YETENEK VİTRİNİ ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">Yetkinliklerimiz</p>
+        <h2 class="section-title">Dört disiplin, tek mühendislik ekibi</h2>
+
+        <div class="spotlight-grid">
+          <div class="spot">
+            <img src="assets/mj-gallery/celik-konstruksiyon-1.png" alt="GES ve çelik konstrüksiyon" />
+            <div class="sp-body">
+              <h4>GES (Güneş Enerjisi Santrali)</h4>
+              <p>
+                Çatı ve saha tipi güneş enerjisi santralleri anahtar teslim olarak devreye alınır — statik analiz ve
+                çelik taşıyıcı sistemden şebeke bağlantısına, üretim garantili devreye almaya kadar.
+              </p>
+            </div>
+          </div>
+          <div class="spot">
+            <img src="assets/mj-gallery/mekanik-pompa-dairesi.png" alt="Mekanik ve iklimlendirme sistemleri" />
+            <div class="sp-body">
+              <h4>Mekanik &amp; İklimlendirme</h4>
+              <p>
+                Enerji verimliliği odaklı endüstriyel ısıtma, soğutma ve havalandırma sistemleri; uzaktan izlenebilir
+                tesis altyapısı için SCADA/PLC otomasyonuyla desteklenir.
+              </p>
+            </div>
+          </div>
+          <div class="spot">
+            <img src="assets/mj-gallery/yangin-sprinkler-hatti.png" alt="Yangın ve can güvenliği sistemleri" />
+            <div class="sp-body">
+              <h4>Yangın &amp; Can Güvenliği</h4>
+              <p>
+                Sprinkler hatları, pompa istasyonları, algılama ve gazlı söndürme sistemleri; mevzuata uygun tasarım ve
+                tesisin tam kapsamlı korunması için sertifikalandırılır.
+              </p>
+            </div>
+          </div>
+          <div class="spot">
+            <img src="assets/mj-gallery/celik-konstruksiyon-2.png" alt="İnşaat ve çelik konstrüksiyon" />
+            <div class="sp-body">
+              <h4>İnşaat &amp; Çelik Konstrüksiyon</h4>
+              <p>
+                Çelik imalat ve montajından yapısal güçlendirme ve tadilata kadar — sunduğumuz her mekanik ve enerji
+                kurulumunun inşai omurgası.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SAYFA 5 — FOTO GALERİ ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">Foto Galeri</p>
+        <h2 class="section-title">Sahadan kareler</h2>
+        <p style="font-size: 9.5pt; color: var(--slate); max-width: 150mm; margin-bottom: 2mm">
+          GES, mekanik, yangın güvenliği ve çelik konstrüksiyon disiplinlerindeki çalışmalarımıza yakından bakış.
+        </p>
+
+        <div class="gallery-grid">
+          <div class="gitem">
+            <img src="assets/gallery/cati-sigmatek_muhendislik_0593.jpg" alt="GES çatı kurulumu" />
+            <div class="gcap">
+              <b>GES Çatı</b>
+              <span>Endüstriyel bir çatıda, statik taşıma kapasitesine uygun panel taşıyıcı ve modül montajı.</span>
+            </div>
+          </div>
+          <div class="gitem">
+            <img src="assets/gallery/saha-sigmatek_muhendislik_0647.jpg" alt="GES saha kurulumu" />
+            <div class="gcap">
+              <b>GES Saha</b>
+              <span>Kapsamlı arazi etüdü ve şebeke bağlantı analizinin ardından kurulan MW ölçekli saha santrali.</span>
+            </div>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/mekanik-esanjor-dairesi.png" alt="Mekanik eşanjör dairesi" />
+            <div class="gcap">
+              <b>Mekanik Tesis Odası</b>
+              <span>Endüstriyel mekanik tesisat içinde eşanjör dairesi boru ve yalıtım çalışması.</span>
+            </div>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/havalandirma-catisi-1.png" alt="Çatı üstü havalandırma üniteleri" />
+            <div class="gcap">
+              <b>Çatı Üstü Havalandırma</b>
+              <span>Çatıya monte edilen ve binanın HVAC dağıtım şebekesine bağlanan hava işleme üniteleri.</span>
+            </div>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/yangin-pompa-istasyonu.png" alt="Yangın pompa istasyonu" />
+            <div class="gcap">
+              <b>Yangın Pompa İstasyonu</b>
+              <span>Tesis genelindeki sprinkler ve hidrant şebekesine basınç sağlayan özel pompa odası.</span>
+            </div>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/celik-konstruksiyon-2.png" alt="Çelik konstrüksiyon montajı" />
+            <div class="gcap">
+              <b>Çelik Konstrüksiyon Montajı</b>
+              <span>Endüstriyel bir binanın taşıyıcı kabuğunu oluşturan çelik taşıyıcı çerçeve montajı.</span>
+            </div>
+          </div>
+          <div class="gitem">
+            <img src="assets/gallery/muh-sigmatek_muhendislik_01454.jpg" alt="Mühendislik saha ölçümü" />
+            <div class="gcap">
+              <b>Mühendislik Etüdü</b>
+              <span>Kurulum öncesi mühendislik ekibimizce yapılan saha ölçümü ve yerleşim doğrulaması.</span>
+            </div>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/mekanik-devreye-alma.png" alt="Mekanik sistem devreye alma" />
+            <div class="gcap">
+              <b>Devreye Alma</b>
+              <span>Teslim ve resmi kabul raporu öncesinde yapılan nihai sistem testleri ve devreye alma.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-grid" style="margin-top: 9mm">
+          <div class="why-card">
+            <h4>Belgelenen Saha İlerlemesi</h4>
+            <p>Her kurulum, tam proje izlenebilirliği için etütten devreye almaya kadar kayıt altına alınır.</p>
+          </div>
+          <div class="why-card">
+            <h4>Çok Disiplinli Ekipler</h4>
+            <p>GES, mekanik, elektrik ve çelik ekipleri, proje takvimini korumak için paralel çalışır.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SAYFA 6 — PROJELER ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">Projeler</p>
+        <h2 class="section-title" style="font-size: 20pt">Sahadan örnek referanslar</h2>
+
+        <div class="projs">
+          <div class="pcard">
+            <img src="assets/photos/proje-1.jpg" alt="Saha Elektrik Altyapısı" />
+            <h4>Saha Elektrik Altyapısı</h4>
+            <p>Trafo ve şalt sahası ekipmanlarının montaj ve kurulum çalışmaları.</p>
+          </div>
+          <div class="pcard">
+            <img src="assets/photos/proje-2.jpg" alt="GES Saha Trafo Merkezi" />
+            <h4>GES Saha Trafo Merkezi</h4>
+            <p>Enerji santrali sahasında trafo ve kumanda ünitelerinin kurulumu.</p>
+          </div>
+          <div class="pcard">
+            <img src="assets/photos/proje-3.jpg" alt="Güç ve Dağıtım Ekipmanları" />
+            <h4>Güç ve Dağıtım Ekipmanları</h4>
+            <p>Sahadaki güç ve dağıtım ekipmanlarının devreye alma çalışmaları.</p>
+          </div>
+        </div>
+        <div class="projs" style="margin-top: 5mm">
+          <div class="pcard">
+            <img src="assets/photos/otomasyon.jpg" alt="SCADA ve Otomasyon Entegrasyonu" />
+            <h4>SCADA &amp; Otomasyon Entegrasyonu</h4>
+            <p>Endüstriyel tesislerde uzaktan izleme ve PLC tabanlı otomasyon kurulumu.</p>
+          </div>
+          <div class="pcard">
+            <img src="assets/photos/isitma-yeni.jpg" alt="Endüstriyel ısıtma kazan dairesi" />
+            <h4>Endüstriyel Isıtma Kazan Dairesi</h4>
+            <p>Müşteri için ölçülebilir enerji verimliliği kazandıran kazan dairesi yenileme çalışması.</p>
+          </div>
+          <div class="pcard">
+            <img src="assets/photos/yangin-2.jpg" alt="Yangın güvenliği sistemi kurulumu" />
+            <h4>Yangın Güvenliği Sistemi Kurulumu</h4>
+            <p>Tesis genelinde mevzuata uygun kurulan ve sertifikalandırılan sprinkler ve algılama şebekesi.</p>
+          </div>
+        </div>
+
+        <div class="why-grid" style="margin-top: 8mm">
+          <div class="why-card">
+            <h4>Kalite &amp; Güvenlik Standartları</h4>
+            <p>
+              ISO tabanlı kalite yönetim yaklaşımı, iş sağlığı-güvenliği (İSG) mevzuatına tam uyum ve çevre
+              standartlarına duyarlı saha uygulaması ile her projede aynı disiplin.
+            </p>
+          </div>
+          <div class="why-card">
+            <h4>Garanti &amp; Devreye Alma</h4>
+            <p>
+              Üretim garantili ekipman seçimi, saha testleri ve resmi devreye alma (commissioning) raporlarıyla teslim
+              edilen her sistem belgelendirilir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SAYFA 7 — MÜŞTERİLER & REFERANSLAR ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">Müşteriler &amp; Referanslar</p>
+        <h2 class="section-title">Bizi tercih eden firmalar</h2>
+        <p style="font-size: 9.5pt; color: var(--slate); max-width: 155mm; margin-bottom: 2mm">
+          Büyük sanayi gruplarından üniversitelere ve perakende zincirlerine kadar müşteri portföyümüz, tek bir ortak
+          beklentiyi paylaşan sektörlere uzanıyor: sahada karşılığını veren mühendislik.
+        </p>
+
+        <div class="refs" style="margin-top: 6mm">
           <div class="refs-row">
             <img src="assets/clients/imc.png" alt="IMC" />
             <img src="assets/clients/ictas.png" alt="İçtaş" />
@@ -774,68 +1152,87 @@
             <img src="assets/clients/tupras.svg" alt="Tüpraş" />
           </div>
         </div>
+
+        <div class="quote-band">
+          <p>
+            "Sigmatek etüt, tasarım ve kurulumu tek bir ekip olarak yönetti — tedarikçiler arası devir teslim yok,
+            sorumluluk arayışında gecikme yok. Santral öngörülen takvimde devreye alındı ve o günden beri nominal güçte
+            çalışıyor."
+          </p>
+          <p class="qsource">— Tesis Operasyon Yöneticisi, sanayi müşteri referansı</p>
+        </div>
       </div>
     </section>
 
-    <!-- ============ SAYFA 4 — PROJELER & İLETİŞİM ============ -->
+    <!-- ============ SAYFA 8 — KALİTE, GÜVENLİK & SÜRDÜRÜLEBİLİRLİK ============ -->
     <section class="page">
       <div class="back">
-        <p class="section-eyebrow">Projeler</p>
-        <h2 class="section-title" style="font-size: 20pt">Sahadan örnek referanslar</h2>
+        <p class="section-eyebrow">Kalite, Güvenlik &amp; Sürdürülebilirlik</p>
+        <h2 class="section-title">Sahada karşılığını veren disiplin</h2>
 
-        <div class="projs">
-          <div class="pcard">
-            <img src="assets/photos/proje-1.jpg" alt="Saha Elektrik Altyapısı" />
-            <h4>Saha Elektrik Altyapısı</h4>
-            <p>Trafo ve şalt sahası ekipmanlarının montaj ve kurulum çalışmaları.</p>
-          </div>
-          <div class="pcard">
-            <img src="assets/photos/proje-2.jpg" alt="GES Saha Trafo Merkezi" />
-            <h4>GES Saha Trafo Merkezi</h4>
-            <p>Enerji santrali sahasında trafo ve kumanda ünitelerinin kurulumu.</p>
-          </div>
-          <div class="pcard">
-            <img src="assets/photos/proje-3.jpg" alt="Güç ve Dağıtım Ekipmanları" />
-            <h4>Güç ve Dağıtım Ekipmanları</h4>
-            <p>Sahadaki güç ve dağıtım ekipmanlarının devreye alma çalışmaları.</p>
-          </div>
-        </div>
-
-        <div class="why-grid" style="margin-top: 8mm">
+        <div class="why-grid cols-3">
           <div class="why-card">
-            <h4>Kalite &amp; Güvenlik Standartları</h4>
+            <h4>ISO Tabanlı Kalite Yönetimi</h4>
             <p>
-              ISO tabanlı kalite yönetim yaklaşımı, iş sağlığı-güvenliği (İSG) mevzuatına tam uyum ve çevre
-              standartlarına duyarlı saha uygulaması ile her projede aynı disiplin.
+              Tasarım incelemesi, tedarik ve saha uygulaması için belgelenen süreçler her projede aynı standardı korur.
             </p>
           </div>
           <div class="why-card">
-            <h4>Garanti &amp; Devreye Alma</h4>
+            <h4>İş Sağlığı &amp; Güvenliği</h4>
             <p>
-              Üretim garantili ekipman seçimi, saha testleri ve resmi devreye alma (commissioning) raporlarıyla teslim
-              edilen her sistem belgelendirilir.
+              Sahada tam İSG uyumu — risk değerlendirmesi, KKD zorunluluğu ve her ekip için günlük saha güvenlik
+              toplantıları.
             </p>
+          </div>
+          <div class="why-card">
+            <h4>Çevresel Sorumluluk</h4>
+            <p>Atık ayrıştırma, kontrollü drenaj ve malzeme geri kazanımı tüm şantiyelerimizde standart uygulamadır.</p>
+          </div>
+          <div class="why-card">
+            <h4>Üretim Garantili Ekipman</h4>
+            <p>GES modülleri, inverterler ve mekanik bileşenler üretici performans garantilerine göre seçilir.</p>
+          </div>
+          <div class="why-card">
+            <h4>Devreye Alma &amp; Belgelendirme</h4>
+            <p>Her teslimatta saha test kayıtları ve müşteri dosyaları için resmi bir devreye alma raporu yer alır.</p>
+          </div>
+          <div class="why-card">
+            <h4>Uzun Vadeli Enerji Verimliliği</h4>
+            <p>Sistemler yalnızca kurulum günü değil, kullanım ömrü boyunca verimlilik için tasarlanır ve ayarlanır.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SAYFA 9 — İLETİŞİM ============ -->
+    <section class="page">
+      <div class="contact-page">
+        <p class="section-eyebrow">İletişim</p>
+        <h2>Projenizi birlikte hayata geçirelim</h2>
+        <p class="lead">
+          Keşif ve ön fizibilite görüşmesi için ekibimizle iletişime geçin — çatı tipi GES'ten anahtar teslim
+          endüstriyel altyapıya kadar.
+        </p>
+
+        <div class="contact-grid">
+          <div class="cbox"><span class="k">Telefon</span><span class="v">+90 532 749 84 60</span></div>
+          <div class="cbox"><span class="k">E-posta</span><span class="v">ugur.gul@sigmatek.org</span></div>
+          <div class="cbox"><span class="k">Web</span><span class="v">www.sigmatekenergy.com</span></div>
+          <div class="cbox">
+            <span class="k">Adres</span
+            ><span class="v">İçerenköy Mah. Şükran Sok. Şerafet Bey Apt. No:52/B, Ataşehir / İstanbul</span>
           </div>
         </div>
 
-        <div class="contact">
+        <div class="contact-cta">
           <div>
-            <h3>Projenizi birlikte hayata geçirelim</h3>
-            <p class="lead">Keşif ve ön fizibilite görüşmesi için ekibimizle iletişime geçin.</p>
-            <p class="person">Uğur Gül<small>SİGMATEK MÜHENDİSLİK</small></p>
+            <b>Projenize başlamaya hazır mısınız?</b>
+            <span>Ücretsiz saha keşfi ve ön görüşme talep edin.</span>
           </div>
-          <div class="cinfo">
-            <div><span class="k">Telefon</span><span class="v">+90 532 749 84 60</span></div>
-            <div><span class="k">E-posta</span><span class="v">ugur.gul@sigmatek.org</span></div>
-            <div><span class="k">Web</span><span class="v">www.sigmatekenergy.com</span></div>
-            <div>
-              <span class="k">Adres</span
-              ><span class="v">İçerenköy Mah. Şükran Sok. Şerafet Bey Apt. No:52/B, Ataşehir / İstanbul</span>
-            </div>
-          </div>
+          <div class="person">Uğur Gül<small>SİGMATEK MÜHENDİSLİK</small></div>
         </div>
 
-        <p class="back-foot">© Sigmatek Mühendislik Danışmanlık A.Ş. — Tüm hakları saklıdır.</p>
+        <p class="contact-foot">© Sigmatek Mühendislik Danışmanlık A.Ş. — Tüm hakları saklıdır.</p>
       </div>
     </section>
   </body>

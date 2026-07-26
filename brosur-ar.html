@@ -466,26 +466,82 @@
         margin-top: 6mm;
       }
       .gitem {
-        position: relative;
         border-radius: 2.5mm;
         overflow: hidden;
-        height: 44mm;
+        background: var(--paper-alt);
       }
       .gitem img {
         width: 100%;
-        height: 100%;
+        height: 33mm;
         object-fit: cover;
       }
-      .gitem span {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(0deg, rgba(10, 14, 20, 0.82), transparent);
-        color: #fff;
-        font-size: 7pt;
+      .gitem .gcap {
+        padding: 2.8mm 3mm 3.5mm;
+      }
+      .gitem .gcap b {
+        font-size: 7.8pt;
         font-weight: 700;
-        padding: 3mm 3mm 1.8mm;
+        display: block;
+        margin-bottom: 1mm;
+      }
+      .gitem .gcap span {
+        font-size: 6.9pt;
+        line-height: 1.5;
+        color: var(--slate);
+      }
+
+      /* أبرز القدرات */
+      .spotlight-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6mm;
+        margin-top: 6mm;
+      }
+      .spot {
+        border-radius: 3mm;
+        overflow: hidden;
+        background: var(--paper-alt);
+      }
+      .spot img {
+        width: 100%;
+        height: 44mm;
+        object-fit: cover;
+      }
+      .spot .sp-body {
+        padding: 5mm 6mm 6mm;
+      }
+      .spot h4 {
+        font-size: 12pt;
+        margin-bottom: 2mm;
+      }
+      .spot p {
+        font-size: 8.7pt;
+        line-height: 1.65;
+        color: var(--slate);
+      }
+
+      /* شريط الاقتباس */
+      .quote-band {
+        margin-top: 8mm;
+        background: var(--ink-soft);
+        color: #fff;
+        border-radius: 4mm;
+        padding: 8mm 9mm;
+      }
+      .quote-band p {
+        font-size: 11pt;
+        line-height: 1.75;
+        font-style: italic;
+      }
+      .quote-band .qsource {
+        margin-top: 4mm;
+        font-size: 8.5pt;
+        color: var(--gold-soft);
+        font-weight: 700;
+        font-style: normal;
+      }
+      .why-grid.cols-3 {
+        grid-template-columns: repeat(3, 1fr);
       }
 
       /* صفحة الاتصال (٦) */
@@ -852,46 +908,54 @@
             <p>امتثال تام للوائح والمعايير ذات الصلة في مشاريع الكهرباء والميكانيكا والسلامة من الحرائق.</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="refs" style="margin-top: 10mm">
-          <p class="section-eyebrow">الشركات التي تثق بنا</p>
-          <div class="refs-row">
-            <img src="assets/clients/imc.png" alt="IMC" />
-            <img src="assets/clients/ictas.png" alt="İçtaş" />
-            <img src="assets/clients/tosyali.svg" alt="Tosyalı" />
-            <img src="assets/clients/calik-enerji.svg" alt="Çalık Enerji" />
-            <img src="assets/clients/fortis-energy.svg" alt="Fortis Enerji" />
-            <img src="assets/clients/basf.svg" alt="BASF" />
-            <img src="assets/clients/dhl.svg" alt="DHL" />
-            <img src="assets/clients/anadolu-efes.png" alt="Anadolu Efes" class="on-dark-chip" />
-            <img src="assets/clients/anadolu-holding.svg" alt="Anadolu Holding" />
-            <img src="assets/clients/buyaka.png" alt="Buyaka" />
-            <img src="assets/clients/levent-insaat.png" alt="Levent İnşaat" class="on-dark-chip" />
-            <img src="assets/clients/meiser.png" alt="MEİSER" />
-            <img src="assets/clients/spx.png" alt="SPX" />
-            <img src="assets/clients/yargici.svg" alt="Yargıcı" />
-            <img src="assets/clients/mono-mimarlik.png" alt="Mono Mimarlık" />
-            <img src="assets/clients/hsa-enerji.png" alt="HSA Enerji" />
-            <img src="assets/clients/benetton.svg" alt="Benetton" />
-            <img src="assets/clients/kfc.svg" alt="KFC" />
-            <img src="assets/clients/turkcell.png" alt="Turkcell" />
-            <img src="assets/clients/dau.svg" alt="جامعة شرق البحر المتوسط" class="on-dark-chip" />
-            <img src="assets/clients/doga-koleji.png" alt="Doğa Koleji" />
-            <img src="assets/clients/bahcesehir-koleji.svg" alt="Bahçeşehir Koleji" class="on-dark-chip" />
-            <img src="assets/clients/merit-royal.png" alt="Merit Royal Girne" />
-            <img src="assets/clients/abelia.svg" alt="Abelia" />
-            <img src="assets/clients/aksa-enerji.svg" alt="Aksa Enerji" />
-            <img src="assets/clients/togg.svg" alt="TOGG" class="on-dark-chip" />
-            <img src="assets/clients/zorlu-center.png" alt="Zorlu Center" />
-            <img src="assets/clients/demiroren.svg" alt="Demirören Holding" />
-            <img src="assets/clients/bahas-holding.png" alt="Bahaş Holding" />
-            <img src="assets/clients/tupras.svg" alt="Tüpraş" />
+    <!-- ============ الصفحة ٤ — أبرز القدرات ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">القدرات</p>
+        <h2 class="section-title">أربعة تخصصات، فريق هندسي واحد</h2>
+
+        <div class="spotlight-grid">
+          <div class="spot">
+            <img src="assets/mj-gallery/celik-konstruksiyon-1.png" alt="طاقة شمسية وهياكل حديدية" />
+            <div class="sp-body">
+              <h4>مشاريع الطاقة الشمسية (EPC)</h4>
+              <p>
+                محطات طاقة شمسية سطحية وأرضية بنظام تسليم مفتاح كامل — من التحليل الإنشائي والهياكل الحديدية إلى الربط
+                بالشبكة والتشغيل بضمان الإنتاج.
+              </p>
+            </div>
+          </div>
+          <div class="spot">
+            <img src="assets/mj-gallery/mekanik-pompa-dairesi.png" alt="أنظمة ميكانيكية وتكييف" />
+            <div class="sp-body">
+              <h4>الميكانيكا والتكييف</h4>
+              <p>أنظمة تدفئة وتبريد وتهوية صناعية مصممة لكفاءة الطاقة، مع أتمتة SCADA/PLC للمراقبة عن بُعد.</p>
+            </div>
+          </div>
+          <div class="spot">
+            <img src="assets/mj-gallery/yangin-sprinkler-hatti.png" alt="أنظمة السلامة من الحريق" />
+            <div class="sp-body">
+              <h4>السلامة من الحرائق</h4>
+              <p>شبكات رشاشات ومحطات ضخ وأنظمة كشف وإطفاء غازي مصممة ومعتمدة وفق المعايير لحماية كاملة للمنشأة.</p>
+            </div>
+          </div>
+          <div class="spot">
+            <img src="assets/mj-gallery/celik-konstruksiyon-2.png" alt="إنشاءات وهياكل حديدية" />
+            <div class="sp-body">
+              <h4>الإنشاءات والهياكل الحديدية</h4>
+              <p>
+                تصنيع وتركيب الحديد، والتقوية الإنشائية والترميم — العمود الفقري المدني لكل تركيب ميكانيكي وطاقة نقدمه.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ الصفحة ٤ — معرض الصور ============ -->
+    <!-- ============ الصفحة ٥ — معرض الصور ============ -->
     <section class="page">
       <div class="back">
         <p class="section-eyebrow">معرض الصور</p>
@@ -903,35 +967,59 @@
         <div class="gallery-grid">
           <div class="gitem">
             <img src="assets/gallery/cati-sigmatek_muhendislik_0593.jpg" alt="تركيب طاقة شمسية سطحية" />
-            <span>طاقة شمسية سطحية</span>
+            <div class="gcap">
+              <b>طاقة شمسية سطحية</b>
+              <span>تركيب حوامل وألواح شمسية على سطح صناعي، وفق قدرة التحمل الإنشائية للسطح.</span>
+            </div>
           </div>
           <div class="gitem">
             <img src="assets/gallery/saha-sigmatek_muhendislik_0647.jpg" alt="حقل طاقة شمسية أرضية" />
-            <span>طاقة شمسية أرضية</span>
+            <div class="gcap">
+              <b>طاقة شمسية أرضية</b>
+              <span>مصفوفة أرضية بمقياس الميغاواط مع صفوف أنظمة تتبع، بعد مسح طبوغرافي كامل ودراسة ربط بالشبكة.</span>
+            </div>
           </div>
           <div class="gitem">
             <img src="assets/mj-gallery/mekanik-esanjor-dairesi.png" alt="غرفة مبادل حراري ميكانيكي" />
-            <span>ميكانيكي</span>
+            <div class="gcap">
+              <b>غرفة المعدات الميكانيكية</b>
+              <span>أعمال تمديد وعزل أنابيب غرفة المبادل الحراري ضمن منشأة ميكانيكية صناعية.</span>
+            </div>
           </div>
           <div class="gitem">
             <img src="assets/mj-gallery/havalandirma-catisi-1.png" alt="وحدات تهوية على السطح" />
-            <span>تهوية</span>
+            <div class="gcap">
+              <b>تهوية سطحية</b>
+              <span>وحدات معالجة هواء مركبة على السطح، متصلة بشبكة توزيع التكييف داخل المبنى.</span>
+            </div>
           </div>
           <div class="gitem">
             <img src="assets/mj-gallery/yangin-pompa-istasyonu.png" alt="محطة ضخ الحريق" />
-            <span>أنظمة الحريق</span>
+            <div class="gcap">
+              <b>محطة ضخ الحريق</b>
+              <span>غرفة ضخ مخصصة توفر الضغط اللازم لشبكة الرشاشات والحنفيات في جميع أنحاء المنشأة.</span>
+            </div>
           </div>
           <div class="gitem">
             <img src="assets/mj-gallery/celik-konstruksiyon-2.png" alt="تركيب هيكل حديدي" />
-            <span>هياكل حديدية</span>
+            <div class="gcap">
+              <b>تركيب الهيكل الحديدي</b>
+              <span>تجميع الإطار الإنشائي الحديدي المكوّن للهيكل الحامل لمبنى صناعي.</span>
+            </div>
           </div>
           <div class="gitem">
             <img src="assets/gallery/muh-sigmatek_muhendislik_01454.jpg" alt="قياس هندسي ميداني" />
-            <span>هندسة</span>
+            <div class="gcap">
+              <b>المسح الهندسي</b>
+              <span>قياس ميداني والتحقق من المخطط قبل التركيب من قبل فريقنا الهندسي.</span>
+            </div>
           </div>
           <div class="gitem">
             <img src="assets/mj-gallery/mekanik-devreye-alma.png" alt="تشغيل نظام ميكانيكي" />
-            <span>التشغيل</span>
+            <div class="gcap">
+              <b>التشغيل</b>
+              <span>اختبار نهائي للنظام وتشغيله قبل التسليم وإصدار تقرير القبول الرسمي.</span>
+            </div>
           </div>
         </div>
 
@@ -948,7 +1036,7 @@
       </div>
     </section>
 
-    <!-- ============ الصفحة ٥ — المشاريع ============ -->
+    <!-- ============ الصفحة ٦ — المشاريع ============ -->
     <section class="page">
       <div class="back">
         <p class="section-eyebrow">المشاريع</p>
@@ -1005,7 +1093,99 @@
       </div>
     </section>
 
-    <!-- ============ الصفحة ٦ — الاتصال ============ -->
+    <!-- ============ الصفحة ٧ — العملاء والمراجع ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">العملاء والمراجع</p>
+        <h2 class="section-title">الشركات التي تثق بنا</h2>
+        <p style="font-size: 9.5pt; color: var(--slate); max-width: 155mm; margin-bottom: 2mm">
+          من الشركات الصناعية الكبرى إلى الجامعات وسلاسل التجزئة، تمتد قاعدة عملائنا عبر قطاعات تشترك في متطلب واحد:
+          هندسة تثبت جدارتها في الميدان.
+        </p>
+
+        <div class="refs" style="margin-top: 6mm">
+          <div class="refs-row">
+            <img src="assets/clients/imc.png" alt="IMC" />
+            <img src="assets/clients/ictas.png" alt="İçtaş" />
+            <img src="assets/clients/tosyali.svg" alt="Tosyalı" />
+            <img src="assets/clients/calik-enerji.svg" alt="Çalık Enerji" />
+            <img src="assets/clients/fortis-energy.svg" alt="Fortis Enerji" />
+            <img src="assets/clients/basf.svg" alt="BASF" />
+            <img src="assets/clients/dhl.svg" alt="DHL" />
+            <img src="assets/clients/anadolu-efes.png" alt="Anadolu Efes" class="on-dark-chip" />
+            <img src="assets/clients/anadolu-holding.svg" alt="Anadolu Holding" />
+            <img src="assets/clients/buyaka.png" alt="Buyaka" />
+            <img src="assets/clients/levent-insaat.png" alt="Levent İnşaat" class="on-dark-chip" />
+            <img src="assets/clients/meiser.png" alt="MEİSER" />
+            <img src="assets/clients/spx.png" alt="SPX" />
+            <img src="assets/clients/yargici.svg" alt="Yargıcı" />
+            <img src="assets/clients/mono-mimarlik.png" alt="Mono Mimarlık" />
+            <img src="assets/clients/hsa-enerji.png" alt="HSA Enerji" />
+            <img src="assets/clients/benetton.svg" alt="Benetton" />
+            <img src="assets/clients/kfc.svg" alt="KFC" />
+            <img src="assets/clients/turkcell.png" alt="Turkcell" />
+            <img src="assets/clients/dau.svg" alt="جامعة شرق البحر المتوسط" class="on-dark-chip" />
+            <img src="assets/clients/doga-koleji.png" alt="Doğa Koleji" />
+            <img src="assets/clients/bahcesehir-koleji.svg" alt="Bahçeşehir Koleji" class="on-dark-chip" />
+            <img src="assets/clients/merit-royal.png" alt="Merit Royal Girne" />
+            <img src="assets/clients/abelia.svg" alt="Abelia" />
+            <img src="assets/clients/aksa-enerji.svg" alt="Aksa Enerji" />
+            <img src="assets/clients/togg.svg" alt="TOGG" class="on-dark-chip" />
+            <img src="assets/clients/zorlu-center.png" alt="Zorlu Center" />
+            <img src="assets/clients/demiroren.svg" alt="Demirören Holding" />
+            <img src="assets/clients/bahas-holding.png" alt="Bahaş Holding" />
+            <img src="assets/clients/tupras.svg" alt="Tüpraş" />
+          </div>
+        </div>
+
+        <div class="quote-band">
+          <p>
+            "نسّقت سيغماتك المسح والتصميم والتركيب كفريق واحد — دون تسليم متقطع بين موردين ودون تأخير في تحديد
+            المسؤولية. تم تشغيل المحطة في الموعد المحدد وتعمل بكامل طاقتها المقررة منذ ذلك الحين."
+          </p>
+          <p class="qsource">— مسؤول عمليات المنشأة، مرجع من أحد عملائنا الصناعيين</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ الصفحة ٨ — الجودة والسلامة والاستدامة ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">الجودة والسلامة والاستدامة</p>
+        <h2 class="section-title">انضباط يثبت جدارته في الميدان</h2>
+
+        <div class="why-grid cols-3">
+          <div class="why-card">
+            <h4>إدارة جودة قائمة على ISO</h4>
+            <p>عمليات موثقة لمراجعة التصميم والتوريد والتنفيذ الميداني تحافظ على معيار واحد في كل مشروع.</p>
+          </div>
+          <div class="why-card">
+            <h4>الصحة والسلامة المهنية</h4>
+            <p>
+              امتثال كامل لمعايير HSE في الموقع — تقييم المخاطر، وإلزامية معدات الوقاية، واجتماعات سلامة يومية لكل فريق.
+            </p>
+          </div>
+          <div class="why-card">
+            <h4>المسؤولية البيئية</h4>
+            <p>فرز النفايات، والتحكم في الصرف، وإعادة استخدام المواد ممارسات معتمدة في جميع مواقعنا الإنشائية.</p>
+          </div>
+          <div class="why-card">
+            <h4>معدات مضمونة الإنتاج</h4>
+            <p>يتم اختيار الألواح الشمسية والعواكس والمكونات الميكانيكية وفق ضمانات أداء الشركة المصنّعة.</p>
+          </div>
+          <div class="why-card">
+            <h4>التشغيل والتوثيق</h4>
+            <p>كل عملية تسليم تتضمن سجلات اختبار ميداني وتقرير تشغيل رسمي لملفات العميل.</p>
+          </div>
+          <div class="why-card">
+            <h4>كفاءة طاقة طويلة الأمد</h4>
+            <p>يتم تصميم الأنظمة وضبطها لكفاءة تدوم طوال عمرها التشغيلي، وليس فقط أداء يوم التركيب.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ الصفحة ٩ — الاتصال ============ -->
     <section class="page">
       <div class="contact-page">
         <p class="section-eyebrow">تواصل معنا</p>
