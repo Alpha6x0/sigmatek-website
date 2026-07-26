@@ -548,6 +548,81 @@
         grid-template-columns: repeat(3, 1fr);
       }
 
+      /* International project showcase */
+      .intl-hero {
+        position: relative;
+        height: 130mm;
+        border-radius: 3mm;
+        overflow: hidden;
+        margin-top: 6mm;
+      }
+      .intl-hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .intl-hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(0deg, rgba(10, 14, 20, 0.88) 0%, rgba(10, 14, 20, 0) 55%);
+      }
+      .intl-hero .intl-label {
+        position: absolute;
+        left: 8mm;
+        right: 8mm;
+        bottom: 6mm;
+        z-index: 2;
+        color: #fff;
+      }
+      .intl-hero .intl-label b {
+        font-family: var(--font-head);
+        font-size: 16pt;
+        display: block;
+      }
+      .intl-hero .intl-label span {
+        font-size: 9pt;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .intl-strip {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4mm;
+        margin-top: 5mm;
+      }
+      .intl-strip img {
+        width: 100%;
+        height: 38mm;
+        object-fit: cover;
+        border-radius: 2.5mm;
+      }
+      .intl-facts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5mm;
+        margin-top: 6mm;
+      }
+      .intl-facts .fbox {
+        background: var(--paper-alt);
+        border-radius: 3mm;
+        padding: 5mm 5.5mm;
+        border-left: 3px solid var(--gold);
+      }
+      .intl-facts .fbox b {
+        font-size: 8.3pt;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--gold);
+        display: block;
+        margin-bottom: 1.5mm;
+      }
+      .intl-facts .fbox span {
+        font-size: 9pt;
+        color: var(--ink);
+        line-height: 1.4;
+      }
+
       /* Contact page (P6) */
       .contact-page {
         background: var(--ink);
@@ -1004,12 +1079,12 @@
             </div>
           </div>
           <div class="gitem">
-            <img src="assets/gallery/saha-sigmatek_muhendislik_0647.jpg" alt="Ground-mount solar field" />
+            <img src="assets/photos/ges-saha-real.webp" alt="Ground-mount solar field substation" />
             <div class="gcap">
               <b>Ground-Mount Solar</b>
               <span
-                >MW-scale ground-mount array with tracker rows, following a full topographic and grid-connection
-                survey.</span
+                >Field transformer and switchgear units of an MW-scale ground-mount plant, installed after a full
+                topographic and grid-connection survey.</span
               >
             </div>
           </div>
@@ -1103,9 +1178,12 @@
         </div>
         <div class="projs" style="margin-top: 5mm">
           <div class="pcard">
-            <img src="assets/photos/otomasyon.jpg" alt="SCADA and Automation Integration" />
-            <h4>SCADA &amp; Automation Integration</h4>
-            <p>Remote monitoring and PLC-based automation deployed across industrial facilities.</p>
+            <img src="assets/photos/otomasyon.jpg" alt="Protection and control panel room" />
+            <h4>Protection &amp; Control Panels</h4>
+            <p>
+              Row of medium-voltage protection and bus-coupler relay panels commissioned inside a substation control
+              room.
+            </p>
           </div>
           <div class="pcard">
             <img src="assets/photos/isitma-yeni.jpg" alt="Industrial Heating Plant Room" />
@@ -1239,7 +1317,69 @@
       </div>
     </section>
 
-    <!-- ============ PAGE 9 — CONTACT ============ -->
+    <!-- ============ PAGE 9 — INTERNATIONAL PROJECTS ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">International Projects</p>
+        <h2 class="section-title">Beyond Türkiye: Central Bank of Iraq HQ, Baghdad</h2>
+
+        <div class="intl-hero">
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-4.webp"
+            alt="Central Bank of Iraq tower under construction"
+          />
+          <div class="intl-label">
+            <b>Central Bank of Iraq — New Headquarters Tower</b>
+            <span>Baghdad, Iraq — on-site engineering &amp; installation works</span>
+          </div>
+        </div>
+
+        <div class="intl-strip">
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-1.webp"
+            alt="Central Bank of Iraq tower facade detail"
+          />
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-2.webp"
+            alt="Central Bank of Iraq signage on building base"
+          />
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-3.webp"
+            alt="Site team surveying at the tower base"
+          />
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-5.webp"
+            alt="Central Bank of Iraq tower and sky-bridge structure"
+          />
+        </div>
+
+        <div class="intl-facts">
+          <div class="fbox">
+            <b>Project</b>
+            <span
+              >New headquarters tower for the Central Bank of Iraq, designed by Zaha Hadid Architects — one of Baghdad's
+              most prominent landmark developments.</span
+            >
+          </div>
+          <div class="fbox">
+            <b>Our Role On-Site</b>
+            <span
+              >Our engineering team took part in on-site technical works during construction, applying the same field
+              discipline we bring to every Sigmatek project.</span
+            >
+          </div>
+          <div class="fbox">
+            <b>Why It Matters</b>
+            <span
+              >A landmark high-rise of this scale demands the same precision as our GES and industrial work — proof our
+              engineering discipline travels beyond Türkiye's borders.</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PAGE 10 — CONTACT ============ -->
     <section class="page">
       <div class="contact-page">
         <p class="section-eyebrow">Get In Touch</p>

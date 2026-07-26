@@ -547,6 +547,81 @@
         grid-template-columns: repeat(3, 1fr);
       }
 
+      /* Uluslararası proje vitrini */
+      .intl-hero {
+        position: relative;
+        height: 130mm;
+        border-radius: 3mm;
+        overflow: hidden;
+        margin-top: 6mm;
+      }
+      .intl-hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .intl-hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(0deg, rgba(10, 14, 20, 0.88) 0%, rgba(10, 14, 20, 0) 55%);
+      }
+      .intl-hero .intl-label {
+        position: absolute;
+        left: 8mm;
+        right: 8mm;
+        bottom: 6mm;
+        z-index: 2;
+        color: #fff;
+      }
+      .intl-hero .intl-label b {
+        font-family: var(--font-head);
+        font-size: 16pt;
+        display: block;
+      }
+      .intl-hero .intl-label span {
+        font-size: 9pt;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .intl-strip {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4mm;
+        margin-top: 5mm;
+      }
+      .intl-strip img {
+        width: 100%;
+        height: 38mm;
+        object-fit: cover;
+        border-radius: 2.5mm;
+      }
+      .intl-facts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5mm;
+        margin-top: 6mm;
+      }
+      .intl-facts .fbox {
+        background: var(--paper-alt);
+        border-radius: 3mm;
+        padding: 5mm 5.5mm;
+        border-left: 3px solid var(--gold);
+      }
+      .intl-facts .fbox b {
+        font-size: 8.3pt;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--gold);
+        display: block;
+        margin-bottom: 1.5mm;
+      }
+      .intl-facts .fbox span {
+        font-size: 9pt;
+        color: var(--ink);
+        line-height: 1.4;
+      }
+
       /* İletişim sayfası */
       .contact-page {
         background: var(--ink);
@@ -985,10 +1060,13 @@
             </div>
           </div>
           <div class="gitem">
-            <img src="assets/gallery/saha-sigmatek_muhendislik_0647.jpg" alt="GES saha kurulumu" />
+            <img src="assets/photos/ges-saha-real.webp" alt="GES saha trafo merkezi" />
             <div class="gcap">
               <b>GES Saha</b>
-              <span>Kapsamlı arazi etüdü ve şebeke bağlantı analizinin ardından kurulan MW ölçekli saha santrali.</span>
+              <span
+                >Kapsamlı arazi etüdü ve şebeke bağlantı analizinin ardından kurulan MW ölçekli saha trafo/şalt
+                üniteleri.</span
+              >
             </div>
           </div>
           <div class="gitem">
@@ -1073,9 +1151,12 @@
         </div>
         <div class="projs" style="margin-top: 5mm">
           <div class="pcard">
-            <img src="assets/photos/otomasyon.jpg" alt="SCADA ve Otomasyon Entegrasyonu" />
-            <h4>SCADA &amp; Otomasyon Entegrasyonu</h4>
-            <p>Endüstriyel tesislerde uzaktan izleme ve PLC tabanlı otomasyon kurulumu.</p>
+            <img src="assets/photos/otomasyon.jpg" alt="Koruma ve kontrol pano odası" />
+            <h4>Koruma &amp; Kontrol Panoları</h4>
+            <p>
+              Bir şalt merkezi kontrol odasında devreye alınan orta gerilim koruma ve bara bağlantı röle panoları
+              sırası.
+            </p>
           </div>
           <div class="pcard">
             <img src="assets/photos/isitma-yeni.jpg" alt="Endüstriyel ısıtma kazan dairesi" />
@@ -1204,7 +1285,69 @@
       </div>
     </section>
 
-    <!-- ============ SAYFA 9 — İLETİŞİM ============ -->
+    <!-- ============ SAYFA 9 — ULUSLARARASI PROJELER ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">Uluslararası Projeler</p>
+        <h2 class="section-title">Türkiye sınırlarının ötesinde: Irak Merkez Bankası, Bağdat</h2>
+
+        <div class="intl-hero">
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-4.webp"
+            alt="İnşaat halindeki Irak Merkez Bankası kulesi"
+          />
+          <div class="intl-label">
+            <b>Irak Merkez Bankası — Yeni Genel Müdürlük Kulesi</b>
+            <span>Bağdat, Irak — sahada mühendislik &amp; kurulum çalışmaları</span>
+          </div>
+        </div>
+
+        <div class="intl-strip">
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-1.webp"
+            alt="Irak Merkez Bankası kulesi cephe detayı"
+          />
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-2.webp"
+            alt="Bina girişinde Irak Merkez Bankası tabelası"
+          />
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-3.webp"
+            alt="Saha ekibi kule tabanında ölçüm yaparken"
+          />
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-5.webp"
+            alt="Irak Merkez Bankası kulesi ve gökyüzü köprüsü yapısı"
+          />
+        </div>
+
+        <div class="intl-facts">
+          <div class="fbox">
+            <b>Proje</b>
+            <span
+              >Zaha Hadid Architects tarafından tasarlanan Irak Merkez Bankası'nın yeni genel müdürlük kulesi —
+              Bağdat'ın en dikkat çekici mimari simgelerinden biri.</span
+            >
+          </div>
+          <div class="fbox">
+            <b>Sahadaki Rolümüz</b>
+            <span
+              >Mühendislik ekibimiz, inşaat sürecinde sahadaki teknik çalışmalarda yer aldı; her Sigmatek projesinde
+              uyguladığımız aynı saha disipliniyle.</span
+            >
+          </div>
+          <div class="fbox">
+            <b>Neden Önemli</b>
+            <span
+              >Bu ölçekte bir mimari simge, GES ve endüstriyel projelerimizdeki aynı hassasiyeti gerektiriyor —
+              mühendislik disiplinimizin Türkiye sınırlarının ötesine taştığının kanıtı.</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SAYFA 10 — İLETİŞİM ============ -->
     <section class="page">
       <div class="contact-page">
         <p class="section-eyebrow">İletişim</p>

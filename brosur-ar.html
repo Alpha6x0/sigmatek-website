@@ -544,6 +544,79 @@
         grid-template-columns: repeat(3, 1fr);
       }
 
+      /* عرض المشروع الدولي */
+      .intl-hero {
+        position: relative;
+        height: 130mm;
+        border-radius: 3mm;
+        overflow: hidden;
+        margin-top: 6mm;
+      }
+      .intl-hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .intl-hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(0deg, rgba(10, 14, 20, 0.88) 0%, rgba(10, 14, 20, 0) 55%);
+      }
+      .intl-hero .intl-label {
+        position: absolute;
+        left: 8mm;
+        right: 8mm;
+        bottom: 6mm;
+        z-index: 2;
+        color: #fff;
+      }
+      .intl-hero .intl-label b {
+        font-family: var(--font-head);
+        font-size: 16pt;
+        display: block;
+      }
+      .intl-hero .intl-label span {
+        font-size: 9pt;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .intl-strip {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4mm;
+        margin-top: 5mm;
+      }
+      .intl-strip img {
+        width: 100%;
+        height: 38mm;
+        object-fit: cover;
+        border-radius: 2.5mm;
+      }
+      .intl-facts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5mm;
+        margin-top: 6mm;
+      }
+      .intl-facts .fbox {
+        background: var(--paper-alt);
+        border-radius: 3mm;
+        padding: 5mm 5.5mm;
+        border-inline-start: 3px solid var(--gold);
+      }
+      .intl-facts .fbox b {
+        font-size: 8.3pt;
+        font-weight: 700;
+        color: var(--gold);
+        display: block;
+        margin-bottom: 1.5mm;
+      }
+      .intl-facts .fbox span {
+        font-size: 9pt;
+        color: var(--ink);
+        line-height: 1.5;
+      }
+
       /* صفحة الاتصال (٦) */
       .contact-page {
         background: var(--ink);
@@ -973,10 +1046,10 @@
             </div>
           </div>
           <div class="gitem">
-            <img src="assets/gallery/saha-sigmatek_muhendislik_0647.jpg" alt="حقل طاقة شمسية أرضية" />
+            <img src="assets/photos/ges-saha-real.webp" alt="محطة تحويل حقل شمسي أرضي" />
             <div class="gcap">
               <b>طاقة شمسية أرضية</b>
-              <span>مصفوفة أرضية بمقياس الميغاواط مع صفوف أنظمة تتبع، بعد مسح طبوغرافي كامل ودراسة ربط بالشبكة.</span>
+              <span>وحدات محولات ومفاتيح حقل بمقياس الميغاواط، رُكّبت بعد مسح طبوغرافي كامل ودراسة ربط بالشبكة.</span>
             </div>
           </div>
           <div class="gitem">
@@ -1061,9 +1134,9 @@
         </div>
         <div class="projs" style="margin-top: 5mm">
           <div class="pcard">
-            <img src="assets/photos/otomasyon.jpg" alt="تكامل أنظمة SCADA والأتمتة" />
-            <h4>تكامل أنظمة SCADA والأتمتة</h4>
-            <p>مراقبة عن بُعد وأتمتة قائمة على PLC في منشآت صناعية متعددة.</p>
+            <img src="assets/photos/otomasyon.jpg" alt="غرفة لوحات الحماية والتحكم" />
+            <h4>لوحات الحماية والتحكم</h4>
+            <p>صف من لوحات حماية الجهد المتوسط ولوحات وصلة الجمع تم تشغيلها داخل غرفة تحكم محطة فرعية.</p>
           </div>
           <div class="pcard">
             <img src="assets/photos/isitma-yeni.jpg" alt="غرفة تدفئة صناعية" />
@@ -1185,7 +1258,69 @@
       </div>
     </section>
 
-    <!-- ============ الصفحة ٩ — الاتصال ============ -->
+    <!-- ============ الصفحة ٩ — مشاريع دولية ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">مشاريع دولية</p>
+        <h2 class="section-title">خارج تركيا: البنك المركزي العراقي، بغداد</h2>
+
+        <div class="intl-hero">
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-4.webp"
+            alt="برج البنك المركزي العراقي تحت الإنشاء"
+          />
+          <div class="intl-label">
+            <b>البنك المركزي العراقي — برج المقر الجديد</b>
+            <span>بغداد، العراق — أعمال هندسية وتركيب ميدانية</span>
+          </div>
+        </div>
+
+        <div class="intl-strip">
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-1.webp"
+            alt="تفاصيل واجهة برج البنك المركزي العراقي"
+          />
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-2.webp"
+            alt="لافتة البنك المركزي العراقي على قاعدة المبنى"
+          />
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-3.webp"
+            alt="فريق الموقع يجري مسحاً عند قاعدة البرج"
+          />
+          <img
+            src="assets/photos/uluslararasi/irak-merkez-bankasi-5.webp"
+            alt="برج البنك المركزي العراقي وهيكل الجسر العلوي"
+          />
+        </div>
+
+        <div class="intl-facts">
+          <div class="fbox">
+            <b>المشروع</b>
+            <span
+              >برج المقر الجديد للبنك المركزي العراقي، من تصميم زها حديد للعمارة — أحد أبرز المعالم الحضرية في
+              بغداد.</span
+            >
+          </div>
+          <div class="fbox">
+            <b>دورنا في الموقع</b>
+            <span
+              >شارك فريقنا الهندسي في الأعمال الفنية الميدانية أثناء الإنشاء، بنفس الانضباط الميداني الذي نطبقه في كل
+              مشروع سيغماتك.</span
+            >
+          </div>
+          <div class="fbox">
+            <b>لماذا يهم هذا</b>
+            <span
+              >معلم عمراني بهذا الحجم يتطلب نفس الدقة التي نقدمها في مشاريع الطاقة الشمسية والصناعية — دليل على أن
+              انضباطنا الهندسي يتجاوز حدود تركيا.</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ الصفحة ١٠ — الاتصال ============ -->
     <section class="page">
       <div class="contact-page">
         <p class="section-eyebrow">تواصل معنا</p>
