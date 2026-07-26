@@ -458,6 +458,127 @@
         color: var(--slate);
       }
 
+      /* شبكة معرض الصور */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4mm;
+        margin-top: 6mm;
+      }
+      .gitem {
+        position: relative;
+        border-radius: 2.5mm;
+        overflow: hidden;
+        height: 44mm;
+      }
+      .gitem img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .gitem span {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(10, 14, 20, 0.82), transparent);
+        color: #fff;
+        font-size: 7pt;
+        font-weight: 700;
+        padding: 3mm 3mm 1.8mm;
+      }
+
+      /* صفحة الاتصال (٦) */
+      .contact-page {
+        background: var(--ink);
+        color: #fff;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 22mm 20mm;
+      }
+      .contact-page .section-eyebrow {
+        color: var(--gold-soft);
+      }
+      .contact-page h2 {
+        font-size: 24pt;
+        font-weight: 700;
+        margin: 3mm 0 6mm;
+        max-width: 140mm;
+      }
+      .contact-page .lead {
+        font-size: 10.5pt;
+        line-height: 1.75;
+        color: rgba(255, 255, 255, 0.72);
+        max-width: 130mm;
+        margin-bottom: 12mm;
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6mm 10mm;
+        margin-bottom: 14mm;
+      }
+      .cbox {
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+        padding-top: 4mm;
+      }
+      .cbox .k {
+        font-size: 8.5pt;
+        font-weight: 700;
+        color: var(--gold);
+        display: block;
+        margin-bottom: 2mm;
+      }
+      .cbox .v {
+        font-size: 11pt;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1.5;
+      }
+      .cbox .v.ltr {
+        direction: ltr;
+        text-align: right;
+        unicode-bidi: isolate;
+        display: inline-block;
+      }
+      .contact-cta {
+        background: linear-gradient(120deg, var(--gold-soft), var(--gold));
+        color: var(--ink);
+        border-radius: 4mm;
+        padding: 8mm 10mm;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6mm;
+      }
+      .contact-cta b {
+        font-family: var(--font-head);
+        font-size: 13pt;
+        display: block;
+        margin-bottom: 1.5mm;
+      }
+      .contact-cta span {
+        font-size: 9pt;
+        font-weight: 500;
+      }
+      .contact-cta .person {
+        font-size: 11pt;
+        font-weight: 700;
+      }
+      .contact-cta .person small {
+        display: block;
+        font-size: 8pt;
+        font-weight: 500;
+        opacity: 0.75;
+      }
+      .contact-foot {
+        margin-top: 14mm;
+        font-size: 8pt;
+        color: rgba(255, 255, 255, 0.45);
+      }
+
       @page {
         size: A4;
         margin: 0;
@@ -770,7 +891,64 @@
       </div>
     </section>
 
-    <!-- ============ الصفحة ٤ — المشاريع والاتصال ============ -->
+    <!-- ============ الصفحة ٤ — معرض الصور ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">معرض الصور</p>
+        <h2 class="section-title">لقطات من الميدان</h2>
+        <p style="font-size: 9.5pt; color: var(--slate); max-width: 150mm; margin-bottom: 2mm">
+          نظرة عن قرب على أعمالنا في مجالات الطاقة الشمسية والميكانيكا والسلامة من الحرائق والهياكل الحديدية.
+        </p>
+
+        <div class="gallery-grid">
+          <div class="gitem">
+            <img src="assets/gallery/cati-sigmatek_muhendislik_0593.jpg" alt="تركيب طاقة شمسية سطحية" />
+            <span>طاقة شمسية سطحية</span>
+          </div>
+          <div class="gitem">
+            <img src="assets/gallery/saha-sigmatek_muhendislik_0647.jpg" alt="حقل طاقة شمسية أرضية" />
+            <span>طاقة شمسية أرضية</span>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/mekanik-esanjor-dairesi.png" alt="غرفة مبادل حراري ميكانيكي" />
+            <span>ميكانيكي</span>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/havalandirma-catisi-1.png" alt="وحدات تهوية على السطح" />
+            <span>تهوية</span>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/yangin-pompa-istasyonu.png" alt="محطة ضخ الحريق" />
+            <span>أنظمة الحريق</span>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/celik-konstruksiyon-2.png" alt="تركيب هيكل حديدي" />
+            <span>هياكل حديدية</span>
+          </div>
+          <div class="gitem">
+            <img src="assets/gallery/muh-sigmatek_muhendislik_01454.jpg" alt="قياس هندسي ميداني" />
+            <span>هندسة</span>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/mekanik-devreye-alma.png" alt="تشغيل نظام ميكانيكي" />
+            <span>التشغيل</span>
+          </div>
+        </div>
+
+        <div class="why-grid" style="margin-top: 9mm">
+          <div class="why-card">
+            <h4>توثيق تقدم الموقع</h4>
+            <p>يتم تسجيل كل عملية تركيب من المسح وحتى التشغيل لضمان تتبع كامل للمشروع.</p>
+          </div>
+          <div class="why-card">
+            <h4>فرق متعددة الاختصاصات</h4>
+            <p>تعمل فرق الطاقة الشمسية والميكانيكا والكهرباء والهياكل الحديدية بالتوازي للحفاظ على الجدول الزمني.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ الصفحة ٥ — المشاريع ============ -->
     <section class="page">
       <div class="back">
         <p class="section-eyebrow">المشاريع</p>
@@ -793,6 +971,23 @@
             <p>أعمال تشغيل معدات الطاقة والتوزيع في الموقع.</p>
           </div>
         </div>
+        <div class="projs" style="margin-top: 5mm">
+          <div class="pcard">
+            <img src="assets/photos/otomasyon.jpg" alt="تكامل أنظمة SCADA والأتمتة" />
+            <h4>تكامل أنظمة SCADA والأتمتة</h4>
+            <p>مراقبة عن بُعد وأتمتة قائمة على PLC في منشآت صناعية متعددة.</p>
+          </div>
+          <div class="pcard">
+            <img src="assets/photos/isitma-yeni.jpg" alt="غرفة تدفئة صناعية" />
+            <h4>غرفة تدفئة صناعية</h4>
+            <p>تحديث غرفة المرجل حقق تحسناً ملموساً في كفاءة الطاقة للعميل.</p>
+          </div>
+          <div class="pcard">
+            <img src="assets/photos/yangin-2.jpg" alt="تركيب نظام السلامة من الحريق" />
+            <h4>تركيب نظام السلامة من الحريق</h4>
+            <p>تم تركيب واعتماد شبكة الرشاشات والكشف وفق المعايير في جميع أنحاء المنشأة.</p>
+          </div>
+        </div>
 
         <div class="why-grid" style="margin-top: 8mm">
           <div class="why-card">
@@ -807,27 +1002,38 @@
             <p>كل نظام يتم تسليمه موثّق باختيار معدات مضمونة الإنتاج، واختبارات ميدانية وتقارير تشغيل رسمية.</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="contact">
-          <div>
-            <h3>لنحقق مشروعكم معاً</h3>
-            <p class="lead">تواصلوا مع فريقنا لإجراء مسح ميداني ومناقشة أولية للجدوى.</p>
-            <p class="person">أوغور غول<small>سيغماتك للهندسة</small></p>
-          </div>
-          <div class="cinfo">
-            <div><span class="k">الهاتف</span><span class="v">+90 532 749 84 60</span></div>
-            <div><span class="k">البريد</span><span class="v">ugur.gul@sigmatek.org</span></div>
-            <div><span class="k">الموقع</span><span class="v">www.sigmatekenergy.com</span></div>
-            <div>
-              <span class="k">العنوان</span
-              ><span class="v" style="direction: rtl"
-                >حي إيچرنكوي، شارع شكران، عمارة شرافت بيك، رقم 52/ب، أتاşehير / إسطنبول، تركيا</span
-              >
-            </div>
+    <!-- ============ الصفحة ٦ — الاتصال ============ -->
+    <section class="page">
+      <div class="contact-page">
+        <p class="section-eyebrow">تواصل معنا</p>
+        <h2>لنحقق مشروعكم معاً</h2>
+        <p class="lead">
+          تواصلوا مع فريقنا لإجراء مسح ميداني ومناقشة أولية للجدوى — من الطاقة الشمسية السطحية إلى البنية التحتية
+          الصناعية الكاملة بنظام تسليم مفتاح.
+        </p>
+
+        <div class="contact-grid">
+          <div class="cbox"><span class="k">الهاتف</span><span class="v ltr">+90 532 749 84 60</span></div>
+          <div class="cbox"><span class="k">البريد</span><span class="v ltr">ugur.gul@sigmatek.org</span></div>
+          <div class="cbox"><span class="k">الموقع</span><span class="v ltr">www.sigmatekenergy.com</span></div>
+          <div class="cbox">
+            <span class="k">العنوان</span
+            ><span class="v">حي إيچرنكوي، شارع شكران، عمارة شرافت بيك، رقم 52/ب، أتاşehير / إسطنبول، تركيا</span>
           </div>
         </div>
 
-        <p class="back-foot">© سيغماتك للاستشارات الهندسية — جميع الحقوق محفوظة.</p>
+        <div class="contact-cta">
+          <div>
+            <b>جاهزون لبدء مشروعكم؟</b>
+            <span>اطلبوا مسحاً ميدانياً مجانياً واستشارة أولية اليوم.</span>
+          </div>
+          <div class="person">أوغور غول<small>سيغماتك للهندسة</small></div>
+        </div>
+
+        <p class="contact-foot">© سيغماتك للاستشارات الهندسية — جميع الحقوق محفوظة.</p>
       </div>
     </section>
   </body>

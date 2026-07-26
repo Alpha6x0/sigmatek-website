@@ -461,6 +461,127 @@
         color: var(--slate);
       }
 
+      /* Gallery grid */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4mm;
+        margin-top: 6mm;
+      }
+      .gitem {
+        position: relative;
+        border-radius: 2.5mm;
+        overflow: hidden;
+        height: 44mm;
+      }
+      .gitem img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .gitem span {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(10, 14, 20, 0.82), transparent);
+        color: #fff;
+        font-size: 7pt;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        padding: 3mm 3mm 1.8mm;
+      }
+
+      /* Contact page (P6) */
+      .contact-page {
+        background: var(--ink);
+        color: #fff;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 22mm 20mm;
+      }
+      .contact-page .section-eyebrow {
+        color: var(--gold-soft);
+      }
+      .contact-page h2 {
+        font-size: 26pt;
+        font-weight: 700;
+        margin: 3mm 0 6mm;
+        max-width: 140mm;
+      }
+      .contact-page .lead {
+        font-size: 10.5pt;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.72);
+        max-width: 130mm;
+        margin-bottom: 12mm;
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6mm 10mm;
+        margin-bottom: 14mm;
+      }
+      .cbox {
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+        padding-top: 4mm;
+      }
+      .cbox .k {
+        font-size: 8.5pt;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--gold);
+        display: block;
+        margin-bottom: 2mm;
+      }
+      .cbox .v {
+        font-size: 11pt;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1.4;
+      }
+      .contact-cta {
+        background: linear-gradient(120deg, var(--gold-soft), var(--gold));
+        color: var(--ink);
+        border-radius: 4mm;
+        padding: 8mm 10mm;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6mm;
+      }
+      .contact-cta b {
+        font-family: var(--font-head);
+        font-size: 14pt;
+        display: block;
+        margin-bottom: 1.5mm;
+      }
+      .contact-cta span {
+        font-size: 9pt;
+        font-weight: 500;
+      }
+      .contact-cta .person {
+        text-align: right;
+        font-size: 11pt;
+        font-weight: 700;
+      }
+      .contact-cta .person small {
+        display: block;
+        font-size: 8pt;
+        font-weight: 500;
+        opacity: 0.75;
+      }
+      .contact-foot {
+        margin-top: 14mm;
+        font-size: 8pt;
+        color: rgba(255, 255, 255, 0.45);
+        letter-spacing: 0.05em;
+      }
+
       @page {
         size: A4;
         margin: 0;
@@ -792,7 +913,64 @@
       </div>
     </section>
 
-    <!-- ============ PAGE 4 — PROJECTS & CONTACT ============ -->
+    <!-- ============ PAGE 4 — GALLERY ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">Photo Gallery</p>
+        <h2 class="section-title">Views from the field</h2>
+        <p style="font-size: 9.5pt; color: var(--slate); max-width: 150mm; margin-bottom: 2mm">
+          A closer look at our work across solar, mechanical, fire safety and steel construction disciplines.
+        </p>
+
+        <div class="gallery-grid">
+          <div class="gitem">
+            <img src="assets/gallery/cati-sigmatek_muhendislik_0593.jpg" alt="Rooftop solar installation" />
+            <span>Rooftop Solar</span>
+          </div>
+          <div class="gitem">
+            <img src="assets/gallery/saha-sigmatek_muhendislik_0647.jpg" alt="Ground-mount solar field" />
+            <span>Ground-Mount Solar</span>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/mekanik-esanjor-dairesi.png" alt="Mechanical heat exchanger room" />
+            <span>Mechanical</span>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/havalandirma-catisi-1.png" alt="Rooftop ventilation units" />
+            <span>Ventilation</span>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/yangin-pompa-istasyonu.png" alt="Fire pump station" />
+            <span>Fire Systems</span>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/celik-konstruksiyon-2.png" alt="Steel structure erection" />
+            <span>Steel Construction</span>
+          </div>
+          <div class="gitem">
+            <img src="assets/gallery/muh-sigmatek_muhendislik_01454.jpg" alt="Engineering site measurement" />
+            <span>Engineering</span>
+          </div>
+          <div class="gitem">
+            <img src="assets/mj-gallery/mekanik-devreye-alma.png" alt="Mechanical system commissioning" />
+            <span>Commissioning</span>
+          </div>
+        </div>
+
+        <div class="why-grid" style="margin-top: 9mm">
+          <div class="why-card">
+            <h4>Documented Site Progress</h4>
+            <p>Every installation is recorded from survey through commissioning for full project traceability.</p>
+          </div>
+          <div class="why-card">
+            <h4>Multi-Discipline Crews</h4>
+            <p>Solar, mechanical, electrical and steel teams work in parallel to keep project timelines on track.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PAGE 5 — PROJECTS ============ -->
     <section class="page">
       <div class="back">
         <p class="section-eyebrow">Projects</p>
@@ -815,6 +993,23 @@
             <p>Commissioning works for power and distribution equipment on site.</p>
           </div>
         </div>
+        <div class="projs" style="margin-top: 5mm">
+          <div class="pcard">
+            <img src="assets/photos/otomasyon.jpg" alt="SCADA and Automation Integration" />
+            <h4>SCADA &amp; Automation Integration</h4>
+            <p>Remote monitoring and PLC-based automation deployed across industrial facilities.</p>
+          </div>
+          <div class="pcard">
+            <img src="assets/photos/isitma-yeni.jpg" alt="Industrial Heating Plant Room" />
+            <h4>Industrial Heating Plant Room</h4>
+            <p>Boiler room retrofit delivering measurable energy-efficiency gains for the client.</p>
+          </div>
+          <div class="pcard">
+            <img src="assets/photos/yangin-2.jpg" alt="Fire Safety System Installation" />
+            <h4>Fire Safety System Installation</h4>
+            <p>Sprinkler and detection network installed and certified to code across the facility.</p>
+          </div>
+        </div>
 
         <div class="why-grid" style="margin-top: 8mm">
           <div class="why-card">
@@ -832,25 +1027,38 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="contact">
-          <div>
-            <h3>Let's bring your project to life together</h3>
-            <p class="lead">Get in touch with our team for a site survey and preliminary feasibility discussion.</p>
-            <p class="person">Uğur Gül<small>SIGMATEK ENGINEERING</small></p>
-          </div>
-          <div class="cinfo">
-            <div><span class="k">Phone</span><span class="v">+90 532 749 84 60</span></div>
-            <div><span class="k">Email</span><span class="v">ugur.gul@sigmatek.org</span></div>
-            <div><span class="k">Web</span><span class="v">www.sigmatekenergy.com</span></div>
-            <div>
-              <span class="k">Address</span
-              ><span class="v">Icerenkoy Mah. Sukran Sok. Serafet Bey Apt. No:52/B, Atasehir / Istanbul, Turkiye</span>
-            </div>
+    <!-- ============ PAGE 6 — CONTACT ============ -->
+    <section class="page">
+      <div class="contact-page">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2>Let's bring your project to life together</h2>
+        <p class="lead">
+          Get in touch with our team for a site survey and preliminary feasibility discussion — from rooftop solar to
+          full turnkey industrial infrastructure.
+        </p>
+
+        <div class="contact-grid">
+          <div class="cbox"><span class="k">Phone</span><span class="v">+90 532 749 84 60</span></div>
+          <div class="cbox"><span class="k">Email</span><span class="v">ugur.gul@sigmatek.org</span></div>
+          <div class="cbox"><span class="k">Web</span><span class="v">www.sigmatekenergy.com</span></div>
+          <div class="cbox">
+            <span class="k">Address</span
+            ><span class="v">Icerenkoy Mah. Sukran Sok. Serafet Bey Apt. No:52/B, Atasehir / Istanbul, Turkiye</span>
           </div>
         </div>
 
-        <p class="back-foot">© Sigmatek Engineering Consulting Inc. — All rights reserved.</p>
+        <div class="contact-cta">
+          <div>
+            <b>Ready to start your project?</b>
+            <span>Request a free site survey and initial consultation today.</span>
+          </div>
+          <div class="person">Uğur Gül<small>SIGMATEK ENGINEERING</small></div>
+        </div>
+
+        <p class="contact-foot">© Sigmatek Engineering Consulting Inc. — All rights reserved.</p>
       </div>
     </section>
   </body>
