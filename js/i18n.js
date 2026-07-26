@@ -26,13 +26,13 @@ window.SIGMATEK_I18N = {
     trust_lead: "Mühendislik ve saha uygulamalarında güvenilir çözüm ortağı",
     trust_tag1: "GES Çatı",
     trust_tag2: "GES Saha",
-    trust_tag3: "Mühendislik &amp; Danışmanlık",
+    trust_tag3: "Mühendislik & Danışmanlık",
     trust_tag4: "Endüstriyel Isıtma",
     trust_tag5: "Soğutma",
     trust_tag6: "Havalandırma",
     trust_tag7: "Otomasyon",
     trust_tag8: "Yangın Sistemleri",
-    trust_tag9: "İnşaat &amp; Çelik",
+    trust_tag9: "İnşaat & Çelik",
 
     services_eyebrow: "Hizmetlerimiz",
     services_title: "Tek çatı altında uçtan uca mühendislik",
@@ -46,7 +46,7 @@ window.SIGMATEK_I18N = {
     svc_gessaha_title: "GES Saha Kurulumları",
     svc_gessaha_desc:
       "Arazi etüdü, şebeke bağlantı çözümleri ve tracker sistemleriyle büyük ölçekli yer tipi güneş enerjisi santrali projeleri.",
-    svc_muhendislik_title: "Mühendislik &amp; Danışmanlık",
+    svc_muhendislik_title: "Mühendislik & Danışmanlık",
     svc_muhendislik_desc:
       "Genel yerleşim planı, kablolama ve elektrik projelendirmesi, fizibilite ve Ar-Ge desteğiyle projenizin her aşamasında danışmanlık.",
     svc_isitma_title: "Endüstriyel Isıtma",
@@ -55,20 +55,20 @@ window.SIGMATEK_I18N = {
     svc_sogutma_title: "Soğutma Sistemleri",
     svc_sogutma_desc:
       "Endüstriyel tesisler ve soğuk hava depoları için sürdürülebilir, düşük işletme maliyetli soğutma sistemi çözümleri.",
-    svc_havalandirma_title: "Havalandırma &amp; Otomasyon",
+    svc_havalandirma_title: "Havalandırma & Otomasyon",
     svc_havalandirma_desc:
       "Endüstriyel havalandırma sistemleri ile SCADA/PLC tabanlı otomasyon entegrasyonu; tesisinizi uzaktan izlenebilir hale getiriyoruz.",
     svc_yangin_title: "Yangın Sistemleri",
     svc_yangin_desc:
       "Sprinkler, yangın dolabı ve pompa istasyonundan algılama ve alarm sistemlerine kadar mevzuata uygun anahtar teslim yangın güvenliği çözümleri.",
-    svc_insaat_title: "İnşaat &amp; Çelik Konstrüksiyon",
+    svc_insaat_title: "İnşaat & Çelik Konstrüksiyon",
     svc_insaat_desc:
       "Çelik konstrüksiyon imalatı ve montajından tadilat, güçlendirme ve onarım işlerine kadar projelendirmeden uygulamaya anahtar teslim inşaat çözümleri.",
 
     about_eyebrow: "Hakkımızda",
     about_title: "Sahada üretilen, mühendislikle doğrulanan çözümler",
     about_p1:
-      "Sigmatek Mühendislik Danışmanlık A.Ş., 2018 yılında Makine Mühendisi Uğur Gül tarafından kurulmuştur. Faaliyetlerine inşaat, elektrik, mekanik ve endüstriyel (elk.-mek.) tesisat alanlarında başlayan firmamız; 2021 yılı itibarıyla uzmanlık alanına yenilenebilir enerji sistemleri yapım işleri ve mühendislik hizmetlerini de dahil ederek enerji sektöründe güçlü bir oyuncu haline gelmiştir.",
+      "Kurucumuz Makine Mühendisi Uğur Gül, sektördeki 116.932 m² kapalı alana sahip Buyaka AVM projesinin topraktan anahtar teslim bitimine kadar süren inşaat sürecinde 2006-2011 yılları arasında elektromekanik işlerden, 2011-2015 yılları arasında ise proje yönetiminden sorumlu olarak görev almıştır. Bu kapsamlı saha ve proje yönetimi tecrübesinin ardından 2018 yılında Sigmatek Mühendislik Danışmanlık A.Ş.'yi kurmuş; firmamız inşaat, elektrik, mekanik ve endüstriyel (elk.-mek.) tesisat alanlarında başlayan faaliyetlerine, 2021 yılı itibarıyla yenilenebilir enerji sistemleri yapım işlerini de dahil ederek enerji sektöründe güçlü bir oyuncu haline gelmiştir.",
     about_p2:
       "Bizi sektörde farklılaştıran en önemli özelliklerden biri, yüksek verimlilik sağlayan motorlu güneş takip sistemleri (motorized solar tracking) konusundaki mühendislik yetkinliğimizdir. Mühendislik bilgisi, saha tecrübesi ve sürdürülebilirlik vizyonuyla; temiz enerjiye geçişte güvenilir bir çözüm ortağı olmayı sürdürüyoruz.",
     about_list1: "İnşaat, elektrik, mekanik ve endüstriyel tesisatta köklü mühendislik birikimi",
@@ -80,14 +80,14 @@ window.SIGMATEK_I18N = {
 
     process_eyebrow: "Çalışma Sürecimiz",
     process_title: "Fikirden devreye almaya dört adım",
-    step1_title: "Keşif &amp; Analiz",
+    step1_title: "Keşif & Analiz",
     step1_desc: "Saha etüdü, enerji ihtiyaç analizi ve fizibilite çalışmasıyla projenin temelini atıyoruz.",
-    step2_title: "Mühendislik &amp; Tasarım",
+    step2_title: "Mühendislik & Tasarım",
     step2_desc:
       "Genel yerleşim, elektrik ve mekanik projelendirmeyi mevzuata ve standartlara uygun olarak hazırlıyoruz.",
-    step3_title: "Kurulum &amp; Devreye Alma",
+    step3_title: "Kurulum & Devreye Alma",
     step3_desc: "Saha ekibimiz kurulumu gerçekleştirir, sistemler testlerden geçirilerek devreye alınır.",
-    step4_title: "İzleme &amp; Bakım",
+    step4_title: "İzleme & Bakım",
     step4_desc:
       "Uzaktan izleme ve periyodik bakım hizmetleriyle sistem performansını uzun vadede güvence altına alıyoruz.",
 
@@ -113,6 +113,10 @@ window.SIGMATEK_I18N = {
     proj3_badge: "Elektrik Ekipmanları",
     proj3_title: "Güç ve Dağıtım Ekipmanları",
     proj3_desc: "Sahadaki güç ve dağıtım ekipmanlarının devreye alma çalışmaları.",
+    proj4_badge: "İnşaat & Çelik Konstrüksiyon",
+    proj4_title: "Buyaka AVM — 116.932 m²",
+    proj4_desc:
+      "Topraktan anahtar teslim bitimine kadar 116.932 m² kapalı alanlı AVM projesi; 2006-2011 elektromekanik yapım, 2011-2015 proje yönetimi.",
 
     gallery_eyebrow: "Foto Galeri",
     gallery_title: "Sahadan kareler",
@@ -168,7 +172,7 @@ window.SIGMATEK_I18N = {
     footer_about:
       "GES çatı ve saha santrallerinden endüstriyel ısıtma, soğutma, havalandırma ve otomasyona; yangın güvenliği ve çelik konstrüksiyona kadar mühendislik disipliniyle tasarlanan, anahtar teslim uygulanan uçtan uca çözümler.",
     footer_servicesHeading: "Hizmetler",
-    footer_link_gescatisaha: "GES Çatı &amp; Saha",
+    footer_link_gescatisaha: "GES Çatı & Saha",
     footer_link_isivehava: "Isıtma / Soğutma / Havalandırma",
     footer_link_otomasyon: "Otomasyon Sistemleri",
     footer_corporateHeading: "Kurumsal",
@@ -203,13 +207,13 @@ window.SIGMATEK_I18N = {
     trust_lead: "A trusted solutions partner in engineering and field applications",
     trust_tag1: "Rooftop Solar",
     trust_tag2: "Ground-Mount Solar",
-    trust_tag3: "Engineering &amp; Consulting",
+    trust_tag3: "Engineering & Consulting",
     trust_tag4: "Industrial Heating",
     trust_tag5: "Cooling",
     trust_tag6: "Ventilation",
     trust_tag7: "Automation",
     trust_tag8: "Fire Systems",
-    trust_tag9: "Construction &amp; Steel",
+    trust_tag9: "Construction & Steel",
 
     services_eyebrow: "Our Services",
     services_title: "End-to-end engineering under one roof",
@@ -223,7 +227,7 @@ window.SIGMATEK_I18N = {
     svc_gessaha_title: "Ground-Mount Solar Installations",
     svc_gessaha_desc:
       "Large-scale ground-mount solar power plant projects with land surveys, grid connection solutions and solar tracker systems.",
-    svc_muhendislik_title: "Engineering &amp; Consulting",
+    svc_muhendislik_title: "Engineering & Consulting",
     svc_muhendislik_desc:
       "Consulting at every stage of your project with general layout planning, cabling and electrical design, feasibility studies and R&D support.",
     svc_isitma_title: "Industrial Heating",
@@ -232,20 +236,20 @@ window.SIGMATEK_I18N = {
     svc_sogutma_title: "Cooling Systems",
     svc_sogutma_desc:
       "Sustainable, low operating-cost cooling system solutions for industrial facilities and cold storage warehouses.",
-    svc_havalandirma_title: "Ventilation &amp; Automation",
+    svc_havalandirma_title: "Ventilation & Automation",
     svc_havalandirma_desc:
       "Industrial ventilation systems with SCADA/PLC-based automation integration, making your facility remotely monitorable.",
     svc_yangin_title: "Fire Systems",
     svc_yangin_desc:
       "Turnkey, code-compliant fire safety solutions ranging from sprinklers, fire cabinets and pump stations to detection and alarm systems.",
-    svc_insaat_title: "Construction &amp; Steel Structures",
+    svc_insaat_title: "Construction & Steel Structures",
     svc_insaat_desc:
       "Turnkey construction solutions from design to execution — steel structure fabrication and erection, renovation, reinforcement and repair works.",
 
     about_eyebrow: "About Us",
     about_title: "Solutions built in the field, validated by engineering",
     about_p1:
-      "Sigmatek Engineering Consulting Inc. was founded in 2018 by Mechanical Engineer Uğur Gül. Starting out in construction, electrical, mechanical and industrial (electro-mechanical) installation works, the company expanded into renewable energy systems and engineering services in 2021, becoming a strong player in the energy sector.",
+      "Our founder, Mechanical Engineer Uğur Gül, was responsible for electromechanical works from 2006-2011 and project management from 2011-2015 during the full ground-up-to-turnkey construction of the 116,932 m² Buyaka Shopping Mall. Building on this extensive field and project management experience, he founded Sigmatek Engineering Consulting Inc. in 2018; starting out in construction, electrical, mechanical and industrial (electro-mechanical) installation works, the company expanded into renewable energy plant construction in 2021, becoming a strong player in the energy sector.",
     about_p2:
       "One of the qualities that sets us apart in the industry is our engineering expertise in high-efficiency motorized solar tracking systems. With engineering knowledge, field experience and a sustainability vision, we continue to be a reliable solutions partner in the transition to clean energy.",
     about_list1:
@@ -258,14 +262,14 @@ window.SIGMATEK_I18N = {
 
     process_eyebrow: "Our Process",
     process_title: "Four steps from concept to commissioning",
-    step1_title: "Survey &amp; Analysis",
+    step1_title: "Survey & Analysis",
     step1_desc: "We lay the project's foundation with site surveys, energy needs analysis and feasibility studies.",
-    step2_title: "Engineering &amp; Design",
+    step2_title: "Engineering & Design",
     step2_desc:
       "We prepare general layout, electrical and mechanical designs in compliance with regulations and standards.",
-    step3_title: "Installation &amp; Commissioning",
+    step3_title: "Installation & Commissioning",
     step3_desc: "Our field team carries out the installation, and systems are tested and commissioned.",
-    step4_title: "Monitoring &amp; Maintenance",
+    step4_title: "Monitoring & Maintenance",
     step4_desc: "We safeguard long-term system performance with remote monitoring and periodic maintenance services.",
 
     clients_label: "Companies That Trust Us",
@@ -289,6 +293,10 @@ window.SIGMATEK_I18N = {
     proj3_badge: "Electrical Equipment",
     proj3_title: "Power and Distribution Equipment",
     proj3_desc: "Commissioning works for power and distribution equipment on site.",
+    proj4_badge: "Construction & Steel Structures",
+    proj4_title: "Buyaka Shopping Mall — 116,932 m²",
+    proj4_desc:
+      "Ground-up to turnkey shopping mall project spanning 116,932 m² of enclosed area; electromechanical construction 2006-2011, project management 2011-2015.",
 
     gallery_eyebrow: "Photo Gallery",
     gallery_title: "Snapshots from the field",
@@ -344,7 +352,7 @@ window.SIGMATEK_I18N = {
     footer_about:
       "End-to-end, turnkey solutions engineered with discipline — from rooftop and ground-mount solar plants to industrial heating, cooling, ventilation and automation, fire safety and steel construction.",
     footer_servicesHeading: "Services",
-    footer_link_gescatisaha: "Rooftop &amp; Ground-Mount Solar",
+    footer_link_gescatisaha: "Rooftop & Ground-Mount Solar",
     footer_link_isivehava: "Heating / Cooling / Ventilation",
     footer_link_otomasyon: "Automation Systems",
     footer_corporateHeading: "Corporate",
@@ -419,7 +427,7 @@ window.SIGMATEK_I18N = {
     about_eyebrow: "من نحن",
     about_title: "حلول تُنجز في الميدان وتُعتمد بالهندسة",
     about_p1:
-      "تأسست شركة سيغماتك للاستشارات الهندسية عام 2018 على يد المهندس الميكانيكي أوغور غول. بدأت الشركة نشاطها في مجالات الإنشاءات والكهرباء والميكانيكا والتمديدات الصناعية، ثم وسّعت تخصصها عام 2021 ليشمل أعمال أنظمة الطاقة المتجددة والخدمات الهندسية، لتصبح لاعباً قوياً في قطاع الطاقة.",
+      "شغل مؤسسنا، المهندس الميكانيكي أوغور غول، منصب المسؤول عن الأعمال الكهروميكانيكية بين عامي 2006-2011، ثم مسؤول إدارة المشروع بين عامي 2011-2015، خلال مراحل إنشاء مول بويأكا (116,932 م²) الكاملة من الألف إلى التسليم النهائي. وبناءً على هذه الخبرة الميدانية وخبرة إدارة المشاريع الواسعة، أسّس شركة سيغماتك للاستشارات الهندسية عام 2018؛ بدأت الشركة نشاطها في مجالات الإنشاءات والكهرباء والميكانيكا والتمديدات الصناعية، ثم وسّعت تخصصها عام 2021 ليشمل أعمال بناء محطات الطاقة المتجددة، لتصبح لاعباً قوياً في قطاع الطاقة.",
     about_p2:
       "من أهم ما يميزنا في القطاع هو خبرتنا الهندسية في أنظمة التتبع الشمسي المحركة عالية الكفاءة. وبفضل معرفتنا الهندسية وخبرتنا الميدانية ورؤيتنا للاستدامة، نواصل كوننا شريكاً موثوقاً في التحول نحو الطاقة النظيفة.",
     about_list1: "خبرة هندسية راسخة في الإنشاءات والكهرباء والميكانيكا والتمديدات الصناعية",
@@ -461,6 +469,10 @@ window.SIGMATEK_I18N = {
     proj3_badge: "معدات كهربائية",
     proj3_title: "معدات الطاقة والتوزيع",
     proj3_desc: "أعمال تشغيل معدات الطاقة والتوزيع في الموقع.",
+    proj4_badge: "الإنشاءات والهياكل الحديدية",
+    proj4_title: "مول بويأكا — 116,932 م²",
+    proj4_desc:
+      "مشروع مول متكامل من الألف إلى التسليم النهائي بمساحة مغلقة 116,932 م²؛ أعمال كهروميكانيكية 2006-2011، وإدارة مشروع 2011-2015.",
 
     gallery_eyebrow: "معرض الصور",
     gallery_title: "لقطات من الميدان",
