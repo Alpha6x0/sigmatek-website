@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sigmatek Mühendislik — Kerkük Valiliği Dilekçesi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #0a0e14;
+        --gold: #f5a623;
+        --slate: #4a5568;
+        --line: #d8dce2;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "DM Sans", Arial, sans-serif;
+        color: var(--ink);
+        background: #6b7280;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 12mm auto;
+        background: #fff;
+        padding: 18mm 20mm;
+        position: relative;
+      }
+      .letterhead {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 2px solid var(--gold);
+        padding-bottom: 6mm;
+        margin-bottom: 10mm;
+      }
+      .letterhead img {
+        height: 16mm;
+      }
+      .letterhead .company-info {
+        text-align: right;
+        font-size: 8pt;
+        color: var(--slate);
+        line-height: 1.6;
+      }
+      .company-info b {
+        font-size: 10pt;
+        color: var(--ink);
+        display: block;
+        margin-bottom: 1mm;
+      }
+      .ar {
+        direction: rtl;
+        font-family: "Noto Kufi Arabic", Arial, sans-serif;
+        line-height: 2;
+      }
+      .ar .letterhead {
+        flex-direction: row-reverse;
+      }
+      .ar .company-info {
+        text-align: left;
+      }
+      .date-ref {
+        display: flex;
+        justify-content: space-between;
+        font-size: 9pt;
+        color: var(--slate);
+        margin-bottom: 8mm;
+      }
+      .subject {
+        font-weight: 700;
+        font-size: 12pt;
+        margin-bottom: 6mm;
+        text-align: center;
+        text-decoration: underline;
+      }
+      .greeting {
+        font-weight: 700;
+        margin-bottom: 4mm;
+        font-size: 10.5pt;
+      }
+      .body-text p {
+        font-size: 10pt;
+        line-height: 1.9;
+        margin-bottom: 4mm;
+        text-align: justify;
+      }
+      .facts {
+        margin: 6mm 0;
+        padding: 5mm 6mm;
+        background: #f7f5f0;
+        border-inline-start: 3px solid var(--gold);
+        border-radius: 2mm;
+      }
+      .facts ul {
+        padding-inline-start: 5mm;
+        margin: 0;
+      }
+      .facts li {
+        font-size: 9.5pt;
+        line-height: 1.8;
+        margin-bottom: 1.5mm;
+      }
+      .signoff {
+        margin-top: 14mm;
+      }
+      .signoff .name {
+        font-weight: 700;
+        font-size: 11pt;
+        margin-top: 14mm;
+      }
+      .signoff .title {
+        font-size: 9pt;
+        color: var(--slate);
+      }
+      .footer-note {
+        position: absolute;
+        bottom: 12mm;
+        left: 20mm;
+        right: 20mm;
+        border-top: 1px solid var(--line);
+        padding-top: 3mm;
+        font-size: 7.5pt;
+        color: var(--slate);
+        display: flex;
+        justify-content: space-between;
+      }
+      .ar .footer-note {
+        direction: rtl;
+      }
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        .page {
+          margin: 0;
+          page-break-after: always;
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ============ SAYFA 1 — ARAPÇA (RESMİ) ============ -->
+    <section class="page ar">
+      <div class="letterhead">
+        <img src="assets/logo/sigmatek_muhendislik-bw.png" alt="Sigmatek Mühendislik" />
+        <div class="company-info">
+          <b>سيغماتك للهندسة والاستشارات</b>
+          حي إيچرنكوي، شارع شكران، عمارة شرافت بيك، رقم 52/ب<br />
+          أتاشهير / إسطنبول، تركيا<br />
+          الهاتف: 60 84 749 532 90+ &nbsp;|&nbsp; ugur.gul@sigmatek.org<br />
+          www.sigmatekenergy.com
+        </div>
+      </div>
+
+      <div class="date-ref">
+        <span>الرقم: SGM-2026/KRK-01</span>
+        <span>إسطنبول، 26 تموز/يوليو 2026</span>
+      </div>
+
+      <p class="greeting">إلى السيد المحترم محافظ كركوك</p>
+      <p class="greeting" style="margin-top: -2mm">المحافظة العامة لكركوك — جمهورية العراق</p>
+
+      <p class="subject">الموضوع: طلب تسهيل ومتابعة لممارسة الأعمال الهندسية والمقاولاتية في محافظة كركوك</p>
+
+      <div class="body-text">
+        <p>تحية طيبة وبعد،</p>
+        <p>
+          تتقدم شركة <b>سيغماتك للهندسة والاستشارات</b> (Sigmatek Mühendislik Danışmanlık A.Ş.) ومقرها الرئيسي في
+          إسطنبول - جمهورية تركيا، بهذا الطلب إلى محافظتكم الموقرة راجين التكرم بالنظر في تسهيل الإجراءات اللازمة لتمكين
+          شركتنا من ممارسة أعمالها والمشاركة في المشاريع الإنشائية والكهروميكانيكية ومشاريع الطاقة المتجددة ضمن محافظة
+          كركوك.
+        </p>
+        <p>
+          تأسست شركتنا عام 2018 على يد المهندس الميكانيكي أوغور غول، وقد توسع نطاق عملها منذ عام 2021 ليشمل، إلى جانب
+          أعمال الإنشاءات والتمديدات الكهربائية والميكانيكية والصناعية، مشاريع محطات الطاقة الشمسية (GES) بنظام تسليم
+          مفتاح، لتصبح شركتنا اليوم أحد الفاعلين الموثوقين في قطاع الطاقة والمقاولات في تركيا.
+        </p>
+        <div class="facts">
+          <ul>
+            <li>أكثر من 15 عاماً من الخبرة الميدانية التراكمية لفريقنا الهندسي.</li>
+            <li>أكثر من 550 ميغاواط من القدرة الشمسية المركبة ضمن مشاريع تسليم مفتاح متكاملة.</li>
+            <li>
+              خبرة دولية مباشرة في العراق: شارك فريقنا في أعمال تكسية واجهة برج المقر الجديد للبنك المركزي العراقي في
+              بغداد (تصميم زها حديد للعمارة)، بنفس الانضباط الميداني وجودة التنفيذ التي نطبقها في جميع مشاريعنا.
+            </li>
+            <li>
+              مشاريع منجزة لعملاء بارزين مثل تسويالي، آي إم سي، آي سي إيچطاش، BASF، دي إتش إل، ومؤسسات تعليمية وحكومية
+              متعددة.
+            </li>
+          </ul>
+        </div>
+        <p>
+          نأمل من محافظتكم الموقرة التكرم بتزويدنا بالإجراءات والمتطلبات الرسمية اللازمة للتسجيل والترخيص، والمشاركة في
+          المناقصات والمشاريع القائمة أو المستقبلية ضمن قطاعات الإنشاءات والكهرباء والميكانيكا والطاقة المتجددة في
+          المحافظة، وذلك ضمن الأطر القانونية والإدارية المعمول بها.
+        </p>
+        <p>
+          نحن على أتم الاستعداد لتزويدكم بأي وثائق أو معلومات إضافية قد تحتاجونها، ونتطلع إلى فرصة التعاون والمساهمة في
+          مشاريع التنمية بمحافظة كركوك.
+        </p>
+        <p>وتفضلوا بقبول فائق الاحترام والتقدير،</p>
+      </div>
+
+      <div class="signoff">
+        <div class="name">أوغور غول</div>
+        <div class="title">المدير العام — سيغماتك للهندسة والاستشارات</div>
+      </div>
+
+      <div class="footer-note">
+        <span>سيغماتك للهندسة والاستشارات</span>
+        <span>www.sigmatekenergy.com</span>
+      </div>
+    </section>
+
+    <!-- ============ SAYFA 2 — TÜRKÇE (ŞİRKET NÜSHASI) ============ -->
+    <section class="page">
+      <div class="letterhead">
+        <img src="assets/logo/sigmatek_muhendislik-bw.png" alt="Sigmatek Mühendislik" />
+        <div class="company-info">
+          <b>Sigmatek Mühendislik Danışmanlık A.Ş.</b>
+          İçerenköy Mahallesi, Şükran Sokak, Şerafet Bey Apt. No:52/B<br />
+          Ataşehir / İstanbul, Türkiye<br />
+          Tel: +90 532 749 84 60 &nbsp;|&nbsp; ugur.gul@sigmatek.org<br />
+          www.sigmatekenergy.com
+        </div>
+      </div>
+
+      <div class="date-ref">
+        <span>Sayı: SGM-2026/KRK-01</span>
+        <span>İstanbul, 26 Temmuz 2026</span>
+      </div>
+
+      <p class="greeting">Sayın Kerkük Valisi</p>
+      <p class="greeting" style="margin-top: -2mm">Kerkük Valiliği — Irak Cumhuriyeti</p>
+
+      <p class="subject">Konu: Kerkük İlinde İnşaat, Elektromekanik ve Enerji Alanında Faaliyet Talebi</p>
+
+      <div class="body-text">
+        <p>Sayın Valim,</p>
+        <p>
+          İstanbul, Türkiye merkezli firmamız <b>Sigmatek Mühendislik Danışmanlık A.Ş.</b>, Kerkük ilinde inşaat,
+          elektromekanik tesisat ve yenilenebilir enerji alanlarında faaliyet göstermek ve projelere katılım sağlamak
+          amacıyla, gerekli kolaylık ve yönlendirmenin sağlanması talebiyle Valiliğinize başvurmaktadır.
+        </p>
+        <p>
+          Firmamız, 2018 yılında Makine Mühendisi Uğur Gül tarafından kurulmuş; 2021 yılından itibaren inşaat, elektrik,
+          mekanik ve endüstriyel tesisat alanlarındaki faaliyetlerine güneş enerjisi santrali (GES) yapım işlerini de
+          ekleyerek enerji sektöründe güçlü bir oyuncu haline gelmiştir.
+        </p>
+        <div class="facts">
+          <ul>
+            <li>Mühendislik ekibimizin 15+ yıllık kümülatif saha deneyimi.</li>
+            <li>Anahtar teslim projelerde toplam 550 MW+ kurulu GES gücü.</li>
+            <li>
+              Irak'ta doğrudan saha tecrübesi: Bağdat'ta Zaha Hadid Architects tasarımı Irak Merkez Bankası yeni genel
+              müdürlük kulesinin cephe kaplaması işlerinde, her projemizde uyguladığımız aynı saha disipliniyle görev
+              aldık.
+            </li>
+            <li>
+              Tosyalı Holding, İMC, IC İçtaş, BASF, DHL gibi kurumsal firmalar ile çeşitli eğitim ve kamu kurumları için
+              tamamlanmış referans projeler.
+            </li>
+          </ul>
+        </div>
+        <p>
+          Valiliğinizin ilgili birimlerince, ilimizde kayıt/ruhsat süreçleri ile mevcut veya gelecekteki inşaat,
+          elektrik, mekanik ve yenilenebilir enerji projelerine katılım için izlenmesi gereken usul ve şartlar konusunda
+          tarafımıza bilgi ve yönlendirme sağlanmasını saygılarımla arz ederim.
+        </p>
+        <p>
+          Talep edilecek her türlü ek belge ve bilgiyi sağlamaya hazır olduğumuzu belirtir, Kerkük ilinin kalkınma
+          projelerine katkı sunma fırsatını memnuniyetle beklediğimizi bildiririz.
+        </p>
+        <p>Saygılarımla,</p>
+      </div>
+
+      <div class="signoff">
+        <div class="name">Uğur Gül</div>
+        <div class="title">Genel Müdür — Sigmatek Mühendislik Danışmanlık A.Ş.</div>
+      </div>
+
+      <div class="footer-note">
+        <span>Sigmatek Mühendislik Danışmanlık A.Ş.</span>
+        <span>www.sigmatekenergy.com</span>
+      </div>
+    </section>
+  </body>
+</html>
