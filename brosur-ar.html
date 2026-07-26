@@ -617,6 +617,62 @@
         line-height: 1.5;
       }
 
+      /* قائمة محفظة المشاريع */
+      .plist {
+        margin-top: 5mm;
+      }
+      .prow {
+        display: flex;
+        gap: 4mm;
+        align-items: flex-start;
+        padding: 2.6mm 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .prow .pnum {
+        font-family: var(--font-head);
+        font-weight: 700;
+        color: var(--emerald);
+        min-width: 6mm;
+        font-size: 8.5pt;
+        direction: ltr;
+      }
+      .prow .pmain {
+        flex: 1;
+      }
+      .prow .pfirm {
+        font-weight: 700;
+        font-size: 8.7pt;
+      }
+      .prow .pdesc {
+        font-size: 7.6pt;
+        color: var(--slate);
+        line-height: 1.5;
+        margin-top: 0.5mm;
+      }
+      .prow .ploc {
+        font-size: 7.3pt;
+        color: var(--gold);
+        font-weight: 700;
+        white-space: nowrap;
+        min-width: 24mm;
+        text-align: left;
+        padding-top: 0.5mm;
+      }
+      .prow .pmw {
+        font-family: var(--font-head);
+        font-weight: 700;
+        color: var(--emerald);
+        min-width: 16mm;
+        text-align: left;
+        font-size: 9.5pt;
+        direction: ltr;
+      }
+      .plist-note {
+        margin-top: 4mm;
+        font-size: 8pt;
+        color: var(--slate);
+      }
+
       /* صفحة الاتصال (٦) */
       .contact-page {
         background: var(--ink);
@@ -1320,7 +1376,273 @@
       </div>
     </section>
 
-    <!-- ============ الصفحة ١٠ — الاتصال ============ -->
+    <!-- ============ الصفحة ١٠ — المشاريع المنجزة (كهروميكانيك وإنشائي) ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">محفظة المشاريع</p>
+        <h2 class="section-title" style="font-size: 18pt">مشاريع كهروميكانيكية وإنشائية منجزة</h2>
+
+        <div class="plist">
+          <div class="prow">
+            <span class="pnum">01</span>
+            <div class="pmain">
+              <div class="pfirm">ليفانت إنشاءات — 6 أبراج + مركز رياضي</div>
+              <div class="pdesc">
+                تنفيذ أعمال التمديدات الميكانيكية (تدفئة-تبريد-تهوية) بنظام تسليم مفتاح عبر 6 أبراج ومجمع رياضي واحد.
+              </div>
+            </div>
+            <span class="ploc">قبرص</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">02</span>
+            <div class="pmain">
+              <div class="pfirm">ليفانت إنشاءات — مشروع سي بريز السكني</div>
+              <div class="pdesc">تركيب أعمال التكييف الميكانيكية بنظام تسليم مفتاح لبرج سكني واحد.</div>
+            </div>
+            <span class="ploc">قبرص</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">03</span>
+            <div class="pmain">
+              <div class="pfirm">إيجه تعهد — كلية دوغا في كيرينيا</div>
+              <div class="pdesc">تركيب أعمال التكييف الميكانيكية بنظام تسليم مفتاح عبر مباني الحرم الجامعي.</div>
+            </div>
+            <span class="ploc">قبرص</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">04</span>
+            <div class="pmain">
+              <div class="pfirm">ليفانت إنشاءات — جامعة شرق البحر المتوسط</div>
+              <div class="pdesc">تركيب أعمال التكييف الميكانيكية بنظام تسليم مفتاح عبر مباني حرم فاماغوستا.</div>
+            </div>
+            <span class="ploc">قبرص</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">05</span>
+            <div class="pmain">
+              <div class="pfirm">شركة الأناضول القابضة — إيفس بازارلاما</div>
+              <div class="pdesc">
+                أعمال التشطيبات الداخلية والكهرباء والميكانيكا والأتمتة والتأثيث والترميم عبر مكاتب البيع والمصانع
+                والمقر الرئيسي على مستوى تركيا.
+              </div>
+            </div>
+            <span class="ploc">تركيا</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">06</span>
+            <div class="pmain">
+              <div class="pfirm">سلاسل تجزئة — SPX، جاكادي باريس، بينيتون، يارغيجي، KFC</div>
+              <div class="pdesc">
+                تركيب أعمال التكييف الميكانيكية بنظام تسليم مفتاح عبر فروع المتاجر على مستوى تركيا.
+              </div>
+            </div>
+            <span class="ploc">تركيا</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">07</span>
+            <div class="pmain">
+              <div class="pfirm">إتش إس إيه للطاقة — مصنعان (12,000 م² + 10,000 م²)</div>
+              <div class="pdesc">استشارات تصميم ميكانيكي وتنفيذ تسليم مفتاح عبر منشأتين إنتاجيتين.</div>
+            </div>
+            <span class="ploc">مانيسا</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">08</span>
+            <div class="pmain">
+              <div class="pfirm">مايزر للشبكات المعدنية</div>
+              <div class="pdesc">استشارات التصميم الميكانيكي لمصنع شبكات وسقالات معدنية.</div>
+            </div>
+            <span class="ploc">كوجالي</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">09</span>
+            <div class="pmain">
+              <div class="pfirm">دي إتش إل للشحن — المقر الرئيسي ومستودع إيكيتلي</div>
+              <div class="pdesc">
+                تركيب أعمال التكييف الميكانيكية بنظام تسليم مفتاح لمبنى مقر رئيسي 27,000 م² ومستودع في منطقة إيكيتلي
+                الصناعية.
+              </div>
+            </div>
+            <span class="ploc">إسطنبول</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">10</span>
+            <div class="pmain">
+              <div class="pfirm">مونو للعمارة — برج شارع بغداد</div>
+              <div class="pdesc">
+                تركيب الأعمال الكهربائية والميكانيكية بنظام تسليم مفتاح لبرج سكني من 26 طابقاً و52 وحدة.
+              </div>
+            </div>
+            <span class="ploc">إسطنبول</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">11</span>
+            <div class="pmain">
+              <div class="pfirm">بويأكا العقارية — مول بويأكا</div>
+              <div class="pdesc">
+                أعمال الهيكل الحديدي والمعمارية إلى جانب أعمال الترميم الكهروميكانيكية بنظام تسليم مفتاح.
+              </div>
+            </div>
+            <span class="ploc">إسطنبول</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">12</span>
+            <div class="pmain">
+              <div class="pfirm">كلية بهتشه شهير — حرم مالتبه</div>
+              <div class="pdesc">تركيب جميع الأعمال الكهربائية والميكانيكية بنظام تسليم مفتاح عبر الحرم الجامعي.</div>
+            </div>
+            <span class="ploc">إسطنبول</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">13</span>
+            <div class="pmain">
+              <div class="pfirm">مجموعة دميرورن — وحدات بنتهاوس زورلو سنتر</div>
+              <div class="pdesc">الأعمال الكهروميكانيكية الكاملة بنظام تسليم مفتاح لوحدتي بنتهاوس.</div>
+            </div>
+            <span class="ploc">إسطنبول</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">14</span>
+            <div class="pmain">
+              <div class="pfirm">مجموعة بهاش — حضانات ومركز أرضروم الرياضي</div>
+              <div class="pdesc">
+                تنفيذ 3 حضانات لبلدية إسطنبول الكبرى بنظام تسليم مفتاح، ومركز شبابي ورياضي بمسبح داخلي في أرضروم.
+              </div>
+            </div>
+            <span class="ploc">إسطنبول / أرضروم</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">15</span>
+            <div class="pmain">
+              <div class="pfirm">مجموعة ليماك — المقر الرئيسي زورلو سنتر</div>
+              <div class="pdesc">تركيب أعمال التكييف الميكانيكية بنظام تسليم مفتاح.</div>
+            </div>
+            <span class="ploc">إسطنبول</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">16</span>
+            <div class="pmain">
+              <div class="pfirm">شركة BASF للكيماويات — برج نيدا في أتاşehير</div>
+              <div class="pdesc">أعمال كهروميكانيكية كاملة بنظام تسليم مفتاح لمبنى مكاتب 26,000 م².</div>
+            </div>
+            <span class="ploc">إسطنبول</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">17</span>
+            <div class="pmain">
+              <div class="pfirm">بي براون للأدوية — مبنى مكاتب مصلك</div>
+              <div class="pdesc">أعمال كهروميكانيكية كاملة بنظام تسليم مفتاح لمبنى مكاتب 7,000 م².</div>
+            </div>
+            <span class="ploc">إسطنبول</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">18</span>
+            <div class="pmain">
+              <div class="pfirm">بروكتر آند غامبل تركيا — متحف أولمبي في مول أكاسيا</div>
+              <div class="pdesc">
+                التصميم المعماري والتنفيذ إلى جانب الأعمال الكهروميكانيكية بنظام تسليم مفتاح لمساحة متحف 10,000 م².
+              </div>
+            </div>
+            <span class="ploc">إسطنبول</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ الصفحة ١١ — مشاريع البنية التحتية للطاقة (GES) ============ -->
+    <section class="page">
+      <div class="back">
+        <p class="section-eyebrow">مشاريع البنية التحتية للطاقة</p>
+        <h2 class="section-title" style="font-size: 18pt">مشاريع محطات الطاقة الشمسية المنجزة</h2>
+        <p style="font-size: 9pt; color: var(--slate); max-width: 155mm; margin-bottom: 1mm">
+          مشاريع محطات طاقة شمسية بنظام تسليم مفتاح تشمل البنية التحتية والمحولات/المفاتيح، والربط بشبكة الجهد المتوسط،
+          والمراقبة عبر SCADA، والتركيب الكهروميكانيكي.
+        </p>
+
+        <div class="plist">
+          <div class="prow">
+            <span class="pnum">01</span>
+            <div class="pmain">
+              <div class="pfirm">مجموعة توسيالي — مصانع إسكندرون / عثمانية للحديد والصلب</div>
+              <div class="pdesc">أعمال طاقة شمسية سطحية وواجهية وأرضية عبر جميع منشآت المصانع.</div>
+            </div>
+            <span class="pmw">265 MW</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">02</span>
+            <div class="pmain">
+              <div class="pfirm">آي إم سي للجلفنة — عثمانية</div>
+              <div class="pdesc">أعمال طاقة شمسية سطحية وواجهية وأرضية.</div>
+            </div>
+            <span class="pmw">25 MW</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">03</span>
+            <div class="pmain">
+              <div class="pfirm">مجموعة توسيالي — مصنع توغ في وادي السيليكون بجبزة</div>
+              <div class="pdesc">أعمال كهربائية للطاقة الشمسية السطحية والواجهية.</div>
+            </div>
+            <span class="pmw">10 MW</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">04</span>
+            <div class="pmain">
+              <div class="pfirm">سي إف إن للكيماويات — أورفا / سيفيرك</div>
+              <div class="pdesc">أعمال طاقة شمسية أرضية.</div>
+            </div>
+            <span class="pmw">11 MW</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">05</span>
+            <div class="pmain">
+              <div class="pfirm">آي سي إيچطاش — هطاي / إرزين</div>
+              <div class="pdesc">أعمال طاقة شمسية أرضية.</div>
+            </div>
+            <span class="pmw">135 MW</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">06</span>
+            <div class="pmain">
+              <div class="pfirm">فورتيس للطاقة — محطات مرمراي في إسطنبول</div>
+              <div class="pdesc">أعمال طاقة شمسية سطحية.</div>
+            </div>
+            <span class="pmw">2.5 MW</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">07</span>
+            <div class="pmain">
+              <div class="pfirm">چاليك للطاقة — أوشاك / سيفاسلي</div>
+              <div class="pdesc">أعمال طاقة شمسية أرضية.</div>
+            </div>
+            <span class="pmw">16 MW</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">08</span>
+            <div class="pmain">
+              <div class="pfirm">توركواز ميديا — كırşehير</div>
+              <div class="pdesc">أعمال طاقة شمسية أرضية.</div>
+            </div>
+            <span class="pmw">22 MW</span>
+          </div>
+          <div class="prow">
+            <span class="pnum">09</span>
+            <div class="pmain">
+              <div class="pfirm">مصنع كوريل — إسكişehير</div>
+              <div class="pdesc">أعمال طاقة شمسية سطحية لمصنع سيور صناعية.</div>
+            </div>
+            <span class="pmw">8 MW</span>
+          </div>
+        </div>
+
+        <p class="plist-note">
+          تصل القدرة الإجمالية المركبة للمشاريع أعلاه إلى
+          <strong style="direction: ltr; unicode-bidi: isolate">494.5 ميغاواط</strong>، وتشكل الجزء الأكبر من إجمالي
+          خبرة فريقنا الميدانية البالغة أكثر من 550 ميغاواط، إلى جانب مشاريع طاقة شمسية أخرى جارية وأصغر حجماً.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ الصفحة ١٢ — الاتصال ============ -->
     <section class="page">
       <div class="contact-page">
         <p class="section-eyebrow">تواصل معنا</p>
