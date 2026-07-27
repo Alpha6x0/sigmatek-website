@@ -709,14 +709,20 @@ body::before {
 .service-card:hover .service-photo img {
   transform: scale(1.06);
 }
+.service-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 24px 32px 12px;
+}
 .service-icon {
-  width: 58px;
-  height: 58px;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: -29px 0 28px 32px;
   box-shadow: 0 10px 24px -8px rgb(10, 14, 20, 0.4);
 }
 .icon-gold {
@@ -729,7 +735,7 @@ body::before {
 }
 .service-card h3 {
   font-size: 1.2rem;
-  margin: 0 32px 12px;
+  margin: 0;
 }
 .service-card p {
   color: var(--slate);
