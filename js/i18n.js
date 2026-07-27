@@ -68,7 +68,7 @@ window.SIGMATEK_I18N = {
     about_eyebrow: "Hakkımızda",
     about_title: "Sahada üretilen, mühendislikle doğrulanan çözümler",
     about_p1:
-      "Kurucumuz Makine Mühendisi Uğur Gül, sektördeki 116.932 m² kapalı alana sahip Buyaka AVM projesinin topraktan anahtar teslim bitimine kadar süren inşaat sürecinde 2006-2011 yılları arasında elektromekanik işlerden, 2011-2015 yılları arasında ise proje yönetiminden sorumlu olarak görev almıştır. Bu kapsamlı saha ve proje yönetimi tecrübesinin ardından 2018 yılında Sigmatek Mühendislik Danışmanlık A.Ş.'yi kurmuş; firmamız inşaat, elektrik, mekanik ve endüstriyel (elk.-mek.) tesisat alanlarında başlayan faaliyetlerine, 2021 yılı itibarıyla yenilenebilir enerji sistemleri yapım işlerini de dahil ederek enerji sektöründe güçlü bir oyuncu haline gelmiştir.",
+      "Kurucumuz Makine Mühendisi Uğur Gül, 116.932 m² kapalı alana sahip Buyaka AVM projesinin topraktan anahtar teslim bitimine kadar süren inşaat sürecinde 2006-2011 yılları arasında projenin elektromekaniğinden sorumlu mühendis olarak, 2011-2015 yılları arasında ise proje yöneticisi olarak görev almıştır. Bu kapsamlı saha ve proje yönetimi tecrübesinin ardından 2018 yılında Sigmatek Mühendislik Danışmanlık A.Ş.'yi kurmuş; firmamız inşaat, elektrik, mekanik ve endüstriyel (elk.-mek.) tesisat alanlarında başlayan faaliyetlerine, 2021 yılı itibarıyla yenilenebilir enerji sistemleri yapım işlerini de dahil ederek enerji sektöründe güçlü bir oyuncu haline gelmiştir.",
     about_p2:
       "Bizi sektörde farklılaştıran en önemli özelliklerden biri, yüksek verimlilik sağlayan motorlu güneş takip sistemleri (motorized solar tracking) konusundaki mühendislik yetkinliğimizdir. Mühendislik bilgisi, saha tecrübesi ve sürdürülebilirlik vizyonuyla; temiz enerjiye geçişte güvenilir bir çözüm ortağı olmayı sürdürüyoruz.",
     about_list1: "İnşaat, elektrik, mekanik ve endüstriyel tesisatta köklü mühendislik birikimi",
@@ -249,7 +249,7 @@ window.SIGMATEK_I18N = {
     about_eyebrow: "About Us",
     about_title: "Solutions built in the field, validated by engineering",
     about_p1:
-      "Our founder, Mechanical Engineer Uğur Gül, was responsible for electromechanical works from 2006-2011 and project management from 2011-2015 during the full ground-up-to-turnkey construction of the 116,932 m² Buyaka Shopping Mall. Building on this extensive field and project management experience, he founded Sigmatek Engineering Consulting Inc. in 2018; starting out in construction, electrical, mechanical and industrial (electro-mechanical) installation works, the company expanded into renewable energy plant construction in 2021, becoming a strong player in the energy sector.",
+      "Our founder, Mechanical Engineer Uğur Gül, served as the engineer responsible for the project's electromechanical works from 2006-2011, and as project manager from 2011-2015, during the full ground-up-to-turnkey construction of the 116,932 m² Buyaka Shopping Mall. Building on this extensive field and project management experience, he founded Sigmatek Engineering Consulting Inc. in 2018; starting out in construction, electrical, mechanical and industrial (electro-mechanical) installation works, the company expanded into renewable energy plant construction in 2021, becoming a strong player in the energy sector.",
     about_p2:
       "One of the qualities that sets us apart in the industry is our engineering expertise in high-efficiency motorized solar tracking systems. With engineering knowledge, field experience and a sustainability vision, we continue to be a reliable solutions partner in the transition to clean energy.",
     about_list1:
@@ -427,7 +427,7 @@ window.SIGMATEK_I18N = {
     about_eyebrow: "من نحن",
     about_title: "حلول تُنجز في الميدان وتُعتمد بالهندسة",
     about_p1:
-      "شغل مؤسسنا، المهندس الميكانيكي أوغور غول، منصب المسؤول عن الأعمال الكهروميكانيكية بين عامي 2006-2011، ثم مسؤول إدارة المشروع بين عامي 2011-2015، خلال مراحل إنشاء مول بويأكا (116,932 م²) الكاملة من الألف إلى التسليم النهائي. وبناءً على هذه الخبرة الميدانية وخبرة إدارة المشاريع الواسعة، أسّس شركة سيغماتك للاستشارات الهندسية عام 2018؛ بدأت الشركة نشاطها في مجالات الإنشاءات والكهرباء والميكانيكا والتمديدات الصناعية، ثم وسّعت تخصصها عام 2021 ليشمل أعمال بناء محطات الطاقة المتجددة، لتصبح لاعباً قوياً في قطاع الطاقة.",
+      "عمل مؤسسنا، المهندس الميكانيكي أوغور غول، كمهندس مسؤول عن الأعمال الكهروميكانيكية للمشروع بين عامي 2006-2011، ثم كمدير مشروع بين عامي 2011-2015، خلال مراحل إنشاء مول بويأكا (116,932 م²) الكاملة من الألف إلى التسليم النهائي. وبناءً على هذه الخبرة الميدانية وخبرة إدارة المشاريع الواسعة، أسّس شركة سيغماتك للاستشارات الهندسية عام 2018؛ بدأت الشركة نشاطها في مجالات الإنشاءات والكهرباء والميكانيكا والتمديدات الصناعية، ثم وسّعت تخصصها عام 2021 ليشمل أعمال بناء محطات الطاقة المتجددة، لتصبح لاعباً قوياً في قطاع الطاقة.",
     about_p2:
       "من أهم ما يميزنا في القطاع هو خبرتنا الهندسية في أنظمة التتبع الشمسي المحركة عالية الكفاءة. وبفضل معرفتنا الهندسية وخبرتنا الميدانية ورؤيتنا للاستدامة، نواصل كوننا شريكاً موثوقاً في التحول نحو الطاقة النظيفة.",
     about_list1: "خبرة هندسية راسخة في الإنشاءات والكهرباء والميكانيكا والتمديدات الصناعية",
