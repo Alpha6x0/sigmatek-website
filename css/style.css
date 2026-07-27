@@ -710,13 +710,13 @@ body::before {
   transform: scale(1.06);
 }
 .service-icon {
-  width: 52px;
-  height: 52px;
+  width: 58px;
+  height: 58px;
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: -26px 0 22px 32px;
+  margin: -29px 0 28px 32px;
   box-shadow: 0 10px 24px -8px rgb(10, 14, 20, 0.4);
 }
 .icon-gold {
