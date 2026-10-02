@@ -38,7 +38,7 @@ npm install
 ├── scripts/
 │   └── optimize-images.js  # Görsel optimizasyon aracı
 ├── vite.config.js          # Build yapılandırması
-└── .claude/dev-server.js   # Basit statik önizleme sunucusu (port 5510)
+└── (yerel) .claude/dev-server.js  # önizleme sunucusu; depoda tutulmaz
 ```
 
 ## Yayına Alma (Deploy)

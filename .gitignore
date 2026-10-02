@@ -26,3 +26,8 @@ brosur-artifact.html
 .playwright-mcp/
 brosur-*.jpeg
 scratch-gamek/
+
+# Yerel çalışma dosyaları ve özel belgeler depoya girmez (2 Ekim 2026: depo herkese açık)
+.claude/
+.mcp.json
+dilekce-*.html
